@@ -41,6 +41,8 @@ ALLOWED_REGIONS = {
     "LOW_BUDGET_SHRINK": ("    if count > 0:\n        mean_sampled_d", "        p_base = float(min(max(p_base, 0.005), 0.995))"),
     "PEER_SHIFT": ("        if total_peer_n > 0:\n            peer_bm_mean = sum(peer_ests) / total_peer_n", "            )"),
     "IRT_ENVELOPE": ("    # Boundary damping envelope", "    p_final = p_base + env * 0.32 * d_rel_2pl"),
+    # the IRT weight also appears inside the kernel-ridge block and its fallback; the template edits all three
+    "IRT_ENVELOPE_KR": ("                    w_kr = min(n_tot / (n_tot + 4.5), 0.65)", "            p_final = p_base + env * 0.32 * d_rel_2pl"),
 }
 SECRET_RE = re.compile(r"(nvapi-[A-Za-z0-9_-]{20,}|sk-or-v1-[0-9a-f]{20,}|eyJ[A-Za-z0-9_-]{30,}\.[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|hf_[A-Za-z0-9]{30,})")
 HIDDEN_ID_RE = re.compile(r"\b(benchmark|subject)_\d{6}\b")
@@ -109,7 +111,9 @@ def known_shas():
     return shas
 
 
-def static_gates(zpath, base, batch_shas):
+def static_gates(zpath, base, batch_shas, allow_unchanged=False):
+    """allow_unchanged: the reference is not v153 (a data-only revision such as v403), so an
+    unchanged model.py is expected rather than a sign of a mislabelled control."""
     reasons, info = [], {}
     cand = read_zip(zpath)
     if len(zpath.name) > 40:
@@ -152,7 +156,7 @@ def static_gates(zpath, base, batch_shas):
         reasons.append(f"G4 edits outside allowed regions at base lines {sorted(outside)[:6]}")
     is_control = "control" in zpath.stem.lower()
     info["control"] = is_control
-    if not touched and not is_control:
+    if not touched and not is_control and not allow_unchanged:
         reasons.append("G4 model.py identical to v153 (no change); name it *_control.zip if it is the daily control")
     if is_control and touched:
         reasons.append("G4 control ZIP must be byte-identical to v153 in model.py")
@@ -243,17 +247,20 @@ def main():
     ap.add_argument("--jobs", type=int, default=4)
     ap.add_argument("--pairs", type=int, default=16, help="pairs per fold for the full-curve sim (8 = screening)")
     ap.add_argument("--tag", default=None, help="sim result tag; default full_v153_vs_baselines for 16 pairs, screen_p<N> otherwise")
+    ap.add_argument("--base", default=str(BASE_ZIP), help="reference ZIP for G2/G4 (default v153); use the parent revision for data-only revisions")
     a = ap.parse_args()
+    base_path = pathlib.Path(a.base).resolve()
+    allow_unchanged = base_path != BASE_ZIP.resolve()
     sim_tag = a.tag or ("full_v153_vs_baselines" if a.pairs == 16 else f"screen_p{a.pairs}")
     out_dir = pathlib.Path(a.out).resolve(); out_dir.mkdir(parents=True, exist_ok=True)
     target = pathlib.Path(a.target).resolve()
     zips = sorted(target.glob("*.zip")) if target.is_dir() else [target]
-    base = read_zip(BASE_ZIP)
+    base = read_zip(base_path)
     seen = known_shas()
     summary = []
     n_controls = 0
     for zp in zips:
-        reasons, info = static_gates(zp, base, seen)
+        reasons, info = static_gates(zp, base, seen, allow_unchanged=allow_unchanged)
         seen.add(info["sha256"])
         if info.get("control"):
             n_controls += 1
@@ -269,6 +276,8 @@ def main():
             reasons.append(f"G7 predict smoke failed: {smoke_out[:200]}")
         lobo, lobo_err = None, None
         if not reasons and not a.no_lobo:
+            if set(info["regions_hit"]) <= {"IRT_ENVELOPE", "IRT_ENVELOPE_KR"}:
+                info["regions_hit"] = ["IRT_ENVELOPE"]
             if info["regions_hit"] == ["B0"]:
                 # budget-0 edits are cheap to evaluate: always use all text folds (905 pairs),
                 # whatever screening folds were requested for the full-curve simulations

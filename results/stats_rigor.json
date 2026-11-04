@@ -63,16 +63,16 @@
  },
  "tiers": {
   "PASS_both": 0,
-  "PASS_pair_only": 24,
-  "HOLD": 52,
-  "REJECT": 30
+  "PASS_pair_only": 60,
+  "HOLD": 149,
+  "REJECT": 17
  },
  "multiple_testing": {
-  "n_tests": 82,
+  "n_tests": 226,
   "bh_q": 0.05,
-  "n_bh_significant": 29,
-  "n_pass": 24,
-  "n_pass_surviving_bh": 24
+  "n_bh_significant": 70,
+  "n_pass": 60,
+  "n_pass_surviving_bh": 60
  },
  "oracle": {
   "n_pairs": 112,

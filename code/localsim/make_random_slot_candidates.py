@@ -5,13 +5,15 @@ same packaging, same QA gate. Slots: B0 (8), LOW_BUDGET_SHRINK (4), PEER_SHIFT (
 import json
 import pathlib
 import random
+import sys
 import zipfile
 
 ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
 SRC = ROOT / "localsim" / "variants" / "v153_nokeys_clean.zip"
-OUT = ROOT / "random_slot_batch_20261104"
+SEED = int(sys.argv[1]) if len(sys.argv) > 1 else 20261104
+OUT = ROOT / (sys.argv[2] if len(sys.argv) > 2 else "random_slot_batch_20261104")
 OUT.mkdir(exist_ok=True)
-rng = random.Random(20261104)
+rng = random.Random(SEED)
 
 with zipfile.ZipFile(SRC) as z:
     base = z.read("model.py").decode("utf-8")
@@ -56,27 +58,28 @@ def build(name, text, meta):
     print(name, meta["params"])
 
 
-# B0: 8 candidates
-cs, ss, es = lhs(8, 0.48, 0.56), lhs(8, 0.0, 1.0), lhs(8, 0.0, 1.2)
-for i in range(8):
+NB0 = int(sys.argv[3]) if len(sys.argv) > 3 else 8
+# B0 candidates
+cs, ss, es = lhs(NB0, 0.48, 0.56), lhs(NB0, 0.0, 1.0), lhs(NB0, 0.0, 1.2)
+for i in range(NB0):
     c, s, e = round(cs[i], 3), round(ss[i], 3), round(es[i], 3)
     t = replace_once(base, OLD_B0, NEW_B0.format(c=c, s=s, e=e))
     build(f"rnd_{i+1:03d}_b0", t, {"slot": "B0", "params": {"center": c, "shrink": s, "ease": e}, "sampler": "lhs"})
-# LOW_BUDGET_SHRINK: 4 candidates
-b1s, b3s, dbs = lhs(4, 0.20, 0.60), lhs(4, 0.05, 0.35), lhs(4, 0.20, 0.32)
-for i in range(4):
+NL = int(sys.argv[4]) if len(sys.argv) > 4 else 4
+b1s, b3s, dbs = lhs(NL, 0.20, 0.60), lhs(NL, 0.05, 0.35), lhs(NL, 0.20, 0.32)
+for i in range(NL):
     b1, b3, db = round(b1s[i], 3), round(b3s[i], 3), round(dbs[i], 3)
     t = base
     t = replace_once(t, "(1.0 - 0.340)", f"(1.0 - {b1:.3f})"); t = replace_once(t, ") * p_base + 0.340 * (0.50", f") * p_base + {b1:.3f} * (0.50")
     t = replace_once(t, "(1.0 - 0.100)", f"(1.0 - {b3:.3f})"); t = replace_once(t, ") * p_base + 0.100 * (0.50", f") * p_base + {b3:.3f} * (0.50")
     t = replace_once(t, "0.265 * count * mean_sampled_d", f"{db:.3f} * count * mean_sampled_d")
-    build(f"rnd_{i+9:03d}_low_budget_s", t, {"slot": "LOW_BUDGET_SHRINK", "params": {"blend_count1": b1, "blend_count_le3": b3, "debias": db}, "sampler": "lhs"})
-# PEER_SHIFT: 4 candidates
-gs, cps, ns = lhs(4, 0.25, 0.70), lhs(4, 0.35, 0.45), lhs(4, 1.0, 6.0)
-for i in range(4):
+    build(f"rnd_{i+NB0+1:03d}_low_budget_s", t, {"slot": "LOW_BUDGET_SHRINK", "params": {"blend_count1": b1, "blend_count_le3": b3, "debias": db}, "sampler": "lhs"})
+NP = int(sys.argv[5]) if len(sys.argv) > 5 else 4
+gs, cps, ns = lhs(NP, 0.25, 0.70), lhs(NP, 0.35, 0.45), lhs(NP, 1.0, 6.0)
+for i in range(NP):
     g, cp, n = round(gs[i], 3), round(cps[i], 4), round(ns[i], 2)
     t = base
     t = replace_once(t, "                0.45\n                * (peer_bm_mean - 0.386)\n                * (total_peer_n / (total_peer_n + 2.0))",
                      f"                {g:.3f}\n                * (peer_bm_mean - {cp:.4f})\n                * (total_peer_n / (total_peer_n + {n:.2f}))")
-    build(f"rnd_{i+13:03d}_peer_shift", t, {"slot": "PEER_SHIFT", "params": {"gain": g, "center": cp, "shrink_n": n}, "sampler": "lhs"})
+    build(f"rnd_{i+NB0+NL+1:03d}_peer_shift", t, {"slot": "PEER_SHIFT", "params": {"gain": g, "center": cp, "shrink_n": n}, "sampler": "lhs"})
 print("built", len(list(OUT.glob("*.zip"))), "candidates in", OUT)

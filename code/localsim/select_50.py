@@ -26,7 +26,10 @@ a = ap.parse_args()
 rows = []
 for qa_dir, zip_dir in a.qa:
     qa_dir, zip_dir = pathlib.Path(qa_dir), pathlib.Path(zip_dir)
-    summ = json.load(open(qa_dir / "qa_summary.json"))
+    if (qa_dir / "qa_summary.json").exists():
+        summ = json.load(open(qa_dir / "qa_summary.json"))
+    else:  # QA still running: use the per-candidate verdict files written so far
+        summ = [json.load(open(p)) for p in sorted(qa_dir.glob("qa_*.json"))]
     for r in summ:
         zp = zip_dir / r["file"]
         if not zp.exists():

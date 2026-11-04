@@ -62,13 +62,23 @@ for f in sorted(glob.glob(str(SIM / "results" / "qa_*" / "qa_*.json"))):
         lobo["fold_significant"] = bool(lobo["diff_alc"] + 2 * se_f < 0)
         json.dump(r, open(f, "w"), indent=1)
         cands.append({"file": r["file"], "batch": pathlib.Path(f).parent.name, "verdict": r["verdict"], "diff": lobo["diff_alc"], "se_p": lobo["se_alc"], "se_f": se_f,
-                      "regions": r["info"].get("regions_hit")})
-    if r["verdict"] == "PASS_UPLOAD" and lobo and lobo.get("per_fold"):
-        tiers["PASS_both" if lobo["fold_significant"] else "PASS_pair_only"] += 1
-    elif r["verdict"] in ("HOLD", "REJECT"):
-        tiers[r["verdict"]] += 1
+                      "fold_sig": lobo["fold_significant"], "regions": r["info"].get("regions_hit")})
+# one entry per distinct candidate: the same file name recurs across batches (cand_001_b0.zip in
+# every student batch) and the same candidate has a screening and a confirmation ("_full") verdict;
+# the confirmation verdict wins.
+ded = {}
+for c in cands:
+    key = (c["batch"].replace("_full", ""), c["file"])
+    if key not in ded or c["batch"].endswith("_full"):
+        ded[key] = c
+cands = list(ded.values())
+for c in cands:
+    if c["verdict"] == "PASS_UPLOAD":
+        tiers["PASS_both" if c["fold_sig"] else "PASS_pair_only"] += 1
+    elif c["verdict"] in ("HOLD", "REJECT"):
+        tiers[c["verdict"]] += 1
 out["tiers"] = tiers
-print("2. tiers over all verdict files:", tiers)
+print(f"2. tiers over {len(cands)} distinct candidates with a LOBO result:", tiers)
 
 # ---------------- 3. multiple testing (BH on one-sided p-values, pair-level SE)
 from math import erf, sqrt
@@ -78,14 +88,14 @@ def p_one_sided(diff, se):
     z = -diff / se
     return 0.5 * (1 - erf(z / sqrt(2)))
 tested = [c for c in cands if c["se_p"] is not None]
-pvals = sorted((p_one_sided(c["diff"], c["se_p"]), c["file"]) for c in tested)
+pvals = sorted((p_one_sided(c["diff"], c["se_p"]), (c["batch"].replace("_full", ""), c["file"])) for c in tested)
 m = len(pvals); q = 0.05
 k_max = 0
 for i, (p, _) in enumerate(pvals, 1):
     if p <= q * i / m:
         k_max = i
 bh_survivors = {name for _, name in pvals[:k_max]}
-pass_files = {c["file"] for c in tested if c["verdict"] == "PASS_UPLOAD"}
+pass_files = {(c["batch"].replace("_full", ""), c["file"]) for c in tested if c["verdict"] == "PASS_UPLOAD"}
 out["multiple_testing"] = {"n_tests": m, "bh_q": q, "n_bh_significant": k_max, "n_pass": len(pass_files), "n_pass_surviving_bh": len(pass_files & bh_survivors)}
 print(f"3. BH q=0.05 over {m} tested candidates: {k_max} significant; PASS {len(pass_files)}, PASS surviving BH {len(pass_files & bh_survivors)}")
 

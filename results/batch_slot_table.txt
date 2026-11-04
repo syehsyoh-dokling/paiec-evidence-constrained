@@ -1,0 +1,12 @@
+batch                    B0 LOW_BUDGET PEER_SHIFT MIXTURE_PR IRT_ENVELO    control      other   total
+qwen_1p5b             13/13       0/18       0/10       0/10       0/10        1/1              14/62
+qwen_v2               15/15       0/21       0/10       0/11       0/10        1/1              16/68
+qwen_v3               15/15       0/21       0/10       0/12       0/10        1/1              16/69
+random_slot             7/8        0/4        0/4                                               7/16
+random_slot2            8/8       0/12       0/12                                               8/32
+
+student batches: ['qwen_1p5b', 'qwen_v2', 'qwen_v3'] | sampler batches: ['random_slot', 'random_slot2']
+B0                 student 43/43 (100%)  sampler 15/16 (94%)  Fisher p=0.271
+LOW_BUDGET_SHRINK  student 0/60 (0%)  sampler 0/16 (0%)  Fisher p=1.000
+PEER_SHIFT         student 0/30 (0%)  sampler 0/16 (0%)  Fisher p=1.000
+ALL non-control    student 43/196 (22%)  sampler 15/48 (31%)  Fisher p=0.188

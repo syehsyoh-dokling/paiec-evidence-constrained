@@ -56,22 +56,14 @@ def _skey(s: dict) -> str:
     return "|".join(str(s.get(k) or "") for k in ("normalized_name", "harness", "harness_version", "reasoning_effort"))
 
 
-def predict(input: list[dict], labeled: list | None = None) -> float:
-    if not input or len(input) < 2:
-        return 0.5
-    subject, item = input
-    rows = []
-    for entry in labeled or []:
-        try:
-            (s, it), y = entry
-        except Exception:
-            continue
-        if y not in (0, 1) or not isinstance(s, dict) or not isinstance(it, dict):
-            continue
-        rows.append((_skey(s), str(it.get("benchmark_id") or ""), str(it.get("item_content") or ""), float(y)))
-    if not rows:
-        return 0.5
-    tkey, tb = _skey(subject), str(item.get("benchmark_id") or "")
+_FIT_CACHE: dict = {}  # fingerprint of the labeled set -> (w, index maps); one fit per budget per pair
+
+
+def _fit(rows, tkey, tb):
+    import hashlib
+    fp = hashlib.sha1(repr(sorted(rows)).encode() + f"|{tkey}|{tb}".encode()).hexdigest()
+    if fp in _FIT_CACHE:
+        return _FIT_CACHE[fp]
     subs = sorted({r[0] for r in rows} | {tkey}); bms = sorted({r[1] for r in rows} | {tb})
     pairs = sorted({(r[0], r[1]) for r in rows} | {(tkey, tb)})
     si = {k: i for i, k in enumerate(subs)}; bi = {k: i for i, k in enumerate(bms)}; pi = {k: i for i, k in enumerate(pairs)}
@@ -100,6 +92,29 @@ def predict(input: list[dict], labeled: list | None = None) -> float:
             w -= np.linalg.solve(H, g)
         except np.linalg.LinAlgError:
             break
+    if len(_FIT_CACHE) > 512:
+        _FIT_CACHE.clear()
+    _FIT_CACHE[fp] = (w, feat)
+    return _FIT_CACHE[fp]
+
+
+def predict(input: list[dict], labeled: list | None = None) -> float:
+    if not input or len(input) < 2:
+        return 0.5
+    subject, item = input
+    rows = []
+    for entry in labeled or []:
+        try:
+            (s, it), y = entry
+        except Exception:
+            continue
+        if y not in (0, 1) or not isinstance(s, dict) or not isinstance(it, dict):
+            continue
+        rows.append((_skey(s), str(it.get("benchmark_id") or ""), str(it.get("item_content") or ""), float(y)))
+    if not rows:
+        return 0.5
+    tkey, tb = _skey(subject), str(item.get("benchmark_id") or "")
+    w, feat = _fit(rows, tkey, tb)
     xt = feat(tkey, tb, str(item.get("item_content") or ""))
     pr = 1.0 / (1.0 + math.exp(-float(np.clip(xt @ w, -30, 30))))
     return float(min(max(pr, 0.02), 0.98))

@@ -154,9 +154,16 @@ def patch_artifacts(sub_dir, bm):
     up = dd / "universal_item_irt.json"
     if up.exists():
         u = json.loads(up.read_text(encoding="utf-8"))
-        z = np.load(NPZ, allow_pickle=True)
-        X, bma, dg, sg = z["X_dual"], z["bm_arr"], z["delta_gt"], z["disc_gt"]
-        keep = [b for b in BMS if b != bm]
+        exp = dd / "expanded_features.npz"
+        if exp.exists():
+            # expanded training set shipped with the submission: refit without the held-out benchmark
+            z = np.load(exp, allow_pickle=True)
+            X, bma, dg, sg = z["X"], z["bm"], z["ease"], z["disc"]
+            keep = sorted({b for b in bma.tolist() if b != bm})
+        else:
+            z = np.load(NPZ, allow_pickle=True)
+            X, bma, dg, sg = z["X_dual"], z["bm_arr"], z["delta_gt"], z["disc_gt"]
+            keep = [b for b in BMS if b != bm]
         Xc = np.vstack([X[bma == b] - X[bma == b].mean(0, keepdims=True) for b in keep])
         m = np.isin(bma, keep)
         # rows ordered by `keep`, so reorder targets identically
