@@ -1,0 +1,57 @@
+{
+ "archives": {
+  "paiec_submission_v153.zip": {
+   "source_file": "v153_nokeys_clean.zip",
+   "sha256": "d44f9382e8a782e7a462cdd39f92ecc770d5d15ef9ee1a4608289c8f67454e7c",
+   "bytes": 458748,
+   "members": {
+    "labeling.py": "2c525bf50b41afe21e4a33b524f04b6d855342af0c50d16d273dd224eac36ade",
+    "model.py": "9271d81f347fcf841ede5e67ccb7375be1607b333225393bbff48d519032ce4e",
+    "models.txt": "2e6a73dafe1b8e68db0acdd438879a808b524569b35b28b8bba1442e848ddd21",
+    "submission_config.json": "5b29f17e33014e3574c3d3006a8e70b0ed30edb35315354926d94e8610bfcd62",
+    "data/corpus_manifest.json": "4e10c5dc82b45e16c636e61971ab633aeb217f4d285bec00bc3be8b2505bd2f4",
+    "data/subject_priors.json": "3cd444d60877fdaa669cc4edb1cb0645e7fd0e2b7b3aed34bd961392353fca31",
+    "data/universal_item_irt.json": "76a58149dbf027396a8f16eec56d2977c9fd026d3066757f601e266014266a46"
+   }
+  },
+  "paiec_submission_v403.zip": {
+   "source_file": "v403_expanded_upload.zip",
+   "sha256": "79afc80987ccdf6b5fbeada2e5f1c9375de22aad950d049f69dbdd4952267e39",
+   "bytes": 476357,
+   "members": {
+    "labeling.py": "2c525bf50b41afe21e4a33b524f04b6d855342af0c50d16d273dd224eac36ade",
+    "model.py": "a7c4062ce4d204975f218bc017439dde325e1768fe7e2bec61725c61d5922d90",
+    "models.txt": "2e6a73dafe1b8e68db0acdd438879a808b524569b35b28b8bba1442e848ddd21",
+    "submission_config.json": "5b29f17e33014e3574c3d3006a8e70b0ed30edb35315354926d94e8610bfcd62",
+    "data/corpus_manifest.json": "4e10c5dc82b45e16c636e61971ab633aeb217f4d285bec00bc3be8b2505bd2f4",
+    "data/subject_priors.json": "572a1cd3b9f804389829da9712620aba07878ba4ae4650cf5f7bb4aea0414c5e",
+    "data/universal_item_irt.json": "49b6f999a9953f1f5f15855f5aaa04588c2afaef26b7c23ff516c3c7c5f20b22"
+   }
+  },
+  "v402b (hosted 1032562)": {
+   "source_file": "v402b_irt_k3_ts2_tb2_w060.zip",
+   "sha256": "8d2db055c7010da8f919c608b068d5e663a7cf95914abc62b3f71572cf175c69",
+   "bytes": 459768,
+   "members": {
+    "labeling.py": "2c525bf50b41afe21e4a33b524f04b6d855342af0c50d16d273dd224eac36ade",
+    "model.py": "a7c4062ce4d204975f218bc017439dde325e1768fe7e2bec61725c61d5922d90",
+    "models.txt": "2e6a73dafe1b8e68db0acdd438879a808b524569b35b28b8bba1442e848ddd21",
+    "submission_config.json": "5b29f17e33014e3574c3d3006a8e70b0ed30edb35315354926d94e8610bfcd62",
+    "data/corpus_manifest.json": "4e10c5dc82b45e16c636e61971ab633aeb217f4d285bec00bc3be8b2505bd2f4",
+    "data/subject_priors.json": "3cd444d60877fdaa669cc4edb1cb0645e7fd0e2b7b3aed34bd961392353fca31",
+    "data/universal_item_irt.json": "76a58149dbf027396a8f16eec56d2977c9fd026d3066757f601e266014266a46"
+   }
+  }
+ },
+ "build": {
+  "data/subject_priors.json": {
+   "v153": "generate_v38_subject_priors_and_simulate_alc.py on the 8-benchmark payload (200 items each); alternating subject x item fixed effects, 40 iterations, ridge 2 or 14",
+   "v403": "localsim/build_priors_expanded.py --root <measurement-db long-form root> --max-items-per-benchmark 4000 --frontier matharena hle livecodebench swebench cybench --min-items-per-subject 20 (12 benchmarks, 1186 subject keys)"
+  },
+  "data/universal_item_irt.json": {
+   "v153": "export_v38_universal_irt.py: ridge 35 (ease) / 55 (discrimination) on 781-d pool-centred dual-encoder features of the 8 x 200 items (hle rows included)",
+   "v403": "localsim/build_priors_expanded.py (same ridge, 18998 items of 12 benchmarks); localsim/make_expanded_zip.py assembled the archive; localsim/make_v403_upload.py dropped the simulator-only data/expanded_features.npz"
+  }
+ },
+ "note": "model.py of v402b and v403 is byte-identical; v403 differs from v402b only in the two data/*.json files. Archives are byte-identical to the uploaded submissions and were not edited after upload."
+}

@@ -1,0 +1,12 @@
+# Versions installed in the environment that produced every number in the report.
+# Python 3.13.6 on Windows 11; CPU inference (GPU optional).
+# The Codabench evaluator installs its own environment; these pins reproduce the local LOBO numbers.
+numpy==2.5.3
+pandas==3.0.5
+pyarrow==25.0.1
+torch==2.14.0+cu126
+transformers==5.16.1
+matplotlib==3.10.9
+huggingface_hub==1.30.0
+tokenizers==0.23.2
+safetensors==0.8.0

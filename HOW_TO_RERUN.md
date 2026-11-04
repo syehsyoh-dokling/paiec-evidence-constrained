@@ -9,6 +9,14 @@ All scripts resolve their paths from `PAIEC_ROOT` (default: the development mach
 The Codabench token file for the upload scripts is read from `PAIEC_CODABENCH_TOKEN_FILE`;
 no script needs it for evaluation.
 
+Pinned versions of the environment that produced the report are in `requirements.txt`; SHA-256 of every
+archive and of the predictor files inside them, with the scripts that built the fitted artifacts, are in
+`submission/ARTIFACTS.json`.
+
+## 0. Unit tests against an unmodified archive (about one minute; downloads the two encoders once)
+
+    python code/tests/test_predictor.py submission/paiec_submission_v403.zip
+
 ## 1. Check the submission archive (organizers' checker)
 
     python code/organizers_tools/check_submission_zip.py submission/paiec_submission_v153.zip
