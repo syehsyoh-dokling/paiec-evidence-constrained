@@ -1,0 +1,32 @@
+{
+  "purpose": "Measurement-science primer injected into the student's prompt (retrieval-style knowledge, not fine-tuning). Sources: AIMS competition page and baseline repo; Lord (1980) IRT; Murphy (1973) Brier decomposition; organizers' ECE definition.",
+  "concepts": [
+    {"name": "Item response theory (1PL/2PL)", "formula": "P(y=1 | theta_s, b_i) = sigmoid(theta_s - b_i)  (1PL);  2PL: sigmoid(a_i (theta_s - b_i))",
+     "meaning": "theta_s = subject ability, b_i = item difficulty, a_i = discrimination. Effects are additive on the LOGIT scale, not on the probability scale. A subject's ability is shared across items; an item's difficulty is shared across subjects.",
+     "use_in_this_predictor": "slot IRT_ENVELOPE and the v402 estimator; the zero-shot ease d_i is a stand-in for -b_i."},
+    {"name": "Conjugate Beta-Binomial shrinkage", "formula": "E[theta | S, N] = (S + a) / (N + a + b)",
+     "meaning": "a and b are pseudo-counts: prior strength in units of observations. Larger a+b = slower reaction to new labels. The three mixture regimes are three such priors with weights updated by the likelihood.",
+     "use_in_this_predictor": "slots MIXTURE_PRIOR and LOW_BUDGET_SHRINK."},
+    {"name": "Brier score and Murphy decomposition", "formula": "Brier = reliability - resolution + uncertainty",
+     "meaning": "reliability (calibration error, lower is better) = how far predicted probabilities are from observed frequencies; resolution (higher is better) = how much predictions separate outcomes; uncertainty = ybar(1-ybar), fixed by the data. A constant prediction equal to the pass rate has zero reliability error and zero resolution, i.e. Brier = uncertainty.",
+     "use_in_this_predictor": "the oracle-constant floor is Brier = uncertainty; any gain below it must come from resolution (item-level discrimination)."},
+    {"name": "Expected calibration error (organizers' definition)", "formula": "ECE = sum_k (n_k / N) |mean_pred_k - mean_y_k| over 10 equal-width probability bins, weighted by response count",
+     "meaning": "diagnostic only; sensitive to sample size. Changes that only rescale probabilities move ECE but may not move Brier.",
+     "use_in_this_predictor": "reported per budget by calib_report.py."},
+    {"name": "Learning curve and ALC", "formula": "Brier ALC = 0.1 B0 + 0.2 (B1 + B3 + B7 + B15) + 0.1 B31",
+     "meaning": "budgets 1 and 3 carry 40% of the weight; a change that only helps at 31 labels is worth at most 0.1 of its Brier effect.",
+     "use_in_this_predictor": "prefer slots that act at budgets 1-7."},
+    {"name": "Leave-one-benchmark-out validation", "formula": "for each benchmark b: fit on all others, score on b; report paired differences on identical pairs",
+     "meaning": "the only evidence the gate accepts; hosted formative scores come from different samples per submission and cannot rank candidates.",
+     "use_in_this_predictor": "qa_gate.py and autopilot.py."},
+    {"name": "Reliability across trials", "formula": "trial agreement = fraction of items whose repeated attempts give the same outcome",
+     "meaning": "76-100% on the public benchmarks; only matharena and agentdojo have meaningful repeat noise. Predictions near 0 or 1 are therefore not unreasonable on deterministic benchmarks but dangerous where repeats disagree.",
+     "use_in_this_predictor": "output clipping bounds and the mixture regimes."}
+  ],
+  "rules_for_proposals": [
+    "Propose changes that act at budgets 1-7 before changes that act only at 31.",
+    "When a slot's proposals so far are indistinguishable from the baseline, move to the ends of the allowed ranges.",
+    "Never justify a baseline by a single hosted score; justify it by LOBO paired evidence.",
+    "Additive effects belong on the logit scale; if a proposal adds to probabilities, say so in the hypothesis."
+  ]
+}
