@@ -1,0 +1,22 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2711.44it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  10%|9         | 19/199 [00:00<00:00, 180.58it/s]Loading weights:  22%|##1       | 43/199 [00:00<00:00, 208.52it/s]Loading weights:  36%|###6      | 72/199 [00:00<00:00, 244.21it/s]Loading weights:  50%|####9     | 99/199 [00:00<00:00, 251.15it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 413.57it/s]
+v153_nokeys                  afrimedqa        subjects= 30 B0 seen=0.2629 unseen=0.2665 diff=+0.0037 se=0.002532456461281386
+v153_nokeys                  agentdojo        subjects= 28 B0 seen=0.2090 unseen=0.2055 diff=-0.0035 se=0.0015855663004652337
+v153_nokeys                  ai2d_test        subjects=254 B0 seen=0.2713 unseen=0.2700 diff=-0.0014 se=0.0005378006908816303
+v153_nokeys                  matharena        subjects= 77 B0 seen=0.2041 unseen=0.2058 diff=+0.0018 se=0.001948146892580339
+v153_nokeys                  mathvista_mini   subjects=263 B0 seen=0.2224 unseen=0.2201 diff=-0.0023 se=0.0005181050703928069
+v153_nokeys                  mmbench_v11      subjects=250 B0 seen=0.2728 unseen=0.2718 diff=-0.0010 se=0.000686222136594926
+v153_nokeys                  mmlupro          subjects= 47 B0 seen=0.2450 unseen=0.2434 diff=-0.0016 se=0.0016488313130738719
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1843.31it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 2030.13it/s]
+b0fix_clean_ref              afrimedqa        subjects= 30 B0 seen=0.2407 unseen=0.2433 diff=+0.0027 se=0.0019099960981493766
+b0fix_clean_ref              agentdojo        subjects= 28 B0 seen=0.2275 unseen=0.2259 diff=-0.0016 se=0.0016010965313252004
+b0fix_clean_ref              ai2d_test        subjects=254 B0 seen=0.2342 unseen=0.2362 diff=+0.0020 se=0.000523413725677528
+b0fix_clean_ref              matharena        subjects= 77 B0 seen=0.1719 unseen=0.1710 diff=-0.0009 se=0.002059207700727616
+b0fix_clean_ref              mathvista_mini   subjects=263 B0 seen=0.2366 unseen=0.2359 diff=-0.0006 se=0.0005776834574803195
+b0fix_clean_ref              mmbench_v11      subjects=250 B0 seen=0.2317 unseen=0.2315 diff=-0.0002 se=0.0006300736199680387
+b0fix_clean_ref              mmlupro          subjects= 47 B0 seen=0.2247 unseen=0.2243 diff=-0.0005 se=0.001851307920876087
+SUMMARY v153_nokeys: benchmarks=7 mean diff (unseen - seen) = -0.0006, SE over benchmarks = 0.0009
+SUMMARY b0fix_clean_ref: benchmarks=7 mean diff (unseen - seen) = +0.0001, SE over benchmarks = 0.0006
+SEEN_UNSEEN_DONE
