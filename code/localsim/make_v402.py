@@ -8,10 +8,11 @@ Fitted by damped Newton (coordinate-wise) on all revealed labels of the target b
 labels of the target subject on other benchmarks enter through a second set of beta_b' offsets.
 Prediction = sigmoid(theta_s + beta_b + kappa * d_target), blended with p_base by budget weight.
 """
+import os
 import pathlib
 import zipfile
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 SRC = ROOT / "localsim" / "variants" / "b0fix_clean_ref.zip"
 OUT = ROOT / "localsim" / "variants"
 

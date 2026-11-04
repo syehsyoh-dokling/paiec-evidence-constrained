@@ -13,6 +13,7 @@
    a two-sample comparison of the mean dALC.
 Writes localsim/results/stats_rigor.json and prints a summary.
 """
+import os
 import glob
 import json
 import math
@@ -22,7 +23,7 @@ from itertools import combinations
 
 import numpy as np
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 SIM = ROOT / "localsim"
 FOLDS = ["afrimedqa", "agentdojo", "ai2d_test", "matharena", "mathvista_mini", "mmbench_v11", "mmlupro"]
 W0 = 0.1

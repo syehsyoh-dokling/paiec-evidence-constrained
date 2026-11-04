@@ -1,7 +1,8 @@
 """Build the upload copy of v403 (= v402b + expanded priors) by dropping the simulator-only
 data/expanded_features.npz, and verify model.py is byte-identical to v402b's."""
+import os
 import hashlib, pathlib, sys, zipfile
-V = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA\localsim\variants")
+V = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA")) / "localsim" / "variants"
 src = V / "v402b_expanded_priors.zip"
 base = V / "v402b_irt_k3_ts2_tb2_w060.zip"
 out = V / "v403_expanded_upload.zip"

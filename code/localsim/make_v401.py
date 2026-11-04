@@ -1,11 +1,12 @@
 """v401 = budget-0 fix (c=0.50, s=0.5, e=1.0) + the mixture-prior parameters of the best
 student candidate (cand_047), built from the clean v153 base. Both effects act on different
 budgets (B0 vs B1-B3), so they should add if they are real."""
+import os
 import json
 import pathlib
 import zipfile
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 SRC = ROOT / "localsim" / "variants" / "b0fix_clean_ref.zip"
 META = ROOT / "kaggle_push_qwen70" / "output_v2" / "qwen_batch"
 OUT = ROOT / "localsim" / "variants"

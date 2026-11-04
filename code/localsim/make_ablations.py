@@ -7,10 +7,11 @@ abl_no_irt_env     : IRT envelope weight 0.32 -> 0.0 (zero-shot ease still used 
 abl_random_acq     : labeling.py removed -> evaluator's random acquisition
 Each edit is a minimal text substitution verified to occur exactly as expected.
 """
+import os
 import pathlib
 import zipfile
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 SRC = ROOT / "localsim" / "variants" / "v153_nokeys.zip"
 OUT = ROOT / "localsim" / "variants"
 

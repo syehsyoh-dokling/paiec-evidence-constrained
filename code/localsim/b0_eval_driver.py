@@ -7,7 +7,7 @@ import sys
 
 import numpy as np
 
-SIM = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA\localsim")
+SIM = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA")) / "localsim"
 FOLDS = ["afrimedqa", "agentdojo", "ai2d_test", "matharena", "mathvista_mini", "mmbench_v11", "mmlupro"]
 OUT = SIM / "results" / "b0eval"
 OUT.mkdir(parents=True, exist_ok=True)

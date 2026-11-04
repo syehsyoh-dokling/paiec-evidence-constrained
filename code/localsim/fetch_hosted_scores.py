@@ -3,6 +3,7 @@ each submission's scoring-output log (per-pair tables) for paired analysis.
 Output: localsim/results/hosted_scores.json  {sid: {file, score, ece, status, created, batch}}
         scoring_logs_all/<sid>.txt (only when not already saved)
 """
+import os
 import csv
 import glob
 import json
@@ -10,8 +11,8 @@ import pathlib
 import time
 import urllib.request
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
-TOK = open(r"C:/Users/Saifuddin/.config/paiec/codabench-token").read().strip()
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
+TOK = open(os.environ.get("PAIEC_CODABENCH_TOKEN_FILE", r"C:/Users/Saifuddin/.config/paiec/codabench-token")).read().strip()
 HDR = {"Authorization": f"Token {TOK}", "Accept": "application/json"}
 OUT = ROOT / "localsim" / "results" / "hosted_scores.json"
 LOGS = ROOT / "scoring_logs_all"

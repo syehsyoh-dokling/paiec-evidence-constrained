@@ -1,7 +1,8 @@
 """Copy the current report, scripts and result summaries into paiec_release/ (the public
 evidence repository) and refuse if any copied text file contains a secret-looking string."""
+import os
 import pathlib, re, shutil, sys
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 REL = ROOT / "paiec_release"
 SECRET = re.compile(r"(nvapi-[A-Za-z0-9_-]{10,}|sk-or-[A-Za-z0-9_-]{10,}|sk-[A-Za-z0-9]{20,}|hf_[A-Za-z0-9]{20,}|Token [0-9a-f]{20,}|api_key\s*[:=]\s*['\"][^'\"]{8,})")
 SCRIPTS = """autopilot.py b0_eval_driver.py b0_eval_fold.py calib_report.py make_ablations.py make_b0_variants.py

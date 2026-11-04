@@ -1,9 +1,10 @@
 """Tabulate every autopilot batch: candidates and PASS_UPLOAD verdicts per edit slot, from the
 AUTOPILOT_REPORT.md files under localsim/results/qa_*/. Also Fisher exact test of PASS rate,
 student batches vs no-LLM sampler batches, per slot and pooled."""
+import os
 import collections, pathlib, re
 from math import comb
-R = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA\localsim\results")
+R = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA")) / "localsim" / "results"
 SLOT = [("control", "control"), ("_b0", "B0"), ("low_budget", "LOW_BUDGET_SHRINK"), ("peer_shift", "PEER_SHIFT"), ("mixture", "MIXTURE_PRIOR"), ("irt", "IRT_ENVELOPE")]
 def slot_of(name):
     n = name.lower()

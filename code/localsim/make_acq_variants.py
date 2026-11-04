@@ -1,9 +1,10 @@
 """Build acquisition-policy variants on top of v402b: random (no labeling.py), the shipped
 complementary policy, and uncertainty-weighted policies with mix 0.5 and 1.0."""
+import os
 import pathlib
 import zipfile
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 SRC = ROOT / "localsim" / "variants" / "v402b_irt_k3_ts2_tb2_w060.zip"
 TPL = (ROOT / "localsim" / "labeling_uncertainty.py").read_text(encoding="utf-8")
 OUT = ROOT / "localsim" / "variants"

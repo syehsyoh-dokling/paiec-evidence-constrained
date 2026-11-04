@@ -1,11 +1,12 @@
 """Paired comparison of every variant in <results>/<tag>/combined.json against a reference variant.
 Usage: python paired_vs.py <tag> <reference_variant> [variant ...]
 Prints dALC, pair-level SE, fold-level SE, folds improved, and per-budget Brier deltas."""
+import os
 import json, math, pathlib, statistics, sys
 from collections import defaultdict
 
 tag, ref = sys.argv[1], sys.argv[2]
-d = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA\localsim\results") / tag
+d = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA")) / "localsim" / "results" / tag
 res = json.load(open(d / "combined.json"))
 want = sys.argv[3:] or [v for v in res if v != ref]
 BUD = ["0", "1", "3", "7", "15", "31"]

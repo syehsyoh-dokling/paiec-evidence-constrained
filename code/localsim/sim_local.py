@@ -26,7 +26,7 @@ from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 import pandas as pd
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 DATA = ROOT / "paiec_v31_ble_hybrid" / "data"
 NPZ = ROOT / "cached_dual_encoder_1600.npz"
 SIM = ROOT / "localsim"

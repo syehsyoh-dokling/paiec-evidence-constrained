@@ -2,6 +2,7 @@
 incremental ledger (<dir>/upload_ledger.json) so a rerun never double-submits.
 Stops cleanly when the daily quota is reached. Usage: python upload_batch.py <dir> [--max N]
 """
+import os
 import argparse
 import hashlib
 import json
@@ -12,7 +13,7 @@ from pathlib import Path
 
 import requests
 
-TOKEN = Path(r"C:\Users\Saifuddin\.config\paiec\codabench-token").read_text().strip()
+TOKEN = Path(os.environ.get("PAIEC_CODABENCH_TOKEN_FILE", r"C:/Users/Saifuddin/.config/paiec/codabench-token")).read_text().strip()
 BASE = "https://www.codabench.org/api"
 PHASE_ID = 29785
 COMPETITION_ID = 17828

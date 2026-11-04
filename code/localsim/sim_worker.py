@@ -39,7 +39,7 @@ def main():
     acq_fn = None
     if os.path.exists(os.path.join(sub_dir, "labeling.py")):
         acq_fn = load_module("labeling", os.path.join(sub_dir, "labeling.py")).acquisition_function
-    sys.path.insert(0, r"c:\Users\Saifuddin\Documents\LOMBA\paiec_baseline\tools")
+    sys.path.insert(0, os.path.join(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"), 'paiec_baseline', 'tools'))
     from streaming_ingestion import AcquisitionHook
 
     hook = AcquisitionHook(acq_fn)

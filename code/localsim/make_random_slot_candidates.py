@@ -2,13 +2,14 @@
 language model (Latin-hypercube style stratified sampling, fixed seed). Same base ZIP,
 same packaging, same QA gate. Slots: B0 (8), LOW_BUDGET_SHRINK (4), PEER_SHIFT (4).
 """
+import os
 import json
 import pathlib
 import random
 import sys
 import zipfile
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 SRC = ROOT / "localsim" / "variants" / "v153_nokeys_clean.zip"
 SEED = int(sys.argv[1]) if len(sys.argv) > 1 else 20261104
 OUT = ROOT / (sys.argv[2] if len(sys.argv) > 2 else "random_slot_batch_20261104")

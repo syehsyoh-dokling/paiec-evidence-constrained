@@ -20,7 +20,7 @@ import zipfile
 
 import numpy as np
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 SIM = ROOT / "localsim"
 sys.path.insert(0, str(SIM))
 import sim_local  # noqa: E402

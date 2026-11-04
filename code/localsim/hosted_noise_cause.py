@@ -1,7 +1,8 @@
 """Why is one hosted score 0.1276 while the family mean is 0.186? Decompose the per-pair ALC
 variance into benchmark composition, subject composition and residual, using every scored log."""
+import os
 import collections, json, math, pathlib, re, statistics
-ROOT = pathlib.Path(r"C:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"C:\Users\Saifuddin\Documents\LOMBA"))
 res = json.load(open(ROOT / "localsim" / "results" / "hosted_scores.json"))
 row_re = re.compile(r"^(subject_\d+)\s+(benchmark_\d+)\s+(\d+)\s+([0-9.]+)\s+([0-9.]+)\s*$")
 

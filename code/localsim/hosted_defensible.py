@@ -2,6 +2,7 @@
 standard error, 95% CI of the mean, best draw; plus a paired per-benchmark comparison of
 today's uploads against the byte-identical controls using the permanent anonymous
 benchmark IDs in the scoring logs."""
+import os
 import collections
 import json
 import math
@@ -9,7 +10,7 @@ import pathlib
 import re
 import statistics
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 res = json.load(open(ROOT / "localsim" / "results" / "hosted_scores.json"))
 scored = {int(k): v for k, v in res.items() if v.get("score") is not None}
 

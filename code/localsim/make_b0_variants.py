@@ -5,11 +5,12 @@ Each variant replaces the B=0 block in model.py with a data-driven prior:
 and removes the hard [0.005, 0.495] cap. api_keys are stripped from
 submission_config.json in every output ZIP.
 """
+import os
 import json
 import pathlib
 import zipfile
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 SRC_ZIP = ROOT / "submission_paiec_v153_cb449_wp184_deb265_damp34.zip"
 OUT_DIR = ROOT / "localsim" / "variants"
 OUT_DIR.mkdir(parents=True, exist_ok=True)

@@ -18,6 +18,7 @@ Stages (all deterministic, all resumable; every stage writes JSON the next stage
   F  report      AUTOPILOT_REPORT.md with the tables a human would otherwise assemble by hand
 Anything the rules cannot settle (tool errors, timeouts) is listed under "needs a human".
 """
+import os
 import argparse
 import json
 import pathlib
@@ -26,7 +27,7 @@ import subprocess
 import sys
 import time
 
-ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
+ROOT = pathlib.Path(os.environ.get("PAIEC_ROOT", r"c:\Users\Saifuddin\Documents\LOMBA"))
 SIM = ROOT / "localsim"
 TEXT_FOLDS = ["afrimedqa", "agentdojo", "ai2d_test", "matharena", "mathvista_mini", "mmbench_v11", "mmlupro"]
 sys.path.insert(0, str(SIM))
