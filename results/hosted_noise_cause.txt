@@ -1,36 +1,36 @@
-submissions with logs 221, pairs per submission mean 8.7
-pair-level ALC: mean 0.1852 SD 0.0759 min 0.0345 max 0.3724
-predicted SD of a 9-pair mean = 0.0258; observed SD of submission scores = 0.0182
-variance of pair ALC 0.00576: benchmark identity explains 53%, (subject,benchmark) identity explains 98%, residual (same pair, different submissions/items) 2%
-distinct subjects 281, distinct pairs 281, pairs seen >=3 times 183
+submissions with logs 382, pairs per submission mean 8.7
+pair-level ALC: mean 0.1851 SD 0.0760 min 0.0343 max 0.3724
+predicted SD of a 9-pair mean = 0.0258; observed SD of submission scores = 0.0191
+variance of pair ALC 0.00577: benchmark identity explains 54%, (subject,benchmark) identity explains 98%, residual (same pair, different submissions/items) 2%
+distinct subjects 301, distinct pairs 301, pairs seen >=3 times 243
 benchmark   n   mean   sd(within)
-benchmark_800730  276 0.0881 0.0433
-benchmark_213669  261 0.1187 0.0779
-benchmark_830060  264 0.1854 0.0384
-benchmark_869474  250 0.2002 0.0717
-benchmark_893575  299 0.2205 0.0516
-benchmark_119137  310 0.2241 0.0342
-benchmark_342307  258 0.2542 0.0304
+benchmark_800730  485 0.0887 0.0431
+benchmark_213669  448 0.1164 0.0773
+benchmark_830060  456 0.1853 0.0389
+benchmark_869474  438 0.2031 0.0703
+benchmark_893575  517 0.2195 0.0521
+benchmark_119137  526 0.2251 0.0337
+benchmark_342307  450 0.2532 0.0312
 
 submission 1020778: score 0.1276
 subject          benchmark         n    ALC    bench mean  pair mean elsewhere (n)
-subject_154237 benchmark_213669  58 0.0428   0.1187     0.0451 (16)
-subject_198432 benchmark_800730  50 0.0738   0.0881     0.0775 (41)
-subject_294931 benchmark_342307  60 0.2471   0.2542     0.2530 (5)
-subject_431933 benchmark_830060  53 0.1389   0.1854     0.1461 (29)
-subject_728955 benchmark_893575  44 0.1950   0.2205     0.1878 (1)
-subject_791774 benchmark_119137  44 0.1886   0.2241     0.1891 (25)
-subject_836977 benchmark_830060  72 0.1828   0.1854     0.1809 (7)
-subject_912438 benchmark_869474  56 0.0445   0.2002     0.0544 (11)
-subject_952069 benchmark_800730  54 0.0348   0.0881     0.0430 (34)
+subject_154237 benchmark_213669  58 0.0428   0.1164     0.0442 (22)
+subject_198432 benchmark_800730  50 0.0738   0.0887     0.0773 (75)
+subject_294931 benchmark_342307  60 0.2471   0.2532     0.2511 (8)
+subject_431933 benchmark_830060  53 0.1389   0.1853     0.1456 (49)
+subject_728955 benchmark_893575  44 0.1950   0.2195     0.1828 (2)
+subject_791774 benchmark_119137  44 0.1886   0.2251     0.1883 (46)
+subject_836977 benchmark_830060  72 0.1828   0.1853     0.1828 (12)
+subject_912438 benchmark_869474  56 0.0445   0.2031     0.0523 (14)
+subject_952069 benchmark_800730  54 0.0348   0.0887     0.0424 (49)
 expected score from its benchmark composition alone: 0.1739
-expected score from its (subject,benchmark) composition (other submissions' results on the same pairs): 0.1308
+expected score from its (subject,benchmark) composition (other submissions' results on the same pairs): 0.1296
 actual: 0.1276; family mean 0.1859
-rank of 0.1276 among 221 scored submissions with logs: 1
+rank of 0.1276 among 382 scored submissions with logs: 1
 
 5 best hosted scores and their pair-composition expectation:
-  1020778 submission_paiec_v153_cb449_wp184_d.zip  score 0.1276 expected-from-draw 0.1308
-  1012027 submission_paiec_v59_c455_debias28.zip   score 0.1398 expected-from-draw 0.1423
-  1011252 submission_paiec_v44_zero_centered_.zip  score 0.1411 expected-from-draw 0.1385
-  1020473 submission_paiec_v137_synergy_cb455.zip  score 0.1414 expected-from-draw 0.1390
-  1013115 submission_paiec_v79_c455_wp22_deb2.zip  score 0.1501 expected-from-draw 0.1573
+  1020778 submission_paiec_v153_cb449_wp184_d.zip  score 0.1276 expected-from-draw 0.1296
+  1026418 submission_paiec_v261_v153_wb225.zip     score 0.1326 expected-from-draw 0.1362
+  1026878 submission_paiec_v283_gold_syn3_wb2.zip  score 0.1390 expected-from-draw 0.1424
+  1026424 submission_paiec_v267_v153_irt335.zip    score 0.1394 expected-from-draw 0.1444
+  1012027 submission_paiec_v59_c455_debias28.zip   score 0.1398 expected-from-draw 0.1409

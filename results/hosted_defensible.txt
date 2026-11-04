@@ -1,10 +1,8 @@
 family                                              n    mean  median      sd      se     95% CI of mean    best
-pre-LOBO earlier generations                      127  0.1849  0.1852  0.0186  0.0016 [ 0.1816,  0.1881]  0.1398
-pre-LOBO v146-v337 (v153 family)                   54  0.1859  0.1872  0.0180  0.0025 [ 0.1811,  0.1907]  0.1276
-budget-0 revision family (student + sampler + grid)   45  0.1853  0.1820  0.0176  0.0026 [ 0.1802,  0.1904]  0.1578
-control (byte-identical v153)                       2  0.2055  0.2055  0.0409  0.0289 [ 0.1489,  0.2622]  0.1766
+pre-LOBO v146-v337 (v153 family)                  170  0.1849  0.1861  0.0200  0.0015 [ 0.1819,  0.1879]  0.1276
+pre-LOBO earlier generations                      157  0.1851  0.1858  0.0187  0.0015 [ 0.1822,  0.1880]  0.1398
+budget-0 revision family (student + sampler + grid)   59  0.1849  0.1803  0.0175  0.0023 [ 0.1805,  0.1894]  0.1545
+control (byte-identical v153)                       3  0.2036  0.1998  0.0291  0.0168 [ 0.1707,  0.2365]  0.1766
 v401 (b0fix + mixture)                              1  0.1923  0.1923     nan     nan [    nan,     nan]  0.1923
+v402b (logistic IRT)                                1  0.1932  0.1932     nan     nan [    nan,     nan]  0.1932
 
-Per hidden benchmark, mean pair ALC by family (n pairs):
-benchmark            pre-LOBO earlier gener   pre-LOBO v146-v337 (v1   budget-0 revision fami   control (byte-identica   v401 (b0fix + mixture)
-benchmark_119137               0.2277 (126)             0.2258 ( 54)             0.2200 ( 38)             0.2075 (  2)             0

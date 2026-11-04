@@ -17,7 +17,7 @@ scored = {int(k): v for k, v in res.items() if v.get("score") is not None}
 
 def family(v):
     f = (v.get("file") or "").lower(); b = v.get("batch") or ""
-    if b == "pre_lobo":
+    if b in ("pre_lobo", "api_only"):
         m = re.search(r"_v(\d+)", f); ver = int(m.group(1)) if m else 0
         return "pre-LOBO v146-v337 (v153 family)" if ver >= 146 else "pre-LOBO earlier generations"
     if "control" in f or (v.get("config") == "control"):

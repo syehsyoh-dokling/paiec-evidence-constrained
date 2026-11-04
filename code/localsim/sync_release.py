@@ -14,7 +14,8 @@ copies = [(ROOT / "openreview_report" / "paiec_report.tex", REL / "report.tex")]
 copies += [(ROOT / "localsim" / s, REL / "code" / "localsim" / s) for s in SCRIPTS]
 copies += [(ROOT / "comparator_logreg" / "model.py", REL / "code" / "comparator_logreg" / "model.py")]
 RES = ROOT / "localsim" / "results"
-for name in ["calib16_ctx2_report.txt", "stats_rigor.json", "hosted_defensible.txt", "hosted_noise_cause.txt", "batch_slot_table.txt"]:
+SCRIPTS += ["hosted_ece_claim.py", "seen_unseen_b0.py", "reliability_fig.py", "slot_sensitivity.py", "make_artifacts_manifest.py", "make_paths_portable.py"]
+for name in ["calib16_ctx2_report.txt", "stats_rigor.json", "hosted_defensible.txt", "hosted_noise_cause.txt", "hosted_ece_claim.txt", "batch_slot_table.txt", "slot_sensitivity.txt", "seen_unseen_b0.json"]:
     copies.append((RES / name, REL / "results" / name))
 copies.append((RES / "calib16_ctx2" / "combined.json", REL / "results" / "calib16_ctx2_combined.json"))
 for b in ["random_slot", "random_slot2", "qwen_v2", "qwen_v3", "qwen_1p5b"]:

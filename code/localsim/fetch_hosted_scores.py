@@ -25,6 +25,22 @@ for led in sorted(ROOT.glob("*/upload_ledger.json")):
     for rec in json.load(open(led)):
         if rec.get("sid"):
             known[int(rec["sid"])] = {"file": rec.get("filename"), "batch": led.parent.name, "version": rec.get("version"), "config": rec.get("config"), "dalc_local": rec.get("dalc")}
+# every submission of the phase as listed by the API (catches uploads made outside the ledgers)
+try:
+    url = "https://www.codabench.org/api/submissions/?phase=29785&page_size=500"
+    n_api = 0
+    while url:
+        d = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers=HDR), timeout=60).read().decode())
+        items = d["results"] if isinstance(d, dict) and "results" in d else d
+        for s in items:
+            sid = int(s.get("id") or s.get("pk"))
+            n_api += 1
+            if sid not in known:
+                known[sid] = {"file": s.get("filename"), "batch": "api_only", "version": None}
+        url = d.get("next") if isinstance(d, dict) else None
+    print(f"API lists {n_api} submissions for the phase")
+except Exception as e:
+    print("API listing failed:", e)
 prev = json.load(open(OUT)) if OUT.exists() else {}
 res = {}
 for i, (sid, meta) in enumerate(sorted(known.items())):

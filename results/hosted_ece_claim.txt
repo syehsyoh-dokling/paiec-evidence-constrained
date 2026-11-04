@@ -1,0 +1,20 @@
+scored submissions 391, with ECE 391; ECE mean 0.1357 SD 0.0193 min (0.0953497391, 1032719) max 0.2035
+submission 1027207: Brier 0.1748233993 ECE 0.1026498647 rank by ECE 16 of 391
+ten lowest ECE: [(1032719, 0.0953, 0.17, 'sub_paiec_v505_b0.zip'), (1026421, 0.096, 0.1567, 'submission_paiec_v264_v153_w'), (1022602, 0.0965, 0.1863, 'submission_paiec_v194_apex_s'), (1013096, 0.0972, 0.1907, 'submission_paiec_v72_c445_de'), (1020497, 0.0978, 0.2306, 'submission_paiec_v144_synerg'), (1031487, 0.0982, 0.1897, 'sub_paiec_v340_b0_c055_s050_'), (1026407, 0.0983, 0.1593, 'submission_paiec_v252_v153_d'), (1021628, 0.0984, 0.1723, 'submission_paiec_v158_v59_ex'), (1017567, 0.1001, 0.2068, 'submission_paiec_v131_v59_de'), (1021691, 0.1006, 0.1909, 'submission_paiec_v169_v59_sy')]
+per-pair ECE over 3320 pair rows of 382 logs: mean 0.1359 SD 0.0547 min 0.0257 max 0.3584
+variance of per-pair ECE explained by pair identity: 83%; by benchmark identity: 3%; residual (model + items): 17%
+corr(per-pair Brier ALC, per-pair ECE) = +0.07
+
+1027207 pairs:
+  subject_238893 benchmark_830060 ALC 0.1970 ECE 0.0751 | same pair in other submissions: ECE 0.0838 (n=18)
+  subject_243003 benchmark_800730 ALC 0.0642 ECE 0.1068 | same pair in other submissions: ECE 0.1190 (n=43)
+  subject_279017 benchmark_119137 ALC 0.2184 ECE 0.1266 | same pair in other submissions: ECE 0.1137 (n=42)
+  subject_429146 benchmark_213669 ALC 0.0425 ECE 0.1473 | same pair in other submissions: ECE 0.1446 (n=34)
+  subject_488357 benchmark_869474 ALC 0.2546 ECE 0.0608 | same pair in other submissions: ECE 0.0717 (n=14)
+  subject_520286 benchmark_800730 ALC 0.1023 ECE 0.0795 | same pair in other submissions: ECE 0.0992 (n=35)
+  subject_637179 benchmark_342307 ALC 0.2488 ECE 0.1030 | same pair in other submissions: ECE 0.0609 (n=8)
+  subject_706420 benchmark_893575 ALC 0.1914 ECE 0.0941 | same pair in other submissions: ECE 0.0978 (n=4)
+  subject_856744 benchmark_342307 ALC 0.2543 ECE 0.1307 | same pair in other submissions: ECE 0.0904 (n=13)
+expected ECE from its draw (other submissions on the same pairs): 0.0979; actual 0.1026; family mean ECE 0.1357
+
+five draws with the lowest expected ECE (expected, actual, id): [(0.0972, 0.0972, 1013096), (0.0979, 0.1026, 1027207), (0.0986, 0.1178, 1020481), (0.1003, 0.0965, 1022602), (0.1006, 0.1001, 1017567)]
