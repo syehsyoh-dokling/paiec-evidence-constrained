@@ -1,0 +1,6 @@
+slot                                          n      min   median      max  n PASS
+budget-0 branch (centre, slope, ease)        58  -0.0022  -0.0017  -0.0010      58
+mixture-prior pseudo-counts                  33  -0.0004  -0.0003  +0.0004       0
+IRT envelope weight                          10  -0.0000  -0.0000  -0.0000       0
+peer shift (gain, centre, shrink)            46  -0.0001  -0.0000  +0.0004       0
+low-budget shrinkage (blend weights)         76  -0.0000  -0.0000  +0.0009       0
