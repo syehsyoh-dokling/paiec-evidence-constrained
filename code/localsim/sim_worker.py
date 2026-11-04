@@ -85,19 +85,26 @@ def main():
                     acq_index.append((pi, n_lab[pi]))
                     n_lab[pi] += 1
         for pi, p in enumerate(pairs):
+            if not p.get("score", True):
+                continue  # context pair: its labels are in `labeled`, it is never scored
             briers = []
+            calib = []  # per budget: 10 equal-width bins of (count, sum_pred, sum_y) for ECE and Brier decomposition
             for B in BUDGETS:
                 lab_B = [e for e, (pj, k) in zip(labeled, acq_index) if k < B]
                 se, n = 0.0, 0
+                bins = [[0, 0.0, 0.0] for _ in range(10)]
                 for ev in p["eval"]:
                     pr = float(model.predict([copy.deepcopy(p["subject"]), copy.deepcopy(ev["item"])], copy.deepcopy(lab_B)))
                     pr = min(max(pr, 0.0), 1.0)
+                    bi = min(int(pr * 10), 9)
                     for y in ev["labels"]:
                         se += (pr - y) ** 2
                         n += 1
+                        bins[bi][0] += 1; bins[bi][1] += pr; bins[bi][2] += y
                 briers.append(se / max(n, 1))
+                calib.append(bins)
             alc = sum(w * b for w, b in zip(WEIGHTS, briers))
-            results.append({"pair": p["pair_id"], "group_size": len(pairs), "briers": briers, "alc": alc})
+            results.append({"pair": p["pair_id"], "group_size": len(pairs), "briers": briers, "alc": alc, "calib": calib})
     json.dump({"results": results, "secs": time.time() - t0}, open(out_path, "w"))
 
 

@@ -1,0 +1,99 @@
+{
+ "nested_lobo_b0": {
+  "per_fold": [
+   {
+    "held_out": "afrimedqa",
+    "selected": "c0.55_s0.50_e1.000",
+    "n_pairs": 30,
+    "delta_b0": -0.02319704196307233,
+    "delta_alc": -0.0023197041963072327
+   },
+   {
+    "held_out": "agentdojo",
+    "selected": "c0.55_s0.75_e1.000",
+    "n_pairs": 28,
+    "delta_b0": 0.05220161666313077,
+    "delta_alc": 0.005220161666313078
+   },
+   {
+    "held_out": "ai2d_test",
+    "selected": "c0.55_s0.25_e1.000",
+    "n_pairs": 253,
+    "delta_b0": -0.052127398247791536,
+    "delta_alc": -0.005212739824779154
+   },
+   {
+    "held_out": "matharena",
+    "selected": "c0.55_s0.50_e1.000",
+    "n_pairs": 36,
+    "delta_b0": -0.028983884808756657,
+    "delta_alc": -0.0028983884808756657
+   },
+   {
+    "held_out": "mathvista_mini",
+    "selected": "c0.55_s0.25_e1.000",
+    "n_pairs": 263,
+    "delta_b0": 0.04309751303740521,
+    "delta_alc": 0.004309751303740521
+   },
+   {
+    "held_out": "mmbench_v11",
+    "selected": "c0.50_s0.50_e1.000",
+    "n_pairs": 248,
+    "delta_b0": -0.0360977529529756,
+    "delta_alc": -0.00360977529529756
+   },
+   {
+    "held_out": "mmlupro",
+    "selected": "c0.55_s0.25_e1.000",
+    "n_pairs": 47,
+    "delta_b0": -0.00492869354661976,
+    "delta_alc": -0.0004928693546619761
+   }
+  ],
+  "mean_delta_alc": -0.0007147948831239985,
+  "se_fold": 0.0015155955905858558,
+  "folds_improved": 5,
+  "selected_configs": [
+   "c0.50_s0.50_e1.000",
+   "c0.55_s0.25_e1.000",
+   "c0.55_s0.50_e1.000",
+   "c0.55_s0.75_e1.000"
+  ]
+ },
+ "tiers": {
+  "PASS_both": 0,
+  "PASS_pair_only": 24,
+  "HOLD": 52,
+  "REJECT": 30
+ },
+ "multiple_testing": {
+  "n_tests": 82,
+  "bh_q": 0.05,
+  "n_bh_significant": 29,
+  "n_pass": 24,
+  "n_pass_surviving_bh": 24
+ },
+ "oracle": {
+  "n_pairs": 112,
+  "in_sample_eval_const": 0.19421741235399587,
+  "acquisition_pool_const": 0.20302898939648045,
+  "v153_B31": 0.19471158604950592,
+  "v153_minus_acq_oracle": -0.008317403346974533
+ },
+ "student_vs_sampler_b0": {
+  "student": {
+   "n": 15,
+   "pass": 15,
+   "mean_dalc": -0.0016725145363542296
+  },
+  "sampler": {
+   "n": 7,
+   "pass": 7,
+   "mean_dalc": -0.001661377965549499
+  },
+  "fisher_p_two_sided": 1.0,
+  "diff_mean_dalc": -1.1136570804730654e-05,
+  "se_diff": 0.00016679107217077493
+ }
+}

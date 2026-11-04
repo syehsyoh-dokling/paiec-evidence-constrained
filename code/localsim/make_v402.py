@@ -116,6 +116,7 @@ VARIANTS = {
     "v402a_irt_k3_ts2_tb2_w040": (3.0, 2.0, 2.0, (0.40, 0.30, 0.20, 0.10)),
     "v402b_irt_k3_ts2_tb2_w060": (3.0, 2.0, 2.0, (0.60, 0.50, 0.30, 0.15)),
     "v402c_irt_k5_ts4_tb1_w040": (5.0, 4.0, 1.0, (0.40, 0.30, 0.20, 0.10)),
+    "v402d_irt_k0_ts2_tb2_w040": (0.0, 2.0, 2.0, (0.40, 0.30, 0.20, 0.10)),  # control: no item ease in the likelihood
 }
 assert base.count(ANCHOR_DEF) == 1 and base.count(OLD_AFTER_BASE) == 1
 for name, (k, ts, tb, prof) in VARIANTS.items():

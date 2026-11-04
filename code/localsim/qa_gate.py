@@ -28,9 +28,11 @@ import numpy as np
 
 ROOT = pathlib.Path(r"c:\Users\Saifuddin\Documents\LOMBA")
 SIM = ROOT / "localsim"
+sys.path.insert(0, str(SIM))
+from strip_hidden_ids import clean_model  # normalises the hidden-ID comment lines before diffing
 BASE_ZIP = SIM / "variants" / "v153_nokeys.zip"
 TEXT_FOLDS = ["afrimedqa", "agentdojo", "ai2d_test", "matharena", "mathvista_mini", "mmbench_v11", "mmlupro"]
-LEDGERS = [ROOT / "quota_17_b0fix_20261104" / "upload_ledger.json", ROOT / "auto_discovery_paiec" / "online_meta_dataset.csv"]
+LEDGERS = sorted(ROOT.glob("quota_*/upload_ledger.json")) + sorted(ROOT.glob("pending_*/upload_ledger.json")) + [ROOT / "auto_discovery_paiec" / "online_meta_dataset.csv"]
 
 # Allowed edit regions in v153 model.py, located by anchor text (start anchor, end anchor inclusive)
 ALLOWED_REGIONS = {
@@ -82,9 +84,12 @@ def smoke_predict(zpath):
         "d=sys.argv[1];sys.path.insert(0,d);os.chdir(d);sp=importlib.util.spec_from_file_location('model',os.path.join(d,'model.py'));"
         "m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);"
         "S={'normalized_name':'gpt-4o','provider':'','release_date':'','access_date':'','harness':'','harness_version':'','reasoning_effort':'','subject_features_extra':''};"
+        "U={'normalized_name':'zz-unknown-model-9000-xl','provider':'','release_date':'','access_date':'','harness':'h','harness_version':'1','reasoning_effort':'high','subject_features_extra':''};"
         "I={'item_content':'What is 2+2? A: 3 B: 4 C: 5 D: 6','item_features':'','interactors':'','benchmark_id':'bm_local_smoke'};"
         "J={'item_content':'Name the capital of France.','item_features':'','interactors':'','benchmark_id':'bm_local_smoke'};"
-        "outs=[m.predict([S,I],[]),m.predict([S,I],[[[S,J],1]]),m.predict([S,I],[[[S,J],0],[[S,J],1]])];"
+        "K={'item_content':'Compute the derivative of x^3.','item_features':'','interactors':'','benchmark_id':'bm_other'};"
+        "outs=[];"
+        "[outs.extend([m.predict([X,I],[]),m.predict([X,I],[[[X,J],1]]),m.predict([X,I],[[[X,J],0],[[X,K],1],[[S,J],0]])]) for X in (S,U)];"
         "assert all(0.0<=float(o)<=1.0 for o in outs),outs;print(json.dumps([float(o) for o in outs]))"
     )
     with tempfile.TemporaryDirectory() as td:
@@ -124,8 +129,8 @@ def static_gates(zpath, base, batch_shas):
             reasons.append("G3 api_keys present in submission_config.json")
     except Exception:
         reasons.append("G3 submission_config.json unreadable")
-    model = cand.get("model.py", b"").decode("utf-8", "replace")
-    base_model = base["model.py"].decode("utf-8")
+    model = clean_model(cand.get("model.py", b"").decode("utf-8", "replace"))
+    base_model = clean_model(base["model.py"].decode("utf-8"))
     with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False, encoding="utf-8") as f:
         f.write(model); tmp = f.name
     try:
@@ -167,8 +172,11 @@ def lobo_b0(zpath, folds, out_dir, jobs=4):
 
     def run(bm):
         out = out_dir / f"b0_{zpath.stem}_{bm}.json"
-        p = subprocess.run([sys.executable, str(SIM / "b0_eval_fold.py"), bm, str(out), str(zpath)],
-                           capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=3600)
+        try:
+            p = subprocess.run([sys.executable, str(SIM / "b0_eval_fold.py"), bm, str(out), str(zpath)],
+                               capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=900)
+        except subprocess.TimeoutExpired:
+            p = subprocess.CompletedProcess(args=[], returncode=124, stdout="", stderr="budget-0 evaluation exceeded 900 s (candidate too slow or hung)")
         return bm, out, p
 
     for bm in folds:
@@ -214,8 +222,15 @@ def verdict(reasons, lobo, n_folds):
         return "REJECT"
     if lobo is None:
         return "HOLD"
+    pf = list((lobo.get("per_fold") or {}).values())
+    if len(pf) > 1:
+        import statistics
+        se_f = statistics.stdev(pf) / len(pf) ** 0.5 * (0.1 if lobo.get("metric") == "B0" else 1.0)
+        lobo["se_fold"] = se_f
+        lobo["fold_significant"] = bool(lobo["diff_alc"] + 2 * se_f < 0)
     good = lobo["diff_alc"] <= -0.0005 and lobo["diff_alc"] + 2 * lobo["se_alc"] < 0 and lobo["folds_improved"] >= max(1, (n_folds + 1) // 2)
-    bad = lobo["diff_alc"] - 2 * lobo["se_alc"] > 0
+    # REJECT only for a material, significant degradation; a +0.00001 with a tiny SE is "no effect", i.e. HOLD
+    bad = lobo["diff_alc"] - 2 * lobo["se_alc"] > 0 and lobo["diff_alc"] >= 0.0002
     return "PASS_UPLOAD" if good else ("REJECT" if bad else "HOLD")
 
 
@@ -255,7 +270,9 @@ def main():
         lobo, lobo_err = None, None
         if not reasons and not a.no_lobo:
             if info["regions_hit"] == ["B0"]:
-                lobo, lobo_err = lobo_b0(zp, a.folds, out_dir, a.jobs)
+                # budget-0 edits are cheap to evaluate: always use all text folds (905 pairs),
+                # whatever screening folds were requested for the full-curve simulations
+                lobo, lobo_err = lobo_b0(zp, TEXT_FOLDS, out_dir, a.jobs)
             else:
                 lobo, lobo_err = lobo_full(zp, a.folds, a.jobs, a.pairs, sim_tag)
             if lobo_err:

@@ -42,48 +42,81 @@ def anon(bm):
     return "benchmark_" + str(h("anon-" + bm) % 900000 + 100000)
 
 
-def build_spec(bm, pairs_per_fold, seed):
-    d = DATA / bm
-    resp = pd.read_parquet(d / "response.parquet")
-    items = pd.read_parquet(d / "items.parquet").set_index("item_id")
-    subs = pd.read_parquet(d / "subjects.parquet").set_index("subject_id")
-    resp = resp[resp["response"].notna()]
-    resp["y"] = (resp["response"].astype(float) >= 0.5).astype(int)
-    cnt = resp.groupby("subject_id").item_id.nunique()
-    elig = sorted(cnt[cnt >= 80].index.tolist())
-    rng = random.Random(h(f"{bm}-{seed}"))
-    rng.shuffle(elig)
-    elig = elig[:pairs_per_fold]
+_BM_CACHE = {}
+
+
+def load_bm(bm):
+    if bm not in _BM_CACHE:
+        d = DATA / bm
+        resp = pd.read_parquet(d / "response.parquet")
+        items = pd.read_parquet(d / "items.parquet").set_index("item_id")
+        subs = pd.read_parquet(d / "subjects.parquet").set_index("subject_id")
+        resp = resp[resp["response"].notna()].copy()
+        resp["y"] = (resp["response"].astype(float) >= 0.5).astype(int)
+        _BM_CACHE[bm] = (resp, items, subs)
+    return _BM_CACHE[bm]
+
+
+def make_pair(bm, sid, seed, score=True):
+    """One subject-benchmark pair with a fixed 50/50 acquisition/evaluation split."""
+    resp, items, subs = load_bm(bm)
     bid = anon(bm)
 
     def item_dict(iid):
         return {"item_content": str(items.loc[iid, "content"] or ""), "item_features": "",
                 "interactors": "", "benchmark_id": bid}
 
-    pairs = []
-    for sid in elig:
-        r = resp[resp.subject_id == sid]
-        row = subs.loc[sid] if sid in subs.index else None
-        subject = {"normalized_name": str(row["normalized_name"]) if row is not None else sid,
-                   "provider": "", "release_date": str(row["release_date"] or "") if row is not None else "",
-                   "access_date": "", "harness": "", "harness_version": "", "reasoning_effort": "",
-                   "subject_features_extra": ""}
-        g = r.groupby("item_id")["y"].apply(list)
-        iids = sorted(g.index.tolist(), key=lambda i: h(f"split-{sid}-{i}"))
-        half = len(iids) // 2
-        acq_ids, ev_ids = iids[:half], iids[half:]
-        acq_ids = sorted(acq_ids, key=lambda i: h(f"order-{seed}-{sid}-{i}"))
-        acq = []
-        for i in acq_ids:
-            labs = g[i]
-            acq.append({"item": item_dict(i), "label": labs[h(f"trial-{seed}-{sid}-{i}") % len(labs)]})
-        ev = [{"item": item_dict(i), "labels": g[i]} for i in ev_ids]
-        pairs.append({"pair_id": f"{bm}|{sid}", "subject_id": "subject_" + str(h(sid) % 900000), "subject": subject,
-                      "acq": acq, "eval": ev})
+    r = resp[resp.subject_id == sid]
+    row = subs.loc[sid] if sid in subs.index else None
+    subject = {"normalized_name": str(row["normalized_name"]) if row is not None else sid,
+               "provider": "", "release_date": str(row["release_date"] or "") if row is not None else "",
+               "access_date": "", "harness": "", "harness_version": "", "reasoning_effort": "",
+               "subject_features_extra": ""}
+    g = r.groupby("item_id")["y"].apply(list)
+    iids = sorted(g.index.tolist(), key=lambda i: h(f"split-{sid}-{i}"))
+    half = len(iids) // 2
+    acq_ids, ev_ids = iids[:half], iids[half:]
+    acq_ids = sorted(acq_ids, key=lambda i: h(f"order-{seed}-{sid}-{i}"))
+    acq = []
+    for i in acq_ids:
+        labs = g[i]
+        acq.append({"item": item_dict(i), "label": labs[h(f"trial-{seed}-{sid}-{i}") % len(labs)]})
+    ev = [{"item": item_dict(i), "labels": g[i]} for i in ev_ids] if score else []
+    return {"pair_id": f"{bm}|{sid}", "subject_id": "subject_" + str(h(sid) % 900000), "subject": subject,
+            "acq": acq, "eval": ev, "score": score}
+
+
+def build_spec(bm, pairs_per_fold, seed, context_pairs=0):
+    """Fold spec. With context_pairs > 0, each draw also carries up to that many unscored
+    pairs of the same subjects on OTHER public benchmarks (their labels enter `labeled`,
+    as cross-benchmark pairs do on Codabench), so predictors that pool a subject's labels
+    across benchmarks can be evaluated. hle is never used as a context benchmark."""
+    resp, items, subs = load_bm(bm)
+    cnt = resp.groupby("subject_id").item_id.nunique()
+    elig = sorted(cnt[cnt >= 80].index.tolist())
+    rng = random.Random(h(f"{bm}-{seed}"))
+    rng.shuffle(elig)
+    elig = elig[:pairs_per_fold]
+    pairs = [make_pair(bm, sid, seed) for sid in elig]
     draws, i, k = [], 0, 0
     while i < len(pairs):
         gs = GROUP_SIZES[k % len(GROUP_SIZES)]
-        draws.append({"pairs": pairs[i:i + gs]})
+        group = pairs[i:i + gs]
+        ctx = []
+        if context_pairs:
+            for p in group:
+                sid = p["pair_id"].split("|", 1)[1]
+                others = [b for b in BMS if b not in (bm, "hle")]
+                others = sorted(others, key=lambda b: h(f"ctx-{seed}-{sid}-{b}"))
+                added = 0
+                for b2 in others:
+                    r2, _, _ = load_bm(b2)
+                    if r2[r2.subject_id == sid].item_id.nunique() >= 80:
+                        ctx.append(make_pair(b2, sid, seed, score=False))
+                        added += 1
+                    if added >= context_pairs:
+                        break
+        draws.append({"pairs": group + ctx})
         i += gs
         k += 1
     return {"fold": bm, "draws": draws}
@@ -153,8 +186,13 @@ def run_variant_fold(zip_path, bm, spec_path, tag):
         zf.extractall(wd)
     patch_artifacts(wd, bm)
     env = dict(os.environ, PAIEC_DISABLE_BLE_NETWORK="1", PYTHONIOENCODING="utf-8")
-    p = subprocess.run([sys.executable, str(SIM / "sim_worker.py"), str(wd), str(spec_path), str(out)],
-                       capture_output=True, text=True, encoding="utf-8", errors="replace", env=env)
+    try:
+        p = subprocess.run([sys.executable, str(SIM / "sim_worker.py"), str(wd), str(spec_path), str(out)],
+                           capture_output=True, text=True, encoding="utf-8", errors="replace", env=env,
+                           timeout=int(os.environ.get("SIM_WORKER_TIMEOUT", "2400")))
+    except subprocess.TimeoutExpired:
+        print(f"FAIL {name} {bm}: worker exceeded {os.environ.get('SIM_WORKER_TIMEOUT', '2400')} s and was killed", flush=True)
+        return None
     if p.returncode != 0:
         print(f"FAIL {name} {bm}\n{p.stderr[-3000:]}", flush=True)
         return None
@@ -171,13 +209,15 @@ def main():
     ap.add_argument("--folds", nargs="*", default=BMS)
     ap.add_argument("--tag", default="run")
     ap.add_argument("--jobs", type=int, default=4)
+    ap.add_argument("--context-pairs", type=int, default=0, help="unscored same-subject pairs from other benchmarks per scored pair")
     a = ap.parse_args()
     specs = {}
     for bm in a.folds:
-        sp = SIM / "specs" / f"{bm}_s{a.seed}_p{a.pairs_per_fold}.json"
+        suffix = f"_c{a.context_pairs}" if a.context_pairs else ""
+        sp = SIM / "specs" / f"{bm}_s{a.seed}_p{a.pairs_per_fold}{suffix}.json"
         sp.parent.mkdir(parents=True, exist_ok=True)
         if not sp.exists():
-            sp.write_text(json.dumps(build_spec(bm, a.pairs_per_fold, a.seed)), encoding="utf-8")
+            sp.write_text(json.dumps(build_spec(bm, a.pairs_per_fold, a.seed, a.context_pairs)), encoding="utf-8")
         specs[bm] = sp
     jobs = [(z, bm) for z in a.zips for bm in a.folds]
     with ThreadPoolExecutor(a.jobs) as ex:

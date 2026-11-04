@@ -119,10 +119,35 @@ def main():
     manifest_path = staged / "manifest.json"
     manifest = json.load(open(manifest_path)) if manifest_path.exists() else []
     already = {m["source"] for m in manifest}
+    # never stage a candidate whose model.py SHA was already uploaded from any staging folder
+    uploaded_sha = set()
+    for led in ROOT.glob("quota_*/upload_ledger.json"):
+        for rec in json.load(open(led)):
+            if rec.get("sid") and rec.get("sha256"):
+                uploaded_sha.add(rec["sha256"])
+    import hashlib, zipfile as _zf
+    def model_sha(zp):
+        with _zf.ZipFile(zp) as z:
+            return hashlib.sha256(z.read("model.py")).hexdigest()
+    uploaded_model_sha = set()
+    for led in ROOT.glob("quota_*/upload_ledger.json"):
+        for rec in json.load(open(led)):
+            zp = led.parent / rec.get("filename", "")
+            if rec.get("sid") and zp.exists():
+                try:
+                    uploaded_model_sha.add(model_sha(zp))
+                except Exception:
+                    pass
     v = a.start_version + len(manifest)
     for n in controls + passes:
         if n in already:
             continue
+        try:
+            if model_sha(cand_dir / n) in uploaded_model_sha and not final[n]["control"]:
+                needs_human.append(f"{n}: identical model.py already uploaded from another batch; skipped")
+                continue
+        except Exception:
+            pass
         tag = "control" if final[n]["control"] else "_".join(final[n]["regions"] or ["x"]).lower()[:14]
         fname = f"sub_paiec_v{v}_{tag}.zip"
         shutil.copy(cand_dir / n, staged / fname)
