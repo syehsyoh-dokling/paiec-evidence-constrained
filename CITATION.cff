@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use the predictor, the leave-one-benchmark-out simulator, the QA gate or the released results, please cite the technical report."
+title: "Evidence-Constrained Probabilistic Prediction of AI Response Outcomes with Leave-One-Benchmark-Out Model Selection and a Gated Code-Revision Agent"
+type: software
+authors:
+  - family-names: Abdullah
+    given-names: Saifuddin
+    email: syehsaifuddin@gmail.com
+  - family-names: Saifannur
+    given-names: Munazar
+version: "1.0"
+date-released: "2026-11-06"
+repository-code: "https://github.com/syehsyoh-dokling/paiec-evidence-constrained"
+license: MIT
+keywords:
+  - predictive AI evaluation
+  - benchmark outcome prediction
+  - leave-one-benchmark-out
+  - Brier score
+  - calibration
+  - item response theory
+preferred-citation:
+  type: report
+  title: "Evidence-Constrained Probabilistic Prediction of AI Response Outcomes with Leave-One-Benchmark-Out Model Selection and a Gated Code-Revision Agent"
+  authors:
+    - family-names: Abdullah
+      given-names: Saifuddin
+    - family-names: Saifannur
+      given-names: Munazar
+  year: 2026
+  institution:
+    name: "Technical report, Predictive AI Evaluation Competition at NeurIPS 2026 (PAIEC)"
+  url: "https://github.com/syehsyoh-dokling/paiec-evidence-constrained"

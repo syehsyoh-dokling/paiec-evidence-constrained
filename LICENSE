@@ -1,0 +1,35 @@
+Licensing of this repository
+
+1. Code (everything under code/, the scripts in the repository root, and the model code inside
+   submission/*.zip): MIT License, reproduced below.
+
+2. Report source (report.tex), figures, result files under results/ and the documents
+   HOW_TO_RERUN.md, REVIEWER_CHECKLIST.md and README.md: Creative Commons Attribution 4.0
+   International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/ , the licence required
+   by the competition's OpenReview submission form.
+
+3. Data inside submission/*.zip (data/*/*.parquet, 200 items per benchmark) and the fitted
+   artifacts derived from them are measurement-db tables and derivatives; they remain under the
+   measurement-db terms (curation contributions CC BY-SA 4.0; individual benchmarks under their
+   upstream licences) and are included only to make the submission archive self-contained.
+
+4. The pretrained encoders named in models.txt are not included and keep their own licences.
+
+MIT License
+
+Copyright (c) 2026 Saifuddin Abdullah, Munazar Saifannur
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

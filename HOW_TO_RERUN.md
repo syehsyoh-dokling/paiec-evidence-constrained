@@ -13,6 +13,20 @@ Pinned versions of the environment that produced the report are in `requirements
 archive and of the predictor files inside them, with the scripts that built the fitted artifacts, are in
 `submission/ARTIFACTS.json`.
 
+## One command for Table 1
+
+    python code/localsim/rerun_table1.py --tag rerun --jobs 7
+
+runs the simulator on the released archives (v153, the two organizer baselines, the budget-0 fix, v402b, v403) on the
+same 112 held-out cases, rebuilds the combined results and prints the paired table. From scratch this takes about
+1.5 h per archive on a laptop CPU; cached folds are reused.
+
+The exact evaluation cases are also published separately as `lobo_specs_v1.zip` (release assets): every pair, split and
+acquisition order, with item text replaced by its SHA-256 so no benchmark content is redistributed.
+
+`submission/ARTIFACTS.json` lists the SHA-256 of every measurement-db table we used (public re-upload, snapshot
+6d2bd058...) next to the intended official revision, so a holder of the official release can verify fidelity file by file.
+
 ## 0. Unit tests against an unmodified archive (about one minute; downloads the two encoders once)
 
     python code/tests/test_predictor.py submission/paiec_submission_v403.zip

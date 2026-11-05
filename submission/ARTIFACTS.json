@@ -53,5 +53,89 @@
    "v403": "localsim/build_priors_expanded.py (same ridge, 18998 items of 12 benchmarks); localsim/make_expanded_zip.py assembled the archive; localsim/make_v403_upload.py dropped the simulator-only data/expanded_features.npz"
   }
  },
- "note": "model.py of v402b and v403 is byte-identical; v403 differs from v402b only in the two data/*.json files. Archives are byte-identical to the uploaded submissions and were not edited after upload."
+ "note": "model.py of v402b and v403 is byte-identical; v403 differs from v402b only in the two data/*.json files. Archives are byte-identical to the uploaded submissions and were not edited after upload.",
+ "training_tables": {
+  "source": "huggingface.co/datasets/cxzdsa1234/measurement-db2 (public re-upload of measurement-db long-form tables)",
+  "snapshot_revision": "6d2bd05843b49702140f04a62cfb75efccfc0e81",
+  "intended_official_source": "aims-foundations/measurement-db @ 54074453da7b9911be0f48e4c560be547bc84d21",
+  "note": "Hash each file of the official release the same way (sha256 of the file bytes) to verify fidelity; the 8-benchmark payload inside the archives was filtered from these tables to 200 items per benchmark.",
+  "files": {
+   "afrimedqa.parquet": {
+    "sha256": "84657428b2594ab970a85454565dd7c60f134c3ba277f50a1a3220755da5a932",
+    "bytes": 378708
+   },
+   "agentdojo.parquet": {
+    "sha256": "53becfc17ffdc9ff4231ba5e5d21a28eb527adde6f355af10824d4dfa81d78cf",
+    "bytes": 116241
+   },
+   "ai2d_test.parquet": {
+    "sha256": "d984b0552aa35ce879c5120921561004644997e0b22090b7d3b78616f081cdaa",
+    "bytes": 1131182
+   },
+   "androidworld.parquet": {
+    "sha256": "b0f02bbcd966162c0d6ad9f8441980e5f4b02c37bf99a4c53af6ac7dd215984d",
+    "bytes": 12831
+   },
+   "benchmarks.parquet": {
+    "sha256": "16984ec4d81d4a94e1356abe40dd8292096bd1c2ab3312484fe9e254af213f91",
+    "bytes": 12183
+   },
+   "bfcl.parquet": {
+    "sha256": "bfa1009befbbab63e72589039468df1f4d03d6c8a4c28ddc4331866d825cd9ab",
+    "bytes": 1360580
+   },
+   "cybench.parquet": {
+    "sha256": "9f8d45cee8785295c47fea0ff8c368bb470923432156c351bc98925de10a24a8",
+    "bytes": 6413
+   },
+   "hle.parquet": {
+    "sha256": "f6712f6edbe4b8c93441dda2ceb794fa75f9b155232c8e77882b88d8ff9f801b",
+    "bytes": 75888
+   },
+   "items.parquet": {
+    "sha256": "1b97942bce0728f47366c16c2509bae302dfd9e84dcd39437df02940f562579a",
+    "bytes": 35237755
+   },
+   "livecodebench.parquet": {
+    "sha256": "e212c0c79dede19c7dba43dafa2651d6a3474769b0181769a877de1f522fef03",
+    "bytes": 201687
+   },
+   "matharena.parquet": {
+    "sha256": "ca347bb91b1a10800ed0bb143493c5a18ed8f157338f0891a177e452ba8c2046",
+    "bytes": 61089
+   },
+   "mathvista_mini.parquet": {
+    "sha256": "e4508a0cec48c0dee03e8b1d02fac382cf2c853b01b7f36fc34896359362f520",
+    "bytes": 172174
+   },
+   "mmbench_v11.parquet": {
+    "sha256": "38e38853ffc62ba2e0a167130a0f6041f197ff0e778fbd659f6f2d0aba0959ef",
+    "bytes": 1617452
+   },
+   "mmlupro.parquet": {
+    "sha256": "0f130ab736374bb31aca93af863ec2aa842fe16534f2fa9fcb3c3c358dcef984",
+    "bytes": 1594366
+   },
+   "subjects.parquet": {
+    "sha256": "6651e253e34413365632803fc440341998a7f9e3b014e41a81042e907eb4bf33",
+    "bytes": 48062
+   },
+   "swebench.parquet": {
+    "sha256": "72ef36f0e18a65d68fbbb66dd904d2de2eb0102258657574649763a22c56ba75",
+    "bytes": 40268
+   },
+   "manifest.yaml": {
+    "sha256": "84db6c0c2a279b503b3a5c0d591257bf474b4d098aa50cf4b4f6e9ad5486a39d",
+    "bytes": 7939
+   },
+   "DATA_FORMAT.md": {
+    "sha256": "dee40465114b8b909eea70c1f51d08906309a4a93fabdbdae907adcdad84b4fe",
+    "bytes": 7870
+   },
+   "README.md": {
+    "sha256": "0e4c8541439416b629ff43ef5ee4ba54275963d2ce0b0c4d061309dc0d3d83f6",
+    "bytes": 10424
+   }
+  }
+ }
 }
