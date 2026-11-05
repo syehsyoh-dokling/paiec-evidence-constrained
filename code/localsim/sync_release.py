@@ -21,6 +21,8 @@ copies.append((RES / "calib16_ctx2" / "combined.json", REL / "results" / "calib1
 for b in ["random_slot", "random_slot2", "qwen_v2", "qwen_v3", "qwen_1p5b"]:
     copies.append((RES / f"qa_{b}" / "AUTOPILOT_REPORT.md", REL / "results" / f"autopilot_{b}.md"))
 copies.append((ROOT / "auto_discovery_paiec" / "LOBO_RESULTS.md", REL / "results" / "LOBO_RESULTS.md"))
+copies.append((ROOT / "quota_day3_20261105" / "upload_ledger.json", REL / "results" / "v403_replicates_upload_ledger.json"))
+copies.append((RES / "hosted_scores.json", REL / "results" / "hosted_scores.json"))
 for f in (ROOT / "openreview_report" / "figures").glob("*.p*"):
     copies.append((f, REL / "figures" / f.name))
 missing = [s for s, _ in copies if not s.exists()]

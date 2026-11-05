@@ -1,0 +1,3767 @@
+{
+ "980470": {
+  "file": "submission_paiec_smoothed_bayes.zip",
+  "batch": "pre_lobo",
+  "version": "",
+  "status": "Finished",
+  "score": 0.1685668786,
+  "ece": 0.1440798123,
+  "created": "2026-10-12T13:24:14.757323Z"
+ },
+ "980751": {
+  "file": "submission_paiec_v3_twoway_bayes.zip",
+  "batch": "pre_lobo",
+  "version": "3",
+  "status": "Finished",
+  "score": 0.1778264317,
+  "ece": 0.1308361853,
+  "created": "2026-10-12T15:41:03.102845Z"
+ },
+ "980759": {
+  "file": "submission_paiec_v4_item_ridge.zip",
+  "batch": "pre_lobo",
+  "version": "4",
+  "status": "Finished",
+  "score": 0.1758636803,
+  "ece": 0.1293205602,
+  "created": "2026-10-12T15:47:55.395300Z"
+ },
+ "980814": {
+  "file": "submission_paiec_v6_semantic_transf.zip",
+  "batch": "pre_lobo",
+  "version": "6",
+  "status": "Finished",
+  "score": 0.1708788682,
+  "ece": 0.1173915675,
+  "created": "2026-10-12T16:19:53.932142Z"
+ },
+ "980837": {
+  "file": "submission_paiec_v7_topk_transforme.zip",
+  "batch": "pre_lobo",
+  "version": "7",
+  "status": "Finished",
+  "score": 0.1814486949,
+  "ece": 0.1570420402,
+  "created": "2026-10-12T16:32:44.952420Z"
+ },
+ "981290": {
+  "file": "submission_paiec_v9_zeronoise_trans.zip",
+  "batch": "pre_lobo",
+  "version": "9",
+  "status": "Finished",
+  "score": 0.1677698499,
+  "ece": 0.1565134913,
+  "created": "2026-10-12T22:22:28.705580Z"
+ },
+ "981369": {
+  "file": "submission_paiec_v10_calibrated_zer.zip",
+  "batch": "pre_lobo",
+  "version": "10",
+  "status": "Finished",
+  "score": 0.1965306079,
+  "ece": 0.1793994518,
+  "created": "2026-10-12T23:37:08.941759Z"
+ },
+ "981406": {
+  "file": "submission_paiec_v10_calibrated_zer.zip",
+  "batch": "pre_lobo",
+  "version": "10",
+  "status": "Finished",
+  "score": 0.1925478055,
+  "ece": 0.1395865651,
+  "created": "2026-10-13T00:06:56.023150Z"
+ },
+ "981573": {
+  "file": "submission_paiec_v10_calibrated_zer.zip",
+  "batch": "pre_lobo",
+  "version": "10",
+  "status": "Finished",
+  "score": 0.1716682665,
+  "ece": 0.1591114642,
+  "created": "2026-10-13T01:50:28.922906Z"
+ },
+ "981625": {
+  "file": "submission_paiec_v10_calibrated_zer.zip",
+  "batch": "pre_lobo",
+  "version": "10",
+  "status": "Finished",
+  "score": 0.2105812027,
+  "ece": 0.1454650682,
+  "created": "2026-10-13T02:16:16.094467Z"
+ },
+ "981648": {
+  "file": "submission_paiec_v10_calibrated_zer.zip",
+  "batch": "pre_lobo",
+  "version": "10",
+  "status": "Finished",
+  "score": 0.2287308531,
+  "ece": 0.188455345,
+  "created": "2026-10-13T02:37:54.358264Z"
+ },
+ "981728": {
+  "file": "submission_paiec_v10_calibrated_zer.zip",
+  "batch": "pre_lobo",
+  "version": "10",
+  "status": "Finished",
+  "score": 0.1897246539,
+  "ece": 0.1394021102,
+  "created": "2026-10-13T03:23:52.679497Z"
+ },
+ "981938": {
+  "file": "submission_paiec_v19_gap_eliminated.zip",
+  "batch": "pre_lobo",
+  "version": "19",
+  "status": "Finished",
+  "score": 0.1871264141,
+  "ece": 0.1577936809,
+  "created": "2026-10-13T05:25:23.241235Z"
+ },
+ "981990": {
+  "file": "submission_paiec_v20_precision_smoo.zip",
+  "batch": "pre_lobo",
+  "version": "20",
+  "status": "Finished",
+  "score": 0.1989750115,
+  "ece": 0.1633278087,
+  "created": "2026-10-13T05:52:15.062333Z"
+ },
+ "982252": {
+  "file": "submission_paiec_v22_dual_kernel_ri.zip",
+  "batch": "pre_lobo",
+  "version": "22",
+  "status": "Finished",
+  "score": 0.1895075288,
+  "ece": 0.1549930746,
+  "created": "2026-10-13T07:42:25.326212Z"
+ },
+ "982367": {
+  "file": "submission_paiec_v24_high_purity_ze.zip",
+  "batch": "pre_lobo",
+  "version": "24",
+  "status": "Finished",
+  "score": 0.185582995,
+  "ece": 0.104044122,
+  "created": "2026-10-13T08:36:37.837558Z"
+ },
+ "984897": {
+  "file": "submission_paiec_v27_hierarchical_e.zip",
+  "batch": "pre_lobo",
+  "version": "27",
+  "status": "Finished",
+  "score": 0.1727751868,
+  "ece": 0.1162881975,
+  "created": "2026-10-13T12:57:57.532179Z"
+ },
+ "989365": {
+  "file": "submission_paiec_v29_unbiased_hiera.zip",
+  "batch": "pre_lobo",
+  "version": "29",
+  "status": "Finished",
+  "score": 0.1735034312,
+  "ece": 0.1359380188,
+  "created": "2026-10-15T08:08:39.690738Z"
+ },
+ "989717": {
+  "file": "submission_paiec_v30_deep_item_feat.zip",
+  "batch": "pre_lobo",
+  "version": "30",
+  "status": "Finished",
+  "score": 0.1793855901,
+  "ece": 0.1120776079,
+  "created": "2026-10-15T10:07:18.697865Z"
+ },
+ "1000653": {
+  "file": "submission_paiec_v34_asymmetric_exa.zip",
+  "batch": "pre_lobo",
+  "version": "34",
+  "status": "Finished",
+  "score": 0.1911030504,
+  "ece": 0.1282339623,
+  "created": "2026-10-18T08:42:11.447296Z"
+ },
+ "1000762": {
+  "file": "submission_paiec_v37_mixture_bayes_.zip",
+  "batch": "pre_lobo",
+  "version": "37",
+  "status": "Finished",
+  "score": 0.1840029345,
+  "ece": 0.1387844808,
+  "created": "2026-10-18T10:00:10.703010Z"
+ },
+ "1000804": {
+  "file": "submission_paiec_v38_deconfounded_d.zip",
+  "batch": "pre_lobo",
+  "version": "38",
+  "status": "Finished",
+  "score": 0.2064073704,
+  "ece": 0.1306540618,
+  "created": "2026-10-18T10:39:06.285408Z"
+ },
+ "1000897": {
+  "file": "submission_paiec_v39_complementary_.zip",
+  "batch": "pre_lobo",
+  "version": "39",
+  "status": "Finished",
+  "score": 0.1774156374,
+  "ece": 0.1401604379,
+  "created": "2026-10-18T11:30:42.857600Z"
+ },
+ "1001526": {
+  "file": "submission_paiec_v39_complementary_.zip",
+  "batch": "pre_lobo",
+  "version": "39",
+  "status": "Finished",
+  "score": 0.1895175858,
+  "ece": 0.1382889039,
+  "created": "2026-10-18T21:39:48.788111Z"
+ },
+ "1002666": {
+  "file": "submission_paiec_v40_clean.zip",
+  "batch": "pre_lobo",
+  "version": "40",
+  "status": "Finished",
+  "score": 0.2016260447,
+  "ece": 0.1207576502,
+  "created": "2026-10-19T09:46:12.355552Z"
+ },
+ "1002694": {
+  "file": "submission_paiec_v40_clean.zip",
+  "batch": "pre_lobo",
+  "version": "40",
+  "status": "Finished",
+  "score": 0.193207991,
+  "ece": 0.1639120053,
+  "created": "2026-10-19T09:59:40.429145Z"
+ },
+ "1011249": {
+  "file": "submission_paiec_v41_calibrated_sig.zip",
+  "batch": "pre_lobo",
+  "version": "41",
+  "status": "Finished",
+  "score": 0.1522558051,
+  "ece": 0.1281960138,
+  "created": "2026-10-27T00:42:47.956874Z"
+ },
+ "1011250": {
+  "file": "submission_paiec_v42_two_zone_stein.zip",
+  "batch": "pre_lobo",
+  "version": "42",
+  "status": "Finished",
+  "score": 0.1628790175,
+  "ece": 0.1419346257,
+  "created": "2026-10-27T00:43:09.469767Z"
+ },
+ "1011251": {
+  "file": "submission_paiec_v43_minimax_b0_hyb.zip",
+  "batch": "pre_lobo",
+  "version": "43",
+  "status": "Finished",
+  "score": 0.2047802601,
+  "ece": 0.147315007,
+  "created": "2026-10-27T00:43:41.019666Z"
+ },
+ "1011252": {
+  "file": "submission_paiec_v44_zero_centered_.zip",
+  "batch": "pre_lobo",
+  "version": "44",
+  "status": "Finished",
+  "score": 0.1410510295,
+  "ece": 0.1536803921,
+  "created": "2026-10-27T00:44:00.475937Z"
+ },
+ "1011253": {
+  "file": "submission_paiec_v45_grand_ensemble.zip",
+  "batch": "pre_lobo",
+  "version": "45",
+  "status": "Finished",
+  "score": 0.1725712215,
+  "ece": 0.1522578675,
+  "created": "2026-10-27T00:44:17.001778Z"
+ },
+ "1012008": {
+  "file": "submission_paiec_v46_c455_std.zip",
+  "batch": "pre_lobo",
+  "version": "46",
+  "status": "Finished",
+  "score": 0.1648854585,
+  "ece": 0.1267769631,
+  "created": "2026-10-27T05:50:36.261831Z"
+ },
+ "1012009": {
+  "file": "submission_paiec_v47_c440_std.zip",
+  "batch": "pre_lobo",
+  "version": "47",
+  "status": "Finished",
+  "score": 0.1685177308,
+  "ece": 0.1129114851,
+  "created": "2026-10-27T05:50:41.298097Z"
+ },
+ "1012010": {
+  "file": "submission_paiec_v48_c470_std.zip",
+  "batch": "pre_lobo",
+  "version": "48",
+  "status": "Finished",
+  "score": 0.1852492439,
+  "ece": 0.1507581358,
+  "created": "2026-10-27T05:50:46.483614Z"
+ },
+ "1012012": {
+  "file": "submission_paiec_v49_c420_deepcente.zip",
+  "batch": "pre_lobo",
+  "version": "49",
+  "status": "Finished",
+  "score": 0.1790821396,
+  "ece": 0.1729161589,
+  "created": "2026-10-27T05:50:52.133481Z"
+ },
+ "1012013": {
+  "file": "submission_paiec_v50_c455_pcenter40.zip",
+  "batch": "pre_lobo",
+  "version": "50",
+  "status": "Finished",
+  "score": 0.1915827911,
+  "ece": 0.1355839982,
+  "created": "2026-10-27T05:50:57.921881Z"
+ },
+ "1012014": {
+  "file": "submission_paiec_v51_c440_pcenter40.zip",
+  "batch": "pre_lobo",
+  "version": "51",
+  "status": "Finished",
+  "score": 0.1716446808,
+  "ece": 0.1009243093,
+  "created": "2026-10-27T05:51:04.764557Z"
+ },
+ "1012015": {
+  "file": "submission_paiec_v52_c470_pcenter40.zip",
+  "batch": "pre_lobo",
+  "version": "52",
+  "status": "Finished",
+  "score": 0.1898991226,
+  "ece": 0.1575907847,
+  "created": "2026-10-27T05:51:10.316265Z"
+ },
+ "1012017": {
+  "file": "submission_paiec_v53_c485_pcenter40.zip",
+  "batch": "pre_lobo",
+  "version": "53",
+  "status": "Finished",
+  "score": 0.1900240465,
+  "ece": 0.1274337876,
+  "created": "2026-10-27T05:51:16.391075Z"
+ },
+ "1012018": {
+  "file": "submission_paiec_v54_c455_wpeer16.zip",
+  "batch": "pre_lobo",
+  "version": "54",
+  "status": "Finished",
+  "score": 0.194943801,
+  "ece": 0.1533091155,
+  "created": "2026-10-27T05:51:20.979130Z"
+ },
+ "1012020": {
+  "file": "submission_paiec_v55_c455_wpeer26.zip",
+  "batch": "pre_lobo",
+  "version": "55",
+  "status": "Finished",
+  "score": 0.1820266175,
+  "ece": 0.1532772458,
+  "created": "2026-10-27T05:51:26.239753Z"
+ },
+ "1012021": {
+  "file": "submission_paiec_v56_c440_wpeer16.zip",
+  "batch": "pre_lobo",
+  "version": "56",
+  "status": "Finished",
+  "score": 0.194535395,
+  "ece": 0.1686734573,
+  "created": "2026-10-27T05:51:31.956761Z"
+ },
+ "1012022": {
+  "file": "submission_paiec_v57_c440_wpeer26.zip",
+  "batch": "pre_lobo",
+  "version": "57",
+  "status": "Finished",
+  "score": 0.1868460327,
+  "ece": 0.1808658053,
+  "created": "2026-10-27T05:51:36.842559Z"
+ },
+ "1012027": {
+  "file": "submission_paiec_v59_c455_debias28.zip",
+  "batch": "pre_lobo",
+  "version": "59",
+  "status": "Finished",
+  "score": 0.1398325996,
+  "ece": 0.1476962403,
+  "created": "2026-10-27T05:52:41.651846Z"
+ },
+ "1012028": {
+  "file": "submission_paiec_v60_c440_debias18.zip",
+  "batch": "pre_lobo",
+  "version": "60",
+  "status": "Finished",
+  "score": 0.194664089,
+  "ece": 0.149077241,
+  "created": "2026-10-27T05:52:58.014649Z"
+ },
+ "1012029": {
+  "file": "submission_paiec_v61_c440_debias28.zip",
+  "batch": "pre_lobo",
+  "version": "61",
+  "status": "Finished",
+  "score": 0.1677029915,
+  "ece": 0.1128834837,
+  "created": "2026-10-27T05:53:15.600872Z"
+ },
+ "1012030": {
+  "file": "submission_paiec_v62_c455_isores_pc.zip",
+  "batch": "pre_lobo",
+  "version": "62",
+  "status": "Finished",
+  "score": 0.1954965875,
+  "ece": 0.1050753748,
+  "created": "2026-10-27T05:53:22.529986Z"
+ },
+ "1012034": {
+  "file": "submission_paiec_v64_c455_isores_wp.zip",
+  "batch": "pre_lobo",
+  "version": "64",
+  "status": "Finished",
+  "score": 0.1912160261,
+  "ece": 0.1275814076,
+  "created": "2026-10-27T05:53:38.784443Z"
+ },
+ "1012035": {
+  "file": "submission_paiec_v65_c435_isores_pc.zip",
+  "batch": "pre_lobo",
+  "version": "65",
+  "status": "Finished",
+  "score": 0.1826661916,
+  "ece": 0.1432433242,
+  "created": "2026-10-27T05:53:47.466516Z"
+ },
+ "1013088": {
+  "file": "submission_paiec_v66_c455_deb30_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "66",
+  "status": "Cancelled",
+  "score": 0.1703949841,
+  "ece": 0.1363965971,
+  "created": "2026-10-27T13:05:30.461979Z"
+ },
+ "1013090": {
+  "file": "submission_paiec_v67_c455_deb32_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "67",
+  "status": "Finished",
+  "score": 0.1766442489,
+  "ece": 0.1204100267,
+  "created": "2026-10-27T13:05:41.557422Z"
+ },
+ "1013091": {
+  "file": "submission_paiec_v68_c455_deb35_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "68",
+  "status": "Finished",
+  "score": 0.2001899831,
+  "ece": 0.1197557909,
+  "created": "2026-10-27T13:05:47.572900Z"
+ },
+ "1013093": {
+  "file": "submission_paiec_v69_c455_deb26_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "69",
+  "status": "Finished",
+  "score": 0.1849794964,
+  "ece": 0.1513615047,
+  "created": "2026-10-27T13:05:53.500246Z"
+ },
+ "1013094": {
+  "file": "submission_paiec_v70_c450_deb28_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "70",
+  "status": "Finished",
+  "score": 0.2025981065,
+  "ece": 0.1068580251,
+  "created": "2026-10-27T13:05:59.913600Z"
+ },
+ "1013095": {
+  "file": "submission_paiec_v71_c460_deb28_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "71",
+  "status": "Finished",
+  "score": 0.1905728872,
+  "ece": 0.1312348487,
+  "created": "2026-10-27T13:06:12.343129Z"
+ },
+ "1013096": {
+  "file": "submission_paiec_v72_c445_deb28_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "72",
+  "status": "Finished",
+  "score": 0.190665057,
+  "ece": 0.0971968309,
+  "created": "2026-10-27T13:06:33.265184Z"
+ },
+ "1013098": {
+  "file": "submission_paiec_v73_c465_deb28_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "73",
+  "status": "Finished",
+  "score": 0.1666325701,
+  "ece": 0.1461883979,
+  "created": "2026-10-27T13:06:55.389495Z"
+ },
+ "1013102": {
+  "file": "submission_paiec_v74_c455_pcenter39.zip",
+  "batch": "pre_lobo",
+  "version": "74",
+  "status": "Finished",
+  "score": 0.1937983876,
+  "ece": 0.1419302584,
+  "created": "2026-10-27T13:07:19.485840Z"
+ },
+ "1013106": {
+  "file": "submission_paiec_v75_c455_pcenter40.zip",
+  "batch": "pre_lobo",
+  "version": "75",
+  "status": "Finished",
+  "score": 0.2161064446,
+  "ece": 0.1335477887,
+  "created": "2026-10-27T13:07:39.324458Z"
+ },
+ "1013109": {
+  "file": "submission_paiec_v76_c450_pcenter39.zip",
+  "batch": "pre_lobo",
+  "version": "76",
+  "status": "Finished",
+  "score": 0.2149031898,
+  "ece": 0.1277125067,
+  "created": "2026-10-27T13:07:58.572363Z"
+ },
+ "1013112": {
+  "file": "submission_paiec_v77_c450_pcenter40.zip",
+  "batch": "pre_lobo",
+  "version": "77",
+  "status": "Finished",
+  "score": 0.1739254988,
+  "ece": 0.1353599132,
+  "created": "2026-10-27T13:08:21.066527Z"
+ },
+ "1013114": {
+  "file": "submission_paiec_v78_c455_wp18_deb2.zip",
+  "batch": "pre_lobo",
+  "version": "78",
+  "status": "Finished",
+  "score": 0.1778752651,
+  "ece": 0.1279325854,
+  "created": "2026-10-27T13:08:46.403644Z"
+ },
+ "1013115": {
+  "file": "submission_paiec_v79_c455_wp22_deb2.zip",
+  "batch": "pre_lobo",
+  "version": "79",
+  "status": "Finished",
+  "score": 0.1501026465,
+  "ece": 0.1247304654,
+  "created": "2026-10-27T13:09:05.194775Z"
+ },
+ "1013117": {
+  "file": "submission_paiec_v81_c450_wp22_deb3.zip",
+  "batch": "pre_lobo",
+  "version": "81",
+  "status": "Finished",
+  "score": 0.1919229632,
+  "ece": 0.1515230871,
+  "created": "2026-10-27T13:09:45.269736Z"
+ },
+ "1013119": {
+  "file": "submission_paiec_v82_c455_deb28_iso.zip",
+  "batch": "pre_lobo",
+  "version": "82",
+  "status": "Finished",
+  "score": 0.1760474961,
+  "ece": 0.1097739704,
+  "created": "2026-10-27T13:10:06.694703Z"
+ },
+ "1013122": {
+  "file": "submission_paiec_v83_c455_deb30_iso.zip",
+  "batch": "pre_lobo",
+  "version": "83",
+  "status": "Finished",
+  "score": 0.189268231,
+  "ece": 0.1595653524,
+  "created": "2026-10-27T13:10:27.844658Z"
+ },
+ "1013123": {
+  "file": "submission_paiec_v84_c450_deb30_iso.zip",
+  "batch": "pre_lobo",
+  "version": "84",
+  "status": "Finished",
+  "score": 0.1643480944,
+  "ece": 0.1595162142,
+  "created": "2026-10-27T13:10:47.257610Z"
+ },
+ "1013425": {
+  "file": "submission_paiec_v86_damp25_deb28.zip",
+  "batch": "pre_lobo",
+  "version": "86",
+  "status": "Finished",
+  "score": 0.1537806484,
+  "ece": 0.1347246436,
+  "created": "2026-10-27T15:19:59.815818Z"
+ },
+ "1013426": {
+  "file": "submission_paiec_v87_damp35_deb28.zip",
+  "batch": "pre_lobo",
+  "version": "87",
+  "status": "Finished",
+  "score": 0.1871741728,
+  "ece": 0.1242420796,
+  "created": "2026-10-27T15:20:26.436994Z"
+ },
+ "1013429": {
+  "file": "submission_paiec_v88_damp45_deb28.zip",
+  "batch": "pre_lobo",
+  "version": "88",
+  "status": "Finished",
+  "score": 0.1942796805,
+  "ece": 0.1539549355,
+  "created": "2026-10-27T15:20:58.220611Z"
+ },
+ "1013430": {
+  "file": "submission_paiec_v89_deb29_damp30.zip",
+  "batch": "pre_lobo",
+  "version": "89",
+  "status": "Finished",
+  "score": 0.173572979,
+  "ece": 0.1700762525,
+  "created": "2026-10-27T15:21:57.415507Z"
+ },
+ "1013431": {
+  "file": "submission_paiec_v90_deb30_damp35.zip",
+  "batch": "pre_lobo",
+  "version": "90",
+  "status": "Finished",
+  "score": 0.1918873718,
+  "ece": 0.1632077141,
+  "created": "2026-10-27T15:22:37.918594Z"
+ },
+ "1013434": {
+  "file": "submission_paiec_v91_c448_deb28_dam.zip",
+  "batch": "pre_lobo",
+  "version": "91",
+  "status": "Finished",
+  "score": 0.1559563991,
+  "ece": 0.1422777882,
+  "created": "2026-10-27T15:23:48.457765Z"
+ },
+ "1014966": {
+  "file": "submission_paiec_v96_damp30_deb28.zip",
+  "batch": "pre_lobo",
+  "version": "96",
+  "status": "Finished",
+  "score": 0.1768910168,
+  "ece": 0.1100017552,
+  "created": "2026-10-28T05:20:27.965307Z"
+ },
+ "1014968": {
+  "file": "submission_paiec_v97_damp38_deb28.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1915848618,
+  "ece": 0.1601709847,
+  "created": "2026-10-28T05:21:21.653065Z"
+ },
+ "1014971": {
+  "file": "submission_paiec_v98_damp45_deb28.zip",
+  "batch": "pre_lobo",
+  "version": "98",
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-10-28T05:22:03.539496Z"
+ },
+ "1014972": {
+  "file": "submission_paiec_v98_damp45_deb28.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1813720673,
+  "ece": 0.1325452669,
+  "created": "2026-10-28T05:22:08.944712Z"
+ },
+ "1014975": {
+  "file": "submission_paiec_v100_b0_c442_wb28_.zip",
+  "batch": "pre_lobo",
+  "version": "100",
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-10-28T05:23:02.898371Z"
+ },
+ "1014976": {
+  "file": "submission_paiec_v100_b0_c442_wb28_.zip",
+  "batch": "pre_lobo",
+  "version": "100",
+  "status": "Finished",
+  "score": 0.1948597391,
+  "ece": 0.1242049546,
+  "created": "2026-10-28T05:23:07.778072Z"
+ },
+ "1014977": {
+  "file": "submission_paiec_v101_b0_c448_wb28_.zip",
+  "batch": "pre_lobo",
+  "version": "101",
+  "status": "Finished",
+  "score": 0.1897940069,
+  "ece": 0.1600139183,
+  "created": "2026-10-28T05:23:22.062727Z"
+ },
+ "1014981": {
+  "file": "submission_paiec_v102_b0_c438_wb32_.zip",
+  "batch": "pre_lobo",
+  "version": "102",
+  "status": "Finished",
+  "score": 0.1765277672,
+  "ece": 0.1572296169,
+  "created": "2026-10-28T05:25:20.496651Z"
+ },
+ "1014982": {
+  "file": "submission_paiec_v103_b0_c445_wb30_.zip",
+  "batch": "pre_lobo",
+  "version": "103",
+  "status": "Finished",
+  "score": 0.1837156791,
+  "ece": 0.1514318672,
+  "created": "2026-10-28T05:25:38.525656Z"
+ },
+ "1014983": {
+  "file": "submission_paiec_v104_wp22_deb28_da.zip",
+  "batch": "pre_lobo",
+  "version": "104",
+  "status": "Finished",
+  "score": 0.2026134668,
+  "ece": 0.1366063736,
+  "created": "2026-10-28T05:25:55.767748Z"
+ },
+ "1014984": {
+  "file": "submission_paiec_v105_wp22_deb29_da.zip",
+  "batch": "pre_lobo",
+  "version": "105",
+  "status": "Finished",
+  "score": 0.2152725457,
+  "ece": 0.1293467287,
+  "created": "2026-10-28T05:26:19.374655Z"
+ },
+ "1014985": {
+  "file": "submission_paiec_v106_wp24_deb29_da.zip",
+  "batch": "pre_lobo",
+  "version": "106",
+  "status": "Finished",
+  "score": 0.1919584343,
+  "ece": 0.1328409933,
+  "created": "2026-10-28T05:26:38.617421Z"
+ },
+ "1014986": {
+  "file": "submission_paiec_v107_wp22_pc395_da.zip",
+  "batch": "pre_lobo",
+  "version": "107",
+  "status": "Finished",
+  "score": 0.1754545041,
+  "ece": 0.1217773023,
+  "created": "2026-10-28T05:26:58.729421Z"
+ },
+ "1014987": {
+  "file": "submission_paiec_v108_isores_deb28_.zip",
+  "batch": "pre_lobo",
+  "version": "108",
+  "status": "Finished",
+  "score": 0.212770676,
+  "ece": 0.1431944939,
+  "created": "2026-10-28T05:27:15.599623Z"
+ },
+ "1014991": {
+  "file": "submission_paiec_v111_isores_deb29_.zip",
+  "batch": "pre_lobo",
+  "version": "111",
+  "status": "Finished",
+  "score": 0.1846608518,
+  "ece": 0.1356270298,
+  "created": "2026-10-28T05:28:01.020208Z"
+ },
+ "1014992": {
+  "file": "submission_paiec_v112_unified_oracl.zip",
+  "batch": "pre_lobo",
+  "version": "112",
+  "status": "Finished",
+  "score": 0.1564674446,
+  "ece": 0.1263112113,
+  "created": "2026-10-28T05:28:15.883409Z"
+ },
+ "1014994": {
+  "file": "submission_paiec_v113_unified_oracl.zip",
+  "batch": "pre_lobo",
+  "version": "113",
+  "status": "Finished",
+  "score": 0.2184241432,
+  "ece": 0.1222515426,
+  "created": "2026-10-28T05:28:29.762270Z"
+ },
+ "1014996": {
+  "file": "submission_paiec_v115_unified_oracl.zip",
+  "batch": "pre_lobo",
+  "version": "115",
+  "status": "Finished",
+  "score": 0.1997228631,
+  "ece": 0.1364512096,
+  "created": "2026-10-28T05:29:08.283232Z"
+ },
+ "1017551": {
+  "file": "submission_paiec_v116_v59_bp_wp20.zip",
+  "batch": "pre_lobo",
+  "version": "116",
+  "status": "Finished",
+  "score": 0.1733809563,
+  "ece": 0.1311440625,
+  "created": "2026-10-28T23:56:45.736970Z"
+ },
+ "1017552": {
+  "file": "submission_paiec_v117_v59_bp_wp18.zip",
+  "batch": "pre_lobo",
+  "version": "117",
+  "status": "Finished",
+  "score": 0.1565492163,
+  "ece": 0.1117875306,
+  "created": "2026-10-28T23:57:25.071421Z"
+ },
+ "1017553": {
+  "file": "submission_paiec_v118_v59_bp_wp22.zip",
+  "batch": "pre_lobo",
+  "version": "118",
+  "status": "Finished",
+  "score": 0.2146928784,
+  "ece": 0.1346105778,
+  "created": "2026-10-28T23:57:37.525451Z"
+ },
+ "1017554": {
+  "file": "submission_paiec_v119_v59_bp_deb30.zip",
+  "batch": "pre_lobo",
+  "version": "119",
+  "status": "Finished",
+  "score": 0.1982577414,
+  "ece": 0.1305962096,
+  "created": "2026-10-28T23:57:46.737801Z"
+ },
+ "1017555": {
+  "file": "submission_paiec_v120_v59_pure_wp18.zip",
+  "batch": "pre_lobo",
+  "version": "120",
+  "status": "Finished",
+  "score": 0.2091212705,
+  "ece": 0.1522525913,
+  "created": "2026-10-28T23:57:55.010929Z"
+ },
+ "1017556": {
+  "file": "submission_paiec_v121_v59_pure_wp21.zip",
+  "batch": "pre_lobo",
+  "version": "121",
+  "status": "Finished",
+  "score": 0.1901643242,
+  "ece": 0.1286314174,
+  "created": "2026-10-28T23:58:03.449646Z"
+ },
+ "1017557": {
+  "file": "submission_paiec_v122_v59_pure_cp38.zip",
+  "batch": "pre_lobo",
+  "version": "122",
+  "status": "Finished",
+  "score": 0.185006362,
+  "ece": 0.1159484629,
+  "created": "2026-10-28T23:58:15.686706Z"
+ },
+ "1017558": {
+  "file": "submission_paiec_v123_v59_pure_cp39.zip",
+  "batch": "pre_lobo",
+  "version": "123",
+  "status": "Finished",
+  "score": 0.183521309,
+  "ece": 0.1361837221,
+  "created": "2026-10-28T23:58:29.600971Z"
+ },
+ "1017559": {
+  "file": "submission_paiec_v124_v59_cb460_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "124",
+  "status": "Finished",
+  "score": 0.1692423499,
+  "ece": 0.1534284245,
+  "created": "2026-10-28T23:58:45.213014Z"
+ },
+ "1017560": {
+  "file": "submission_paiec_v125_v59_cb465_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "125",
+  "status": "Finished",
+  "score": 0.1880968306,
+  "ece": 0.1271434977,
+  "created": "2026-10-28T23:58:57.022049Z"
+ },
+ "1017561": {
+  "file": "submission_paiec_v126_v59_cb450_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "126",
+  "status": "Finished",
+  "score": 0.1558612163,
+  "ece": 0.1352833993,
+  "created": "2026-10-28T23:59:04.150291Z"
+ },
+ "1017563": {
+  "file": "submission_paiec_v127_v59_cb460_bp_.zip",
+  "batch": "pre_lobo",
+  "version": "127",
+  "status": "Finished",
+  "score": 0.1667673602,
+  "ece": 0.1090439168,
+  "created": "2026-10-28T23:59:15.322249Z"
+ },
+ "1017564": {
+  "file": "submission_paiec_v128_v59_deb26_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "128",
+  "status": "Scoring",
+  "score": 0.1966218816,
+  "ece": 0.1247652343,
+  "created": "2026-10-28T23:59:25.853818Z"
+ },
+ "1017565": {
+  "file": "submission_paiec_v129_v59_deb30_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "129",
+  "status": "Finished",
+  "score": 0.1844367074,
+  "ece": 0.1155913661,
+  "created": "2026-10-28T23:59:37.302532Z"
+ },
+ "1017566": {
+  "file": "submission_paiec_v130_v59_deb26_wp1.zip",
+  "batch": "pre_lobo",
+  "version": "130",
+  "status": "Finished",
+  "score": 0.1996929295,
+  "ece": 0.1425662237,
+  "created": "2026-10-29T00:00:05.135368Z"
+ },
+ "1017567": {
+  "file": "submission_paiec_v131_v59_deb30_wp2.zip",
+  "batch": "pre_lobo",
+  "version": "131",
+  "status": "Finished",
+  "score": 0.2068082747,
+  "ece": 0.1000735641,
+  "created": "2026-10-29T00:00:28.327663Z"
+ },
+ "1017568": {
+  "file": "submission_paiec_v132_v59_micro05_b.zip",
+  "batch": "pre_lobo",
+  "version": "132",
+  "status": "Finished",
+  "score": 0.1764890329,
+  "ece": 0.1179141307,
+  "created": "2026-10-29T00:00:41.501748Z"
+ },
+ "1017569": {
+  "file": "submission_paiec_v133_v59_micro08_b.zip",
+  "batch": "pre_lobo",
+  "version": "133",
+  "status": "Finished",
+  "score": 0.1991206024,
+  "ece": 0.1357582829,
+  "created": "2026-10-29T00:00:53.981293Z"
+ },
+ "1017570": {
+  "file": "submission_paiec_v134_v59_synergy_a.zip",
+  "batch": "pre_lobo",
+  "version": "134",
+  "status": "Finished",
+  "score": 0.1549311009,
+  "ece": 0.12471478,
+  "created": "2026-10-29T00:01:07.195375Z"
+ },
+ "1020473": {
+  "file": "submission_paiec_v137_synergy_cb455.zip",
+  "batch": "pre_lobo",
+  "version": "137",
+  "status": "Finished",
+  "score": 0.1413831795,
+  "ece": 0.1443207647,
+  "created": "2026-10-30T03:46:34.029608Z"
+ },
+ "1020475": {
+  "file": "submission_paiec_v138_synergy_cb450.zip",
+  "batch": "pre_lobo",
+  "version": "138",
+  "status": "Finished",
+  "score": 0.1613181639,
+  "ece": 0.1709913418,
+  "created": "2026-10-30T03:46:40.427625Z"
+ },
+ "1020476": {
+  "file": "submission_paiec_v139_synergy_cb452.zip",
+  "batch": "pre_lobo",
+  "version": "139",
+  "status": "Finished",
+  "score": 0.184715662,
+  "ece": 0.1388310088,
+  "created": "2026-10-30T03:46:46.613626Z"
+ },
+ "1020478": {
+  "file": "submission_paiec_v141_synergy_cb448.zip",
+  "batch": "pre_lobo",
+  "version": "141",
+  "status": "Finished",
+  "score": 0.1636214017,
+  "ece": 0.1127201844,
+  "created": "2026-10-30T03:47:00.386018Z"
+ },
+ "1020479": {
+  "file": "submission_paiec_v142_synergy_cb452.zip",
+  "batch": "pre_lobo",
+  "version": "142",
+  "status": "Finished",
+  "score": 0.2356217667,
+  "ece": 0.1417643712,
+  "created": "2026-10-30T03:47:17.231293Z"
+ },
+ "1020481": {
+  "file": "submission_paiec_v143_synergy_cb450.zip",
+  "batch": "pre_lobo",
+  "version": "143",
+  "status": "Finished",
+  "score": 0.1731922717,
+  "ece": 0.117765078,
+  "created": "2026-10-30T03:47:23.736932Z"
+ },
+ "1020483": {
+  "file": "submission_paiec_v136_synergy_cb452.zip",
+  "batch": "pre_lobo",
+  "version": "136",
+  "status": "Finished",
+  "score": 0.1708109858,
+  "ece": 0.1491407784,
+  "created": "2026-10-30T03:48:45.957816Z"
+ },
+ "1020485": {
+  "file": "submission_paiec_v138_synergy_cb450.zip",
+  "batch": "pre_lobo",
+  "version": "138",
+  "status": "Finished",
+  "score": 0.1971849082,
+  "ece": 0.1278519076,
+  "created": "2026-10-30T03:49:01.157794Z"
+ },
+ "1020488": {
+  "file": "submission_paiec_v139_synergy_cb452.zip",
+  "batch": "pre_lobo",
+  "version": "139",
+  "status": "Finished",
+  "score": 0.2177013976,
+  "ece": 0.1572886565,
+  "created": "2026-10-30T03:50:13.918798Z"
+ },
+ "1020490": {
+  "file": "submission_paiec_v139_synergy_cb452.zip",
+  "batch": "pre_lobo",
+  "version": "139",
+  "status": "Finished",
+  "score": 0.1872200685,
+  "ece": 0.1326539482,
+  "created": "2026-10-30T03:51:04.164110Z"
+ },
+ "1020491": {
+  "file": "submission_paiec_v140_synergy_cb455.zip",
+  "batch": "pre_lobo",
+  "version": "140",
+  "status": "Finished",
+  "score": 0.1738187626,
+  "ece": 0.113193928,
+  "created": "2026-10-30T03:51:23.006051Z"
+ },
+ "1020492": {
+  "file": "submission_paiec_v141_synergy_cb448.zip",
+  "batch": "pre_lobo",
+  "version": "141",
+  "status": "Finished",
+  "score": 0.1885115723,
+  "ece": 0.1219404943,
+  "created": "2026-10-30T03:51:43.805996Z"
+ },
+ "1020494": {
+  "file": "submission_paiec_v142_synergy_cb452.zip",
+  "batch": "pre_lobo",
+  "version": "142",
+  "status": "Finished",
+  "score": 0.2286329507,
+  "ece": 0.1507379315,
+  "created": "2026-10-30T03:52:04.187443Z"
+ },
+ "1020495": {
+  "file": "submission_paiec_v143_synergy_cb450.zip",
+  "batch": "pre_lobo",
+  "version": "143",
+  "status": "Finished",
+  "score": 0.172095528,
+  "ece": 0.13570352,
+  "created": "2026-10-30T03:52:45.112799Z"
+ },
+ "1020497": {
+  "file": "submission_paiec_v144_synergy_cb452.zip",
+  "batch": "pre_lobo",
+  "version": "144",
+  "status": "Finished",
+  "score": 0.2306002843,
+  "ece": 0.0978048009,
+  "created": "2026-10-30T03:53:15.832596Z"
+ },
+ "1020498": {
+  "file": "submission_paiec_v145_synergy_cb458.zip",
+  "batch": "pre_lobo",
+  "version": "145",
+  "status": "Finished",
+  "score": 0.1864677428,
+  "ece": 0.1139739279,
+  "created": "2026-10-30T03:53:28.540004Z"
+ },
+ "1020741": {
+  "file": "submission_paiec_v59_debias20.zip",
+  "batch": "pre_lobo",
+  "version": "59",
+  "status": "Finished",
+  "score": 0.1742122644,
+  "ece": 0.184545006,
+  "created": "2026-10-30T06:31:49.315744Z"
+ },
+ "1020742": {
+  "file": "submission_paiec_v59_ease28.zip",
+  "batch": "pre_lobo",
+  "version": "59",
+  "status": "Finished",
+  "score": 0.1724898909,
+  "ece": 0.1151582183,
+  "created": "2026-10-30T06:32:14.122322Z"
+ },
+ "1020744": {
+  "file": "submission_paiec_v59_debias32.zip",
+  "batch": "pre_lobo",
+  "version": "59",
+  "status": "Finished",
+  "score": 0.1978055396,
+  "ece": 0.1584023116,
+  "created": "2026-10-30T06:32:41.921220Z"
+ },
+ "1020745": {
+  "file": "submission_paiec_v59_peer35.zip",
+  "batch": "pre_lobo",
+  "version": "59",
+  "status": "Finished",
+  "score": 0.2080984886,
+  "ece": 0.1905980559,
+  "created": "2026-10-30T06:33:15.407434Z"
+ },
+ "1020747": {
+  "file": "submission_paiec_v59_peer35.zip",
+  "batch": "pre_lobo",
+  "version": "59",
+  "status": "Finished",
+  "score": 0.1716197082,
+  "ece": 0.1294252589,
+  "created": "2026-10-30T06:33:47.752191Z"
+ },
+ "1020767": {
+  "file": "submission_paiec_v146_cb457_wp176_d.zip",
+  "batch": "pre_lobo",
+  "version": "146",
+  "status": "Finished",
+  "score": 0.1708907346,
+  "ece": 0.134115833,
+  "created": "2026-10-30T06:47:48.962033Z"
+ },
+ "1020769": {
+  "file": "submission_paiec_v147_cb457_wp186_d.zip",
+  "batch": "pre_lobo",
+  "version": "147",
+  "status": "Finished",
+  "score": 0.1887516464,
+  "ece": 0.1186671256,
+  "created": "2026-10-30T06:48:00.944383Z"
+ },
+ "1020770": {
+  "file": "submission_paiec_v148_cb454_wp182_d.zip",
+  "batch": "pre_lobo",
+  "version": "148",
+  "status": "Finished",
+  "score": 0.2080609255,
+  "ece": 0.1621674227,
+  "created": "2026-10-30T06:48:34.451016Z"
+ },
+ "1020772": {
+  "file": "submission_paiec_v149_cb451_wp178_d.zip",
+  "batch": "pre_lobo",
+  "version": "149",
+  "status": "Finished",
+  "score": 0.1972182913,
+  "ece": 0.1296535907,
+  "created": "2026-10-30T06:49:07.487284Z"
+ },
+ "1020776": {
+  "file": "submission_paiec_v151_cb454_wp184_d.zip",
+  "batch": "pre_lobo",
+  "version": "151",
+  "status": "Finished",
+  "score": 0.2114803436,
+  "ece": 0.1640764926,
+  "created": "2026-10-30T06:50:47.781860Z"
+ },
+ "1020777": {
+  "file": "submission_paiec_v152_cb456_wp184_d.zip",
+  "batch": "pre_lobo",
+  "version": "152",
+  "status": "Finished",
+  "score": 0.1602026245,
+  "ece": 0.1213561811,
+  "created": "2026-10-30T06:51:05.446726Z"
+ },
+ "1020778": {
+  "file": "submission_paiec_v153_cb449_wp184_d.zip",
+  "batch": "pre_lobo",
+  "version": "153",
+  "status": "Finished",
+  "score": 0.127585727,
+  "ece": 0.1234164502,
+  "created": "2026-10-30T06:51:31.053712Z"
+ },
+ "1020780": {
+  "file": "submission_paiec_v155_cb449_wp178_d.zip",
+  "batch": "pre_lobo",
+  "version": "155",
+  "status": "error: HTTP Error 404: Not Found",
+  "score": null
+ },
+ "1021626": {
+  "file": "submission_paiec_v156_v59_exact38.zip",
+  "batch": "pre_lobo",
+  "version": "156",
+  "status": "Finished",
+  "score": 0.1668071078,
+  "ece": 0.1193839858,
+  "created": "2026-10-30T14:06:09.817734Z"
+ },
+ "1021627": {
+  "file": "submission_paiec_v157_v59_exact42.zip",
+  "batch": "pre_lobo",
+  "version": "157",
+  "status": "Finished",
+  "score": 0.1951355147,
+  "ece": 0.1276744312,
+  "created": "2026-10-30T14:06:39.555586Z"
+ },
+ "1021628": {
+  "file": "submission_paiec_v158_v59_exact45_c.zip",
+  "batch": "pre_lobo",
+  "version": "158",
+  "status": "Finished",
+  "score": 0.172254781,
+  "ece": 0.0983971284,
+  "created": "2026-10-30T14:07:32.448969Z"
+ },
+ "1021632": {
+  "file": "submission_paiec_v159_v59_exact40_p.zip",
+  "batch": "pre_lobo",
+  "version": "159",
+  "status": "Finished",
+  "score": 0.1839708983,
+  "ece": 0.1275481622,
+  "created": "2026-10-30T14:09:56.002946Z"
+ },
+ "1021634": {
+  "file": "submission_paiec_v160_v59_cb460_ex3.zip",
+  "batch": "pre_lobo",
+  "version": "160",
+  "status": "Finished",
+  "score": 0.1857958056,
+  "ece": 0.1434290644,
+  "created": "2026-10-30T14:10:10.183055Z"
+ },
+ "1021635": {
+  "file": "submission_paiec_v161_v59_cb465_ex3.zip",
+  "batch": "pre_lobo",
+  "version": "161",
+  "status": "Finished",
+  "score": 0.1893362735,
+  "ece": 0.1176516299,
+  "created": "2026-10-30T14:10:50.485388Z"
+ },
+ "1021636": {
+  "file": "submission_paiec_v162_v59_cb462_pee.zip",
+  "batch": "pre_lobo",
+  "version": "162",
+  "status": "Finished",
+  "score": 0.1797053689,
+  "ece": 0.16137244,
+  "created": "2026-10-30T14:11:16.925848Z"
+ },
+ "1021647": {
+  "file": "submission_paiec_v163_v59_cb458_cp3.zip",
+  "batch": "pre_lobo",
+  "version": "163",
+  "status": "Finished",
+  "score": 0.1706446011,
+  "ece": 0.1237661294,
+  "created": "2026-10-30T14:17:05.085813Z"
+ },
+ "1021651": {
+  "file": "submission_paiec_v164_v59_deb26_ex4.zip",
+  "batch": "pre_lobo",
+  "version": "164",
+  "status": "Finished",
+  "score": 0.1971214629,
+  "ece": 0.1530766935,
+  "created": "2026-10-30T14:19:22.707688Z"
+ },
+ "1021653": {
+  "file": "submission_paiec_v165_v59_deb30_ex4.zip",
+  "batch": "pre_lobo",
+  "version": "165",
+  "status": "Finished",
+  "score": 0.1865371695,
+  "ece": 0.1362105661,
+  "created": "2026-10-30T14:19:41.700117Z"
+ },
+ "1021658": {
+  "file": "submission_paiec_v166_v59_deb25_pee.zip",
+  "batch": "pre_lobo",
+  "version": "166",
+  "status": "Finished",
+  "score": 0.1879104603,
+  "ece": 0.1209674535,
+  "created": "2026-10-30T14:21:19.808952Z"
+ },
+ "1021660": {
+  "file": "submission_paiec_v167_v59_deb31_cb4.zip",
+  "batch": "pre_lobo",
+  "version": "167",
+  "status": "Finished",
+  "score": 0.1648798309,
+  "ece": 0.1593248832,
+  "created": "2026-10-30T14:22:44.539689Z"
+ },
+ "1021670": {
+  "file": "submission_paiec_v168_v59_synergy_u.zip",
+  "batch": "pre_lobo",
+  "version": "168",
+  "status": "Finished",
+  "score": 0.163926727,
+  "ece": 0.1013416572,
+  "created": "2026-10-30T14:23:53.663787Z"
+ },
+ "1021691": {
+  "file": "submission_paiec_v169_v59_synergy_u.zip",
+  "batch": "pre_lobo",
+  "version": "169",
+  "status": "Finished",
+  "score": 0.1909453442,
+  "ece": 0.1005574389,
+  "created": "2026-10-30T14:29:27.746090Z"
+ },
+ "1021692": {
+  "file": "submission_paiec_v170_v59_synergy_u.zip",
+  "batch": "pre_lobo",
+  "version": "170",
+  "status": "Finished",
+  "score": 0.1806370427,
+  "ece": 0.126066698,
+  "created": "2026-10-30T14:29:44.618136Z"
+ },
+ "1021693": {
+  "file": "submission_paiec_v171_v59_synergy_a.zip",
+  "batch": "pre_lobo",
+  "version": "171",
+  "status": "Finished",
+  "score": 0.2012848924,
+  "ece": 0.1278162027,
+  "created": "2026-10-30T14:30:08.207739Z"
+ },
+ "1022570": {
+  "file": "submission_paiec_v172_cb462_wb26.zip",
+  "batch": "pre_lobo",
+  "version": "172",
+  "status": "Finished",
+  "score": 0.1819431083,
+  "ece": 0.1517923368,
+  "created": "2026-10-31T00:07:33.515604Z"
+ },
+ "1022573": {
+  "file": "submission_paiec_v173_cb465_wb26.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1842578421,
+  "ece": 0.1256068872,
+  "created": "2026-10-31T00:07:44.487389Z"
+ },
+ "1022574": {
+  "file": "submission_paiec_v174_cb468_wb28.zip",
+  "batch": "pre_lobo",
+  "version": "174",
+  "status": "error: HTTP Error 404: Not Found",
+  "score": null
+ },
+ "1022575": {
+  "file": "submission_paiec_v175_cb462_cp395.zip",
+  "batch": "pre_lobo",
+  "version": "175",
+  "status": "Finished",
+  "score": 0.1968116626,
+  "ece": 0.1547692318,
+  "created": "2026-10-31T00:08:16.813109Z"
+ },
+ "1022577": {
+  "file": "submission_paiec_v176_cb465_cp400.zip",
+  "batch": "pre_lobo",
+  "version": "176",
+  "status": "Scoring",
+  "score": 0.180987318,
+  "ece": 0.1310571954,
+  "created": "2026-10-31T00:08:28.713412Z"
+ },
+ "1022579": {
+  "file": "submission_paiec_v177_exact46_cap68.zip",
+  "batch": "pre_lobo",
+  "version": "177",
+  "status": "Finished",
+  "score": 0.1552684587,
+  "ece": 0.1211723216,
+  "created": "2026-10-31T00:08:37.033025Z"
+ },
+ "1022580": {
+  "file": "submission_paiec_v178_exact48_cap70.zip",
+  "batch": "pre_lobo",
+  "version": "178",
+  "status": "Finished",
+  "score": 0.2066381106,
+  "ece": 0.1173043198,
+  "created": "2026-10-31T00:08:43.153864Z"
+ },
+ "1022582": {
+  "file": "submission_paiec_v179_exact50_cap72.zip",
+  "batch": "pre_lobo",
+  "version": "179",
+  "status": "Finished",
+  "score": 0.1964604569,
+  "ece": 0.1654277686,
+  "created": "2026-10-31T00:08:49.266416Z"
+ },
+ "1022583": {
+  "file": "submission_paiec_v180_exact45_cb465.zip",
+  "batch": "pre_lobo",
+  "version": "180",
+  "status": "Finished",
+  "score": 0.2106676344,
+  "ece": 0.1309562712,
+  "created": "2026-10-31T00:08:55.187650Z"
+ },
+ "1022585": {
+  "file": "submission_paiec_v181_exact48_cb468.zip",
+  "batch": "pre_lobo",
+  "version": "181",
+  "status": "Finished",
+  "score": 0.2017240919,
+  "ece": 0.1231775349,
+  "created": "2026-10-31T00:09:03.472073Z"
+ },
+ "1022586": {
+  "file": "submission_paiec_v182_deb25_ultra.zip",
+  "batch": "pre_lobo",
+  "version": "182",
+  "status": "Finished",
+  "score": 0.207550483,
+  "ece": 0.196631837,
+  "created": "2026-10-31T00:09:09.330987Z"
+ },
+ "1022589": {
+  "file": "submission_paiec_v184_deb29_ultra.zip",
+  "batch": "pre_lobo",
+  "version": "184",
+  "status": "Finished",
+  "score": 0.1700573324,
+  "ece": 0.1267725108,
+  "created": "2026-10-31T00:09:25.225986Z"
+ },
+ "1022591": {
+  "file": "submission_paiec_v185_deb30_ultra.zip",
+  "batch": "pre_lobo",
+  "version": "185",
+  "status": "Finished",
+  "score": 0.2129510343,
+  "ece": 0.1310014346,
+  "created": "2026-10-31T00:09:36.022360Z"
+ },
+ "1022592": {
+  "file": "submission_paiec_v186_deb31_ultra.zip",
+  "batch": "pre_lobo",
+  "version": "186",
+  "status": "Finished",
+  "score": 0.1607833401,
+  "ece": 0.1179111192,
+  "created": "2026-10-31T00:09:46.719682Z"
+ },
+ "1022593": {
+  "file": "submission_paiec_v187_peer19_ex45.zip",
+  "batch": "pre_lobo",
+  "version": "187",
+  "status": "Finished",
+  "score": 0.2095274561,
+  "ece": 0.1068768667,
+  "created": "2026-10-31T00:09:52.231296Z"
+ },
+ "1022595": {
+  "file": "submission_paiec_v188_peer21_ex46.zip",
+  "batch": "pre_lobo",
+  "version": "188",
+  "status": "Finished",
+  "score": 0.2044938546,
+  "ece": 0.1423612588,
+  "created": "2026-10-31T00:09:59.998063Z"
+ },
+ "1022597": {
+  "file": "submission_paiec_v189_peer23_ex45.zip",
+  "batch": "pre_lobo",
+  "version": "189",
+  "status": "Finished",
+  "score": 0.1723225883,
+  "ece": 0.1201498104,
+  "created": "2026-10-31T00:10:06.081778Z"
+ },
+ "1022598": {
+  "file": "submission_paiec_v190_peer24_ex46.zip",
+  "batch": "pre_lobo",
+  "version": "190",
+  "status": "Finished",
+  "score": 0.191571121,
+  "ece": 0.1591270265,
+  "created": "2026-10-31T00:10:11.927010Z"
+ },
+ "1022599": {
+  "file": "submission_paiec_v191_peer23_cb468.zip",
+  "batch": "pre_lobo",
+  "version": "191",
+  "status": "Finished",
+  "score": 0.1954733709,
+  "ece": 0.1273281857,
+  "created": "2026-10-31T00:10:18.592193Z"
+ },
+ "1022600": {
+  "file": "submission_paiec_v192_apex_synergy_.zip",
+  "batch": "pre_lobo",
+  "version": "192",
+  "status": "Finished",
+  "score": 0.1855854962,
+  "ece": 0.1051962457,
+  "created": "2026-10-31T00:10:25.776012Z"
+ },
+ "1022601": {
+  "file": "submission_paiec_v193_apex_synergy_.zip",
+  "batch": "pre_lobo",
+  "version": "193",
+  "status": "Finished",
+  "score": 0.1658432104,
+  "ece": 0.1339029202,
+  "created": "2026-10-31T00:10:33.722289Z"
+ },
+ "1022602": {
+  "file": "submission_paiec_v194_apex_synergy_.zip",
+  "batch": "pre_lobo",
+  "version": "194",
+  "status": "Finished",
+  "score": 0.1863331775,
+  "ece": 0.0964754819,
+  "created": "2026-10-31T00:10:42.028761Z"
+ },
+ "1022605": {
+  "file": "submission_paiec_v195_apex_synergy_.zip",
+  "batch": "pre_lobo",
+  "version": "195",
+  "status": "Finished",
+  "score": 0.1963131086,
+  "ece": 0.1440949042,
+  "created": "2026-10-31T00:10:50.076961Z"
+ },
+ "1022607": {
+  "file": "submission_paiec_v196_apex_ultimate.zip",
+  "batch": "pre_lobo",
+  "version": "196",
+  "status": "Finished",
+  "score": 0.1528047135,
+  "ece": 0.1235696996,
+  "created": "2026-10-31T00:10:56.345303Z"
+ },
+ "1022979": {
+  "file": "submission_paiec_v197_v153_cb447_cp.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1492468155,
+  "ece": 0.1014911864,
+  "created": "2026-10-31T06:14:12.841311Z"
+ },
+ "1022982": {
+  "file": "submission_paiec_v198_v153_cb451_cp.zip",
+  "batch": "pre_lobo",
+  "version": "198",
+  "status": "Finished",
+  "score": 0.183585461,
+  "ece": 0.1194792792,
+  "created": "2026-10-31T06:14:29.444227Z"
+ },
+ "1022983": {
+  "file": "submission_paiec_v199_v153_cb448_cp.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1518680103,
+  "ece": 0.1051402027,
+  "created": "2026-10-31T06:14:47.385444Z"
+ },
+ "1022985": {
+  "file": "submission_paiec_v200_v153_cb450_cp.zip",
+  "batch": "pre_lobo",
+  "version": "200",
+  "status": "error: HTTP Error 404: Not Found",
+  "score": null
+ },
+ "1022986": {
+  "file": "submission_paiec_v201_v153_cb452_cp.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.191364003,
+  "ece": 0.1132221741,
+  "created": "2026-10-31T06:15:36.050505Z"
+ },
+ "1022987": {
+  "file": "submission_paiec_v202_v153_ex42_cap.zip",
+  "batch": "pre_lobo",
+  "version": "202",
+  "status": "Finished",
+  "score": 0.2037359994,
+  "ece": 0.1309458485,
+  "created": "2026-10-31T06:15:43.595411Z"
+ },
+ "1022988": {
+  "file": "submission_paiec_v203_v153_ex45_cap.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1695079577,
+  "ece": 0.1258342732,
+  "created": "2026-10-31T06:16:16.443911Z"
+ },
+ "1022991": {
+  "file": "submission_paiec_v204_v153_ex47_cap.zip",
+  "batch": "pre_lobo",
+  "version": "204",
+  "status": "Finished",
+  "score": 0.1990770945,
+  "ece": 0.1569633745,
+  "created": "2026-10-31T06:16:33.775778Z"
+ },
+ "1022992": {
+  "file": "submission_paiec_v205_v153_ex44_cb4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1807706292,
+  "ece": 0.1040109601,
+  "created": "2026-10-31T06:16:54.158587Z"
+ },
+ "1022993": {
+  "file": "submission_paiec_v206_v153_ex46_cb4.zip",
+  "batch": "pre_lobo",
+  "version": "206",
+  "status": "Finished",
+  "score": 0.2149651726,
+  "ece": 0.1550284643,
+  "created": "2026-10-31T06:17:04.133877Z"
+ },
+ "1022994": {
+  "file": "submission_paiec_v207_v153_deb258_d.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1828762736,
+  "ece": 0.1467396894,
+  "created": "2026-10-31T06:17:27.858091Z"
+ },
+ "1022995": {
+  "file": "submission_paiec_v208_v153_deb270_d.zip",
+  "batch": "pre_lobo",
+  "version": "208",
+  "status": "Finished",
+  "score": 0.1707353093,
+  "ece": 0.1349436558,
+  "created": "2026-10-31T06:17:43.302889Z"
+ },
+ "1022997": {
+  "file": "submission_paiec_v209_v153_deb262_d.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1966891095,
+  "ece": 0.1764606198,
+  "created": "2026-10-31T06:17:55.524945Z"
+ },
+ "1022998": {
+  "file": "submission_paiec_v210_v153_deb268_d.zip",
+  "batch": "pre_lobo",
+  "version": "210",
+  "status": "Finished",
+  "score": 0.1943115538,
+  "ece": 0.1486447638,
+  "created": "2026-10-31T06:18:01.640323Z"
+ },
+ "1023001": {
+  "file": "submission_paiec_v212_v153_irt34_wb.zip",
+  "batch": "pre_lobo",
+  "version": "212",
+  "status": "Finished",
+  "score": 0.1817695693,
+  "ece": 0.1854823197,
+  "created": "2026-10-31T06:18:27.503751Z"
+ },
+ "1023003": {
+  "file": "submission_paiec_v213_v153_irt36_wb.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1847452688,
+  "ece": 0.1314689018,
+  "created": "2026-10-31T06:18:41.969320Z"
+ },
+ "1023005": {
+  "file": "submission_paiec_v214_v153_irt35_cb.zip",
+  "batch": "pre_lobo",
+  "version": "214",
+  "status": "Finished",
+  "score": 0.1701434277,
+  "ece": 0.1438402362,
+  "created": "2026-10-31T06:18:53.950356Z"
+ },
+ "1023006": {
+  "file": "submission_paiec_v215_v153_irt36_wp.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1504376367,
+  "ece": 0.1359128888,
+  "created": "2026-10-31T06:19:06.808978Z"
+ },
+ "1023007": {
+  "file": "submission_paiec_v216_v153_irt37_ex.zip",
+  "batch": "pre_lobo",
+  "version": "216",
+  "status": "error: HTTP Error 404: Not Found",
+  "score": null
+ },
+ "1023008": {
+  "file": "submission_paiec_v217_apex_v153_opt.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2191288897,
+  "ece": 0.147407467,
+  "created": "2026-10-31T06:19:20.501170Z"
+ },
+ "1023010": {
+  "file": "submission_paiec_v218_apex_v153_opt.zip",
+  "batch": "pre_lobo",
+  "version": "218",
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-10-31T06:19:32.197259Z"
+ },
+ "1023011": {
+  "file": "submission_paiec_v218_apex_v153_opt.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1730826804,
+  "ece": 0.1121347791,
+  "created": "2026-10-31T06:19:36.165123Z"
+ },
+ "1023013": {
+  "file": "submission_paiec_v219_apex_v153_opt.zip",
+  "batch": "pre_lobo",
+  "version": "219",
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-10-31T06:19:48.176319Z"
+ },
+ "1023014": {
+  "file": "submission_paiec_v219_apex_v153_opt.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2150945675,
+  "ece": 0.1620208933,
+  "created": "2026-10-31T06:19:59.472105Z"
+ },
+ "1024484": {
+  "file": "submission_paiec_v221_apex_v153_cro.zip",
+  "batch": "pre_lobo",
+  "version": "221",
+  "status": "Finished",
+  "score": 0.1952954049,
+  "ece": 0.1214374675,
+  "created": "2026-10-31T23:52:25.264376Z"
+ },
+ "1026377": {
+  "file": "submission_paiec_v222_v153_cb4475.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1806650537,
+  "ece": 0.1640721151,
+  "created": "2026-11-01T22:18:52.063811Z"
+ },
+ "1026378": {
+  "file": "submission_paiec_v223_v153_cb4480.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2035352347,
+  "ece": 0.1579113073,
+  "created": "2026-11-01T22:18:59.314838Z"
+ },
+ "1026379": {
+  "file": "submission_paiec_v224_v153_cb4485.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1672274007,
+  "ece": 0.1241690247,
+  "created": "2026-11-01T22:19:05.092025Z"
+ },
+ "1026380": {
+  "file": "submission_paiec_v225_v153_cb4490_a.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2037463304,
+  "ece": 0.1206482293,
+  "created": "2026-11-01T22:19:11.125463Z"
+ },
+ "1026381": {
+  "file": "submission_paiec_v226_v153_cb4495.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2015443132,
+  "ece": 0.1404211814,
+  "created": "2026-11-01T22:19:17.090800Z"
+ },
+ "1026382": {
+  "file": "submission_paiec_v227_v153_cb4500.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1604857415,
+  "ece": 0.1341335173,
+  "created": "2026-11-01T22:19:23.091011Z"
+ },
+ "1026383": {
+  "file": "submission_paiec_v228_v153_cb4465.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1915399279,
+  "ece": 0.1717591266,
+  "created": "2026-11-01T22:19:29.728933Z"
+ },
+ "1026384": {
+  "file": "submission_paiec_v229_v153_cb4470.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2058107574,
+  "ece": 0.1157488419,
+  "created": "2026-11-01T22:19:35.490533Z"
+ },
+ "1026385": {
+  "file": "submission_paiec_v230_v153_cp3840.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1708722396,
+  "ece": 0.1422043921,
+  "created": "2026-11-01T22:19:41.010215Z"
+ },
+ "1026386": {
+  "file": "submission_paiec_v231_v153_cp3845.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Scoring",
+  "score": 0.1821907304,
+  "ece": 0.1225653423,
+  "created": "2026-11-01T22:19:46.725613Z"
+ },
+ "1026387": {
+  "file": "submission_paiec_v232_v153_cp3850.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1864553395,
+  "ece": 0.1108291696,
+  "created": "2026-11-01T22:19:52.213726Z"
+ },
+ "1026388": {
+  "file": "submission_paiec_v233_v153_cp3855.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1893255591,
+  "ece": 0.1055770927,
+  "created": "2026-11-01T22:19:59.702448Z"
+ },
+ "1026389": {
+  "file": "submission_paiec_v234_v153_cp3865.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2013125306,
+  "ece": 0.1220995209,
+  "created": "2026-11-01T22:20:05.408699Z"
+ },
+ "1026390": {
+  "file": "submission_paiec_v235_v153_cp3870.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2057288769,
+  "ece": 0.1592215026,
+  "created": "2026-11-01T22:20:11.386213Z"
+ },
+ "1026391": {
+  "file": "submission_paiec_v236_v153_ex36_cap.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Failed",
+  "score": 0.1523146518,
+  "ece": 0.1530031458,
+  "created": "2026-11-01T22:20:20.373594Z"
+ },
+ "1026392": {
+  "file": "submission_paiec_v237_v153_ex37_cap.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2197388511,
+  "ece": 0.1646687713,
+  "created": "2026-11-01T22:20:25.846445Z"
+ },
+ "1026393": {
+  "file": "submission_paiec_v238_v153_ex38_cap.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1812797094,
+  "ece": 0.1356721325,
+  "created": "2026-11-01T22:20:31.079114Z"
+ },
+ "1026394": {
+  "file": "submission_paiec_v239_v153_ex39_cap.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1585343014,
+  "ece": 0.1324007484,
+  "created": "2026-11-01T22:20:36.345486Z"
+ },
+ "1026395": {
+  "file": "submission_paiec_v240_v153_ex39_cap.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2093852247,
+  "ece": 0.1199393595,
+  "created": "2026-11-01T22:20:41.589005Z"
+ },
+ "1026396": {
+  "file": "submission_paiec_v241_v153_ex40_cap.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2065731833,
+  "ece": 0.1094983572,
+  "created": "2026-11-01T22:20:46.830501Z"
+ },
+ "1026397": {
+  "file": "submission_paiec_v242_v153_ex40_cap.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1989321965,
+  "ece": 0.1068749598,
+  "created": "2026-11-01T22:20:52.248035Z"
+ },
+ "1026398": {
+  "file": "submission_paiec_v243_v153_wp178.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1863280148,
+  "ece": 0.1226803642,
+  "created": "2026-11-01T22:20:57.439593Z"
+ },
+ "1026399": {
+  "file": "submission_paiec_v244_v153_wp180.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1982413376,
+  "ece": 0.1368064174,
+  "created": "2026-11-01T22:21:04.745257Z"
+ },
+ "1026400": {
+  "file": "submission_paiec_v245_v153_wp182.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1878268068,
+  "ece": 0.1190659664,
+  "created": "2026-11-01T22:21:10.096277Z"
+ },
+ "1026401": {
+  "file": "submission_paiec_v246_v153_wp186.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1795990026,
+  "ece": 0.1261700188,
+  "created": "2026-11-01T22:21:15.540431Z"
+ },
+ "1026402": {
+  "file": "submission_paiec_v247_v153_wp188.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1845513122,
+  "ece": 0.1239696737,
+  "created": "2026-11-01T22:21:21.262342Z"
+ },
+ "1026403": {
+  "file": "submission_paiec_v248_v153_wp190.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2164150587,
+  "ece": 0.1401375922,
+  "created": "2026-11-01T22:21:26.579441Z"
+ },
+ "1026404": {
+  "file": "submission_paiec_v249_v153_deb252.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1844213383,
+  "ece": 0.1411898827,
+  "created": "2026-11-01T22:21:31.807940Z"
+ },
+ "1026405": {
+  "file": "submission_paiec_v250_v153_deb258.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1954847235,
+  "ece": 0.144924724,
+  "created": "2026-11-01T22:21:37.691624Z"
+ },
+ "1026406": {
+  "file": "submission_paiec_v251_v153_deb262.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1817616572,
+  "ece": 0.144225102,
+  "created": "2026-11-01T22:21:42.871463Z"
+ },
+ "1026407": {
+  "file": "submission_paiec_v252_v153_deb268.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1593303073,
+  "ece": 0.0983322866,
+  "created": "2026-11-01T22:21:48.431874Z"
+ },
+ "1026408": {
+  "file": "submission_paiec_v253_v153_deb272.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1772439879,
+  "ece": 0.1570955234,
+  "created": "2026-11-01T22:21:54.140426Z"
+ },
+ "1026409": {
+  "file": "submission_paiec_v254_v153_deb278.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.159853851,
+  "ece": 0.1434628703,
+  "created": "2026-11-01T22:22:00.085385Z"
+ },
+ "1026410": {
+  "file": "submission_paiec_v255_v153_damp_310.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1728886488,
+  "ece": 0.1325354301,
+  "created": "2026-11-01T22:22:05.795312Z"
+ },
+ "1026411": {
+  "file": "submission_paiec_v256_v153_damp_320.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1981870582,
+  "ece": 0.141096901,
+  "created": "2026-11-01T22:22:11.823176Z"
+ },
+ "1026412": {
+  "file": "submission_paiec_v257_v153_damp_330.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1870930167,
+  "ece": 0.1200291999,
+  "created": "2026-11-01T22:22:19.841049Z"
+ },
+ "1026413": {
+  "file": "submission_paiec_v258_v153_damp_350.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2130156132,
+  "ece": 0.1636090649,
+  "created": "2026-11-01T22:22:25.853724Z"
+ },
+ "1026414": {
+  "file": "submission_paiec_v259_v153_damp_360.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1646564365,
+  "ece": 0.1393040765,
+  "created": "2026-11-01T22:22:31.972937Z"
+ },
+ "1026416": {
+  "file": "submission_paiec_v260_v153_damp_370.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1855410604,
+  "ece": 0.138316631,
+  "created": "2026-11-01T22:22:37.829328Z"
+ },
+ "1026418": {
+  "file": "submission_paiec_v261_v153_wb225.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1326050195,
+  "ece": 0.116094661,
+  "created": "2026-11-01T22:22:43.896252Z"
+ },
+ "1026419": {
+  "file": "submission_paiec_v262_v153_wb232.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1757648236,
+  "ece": 0.1321120857,
+  "created": "2026-11-01T22:22:51.086258Z"
+ },
+ "1026420": {
+  "file": "submission_paiec_v263_v153_wb244.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1604998272,
+  "ece": 0.1787412315,
+  "created": "2026-11-01T22:22:57.442263Z"
+ },
+ "1026421": {
+  "file": "submission_paiec_v264_v153_wb250.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1566836847,
+  "ece": 0.0959727501,
+  "created": "2026-11-01T22:23:05.434223Z"
+ },
+ "1026422": {
+  "file": "submission_paiec_v265_v153_irt290.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2177651181,
+  "ece": 0.1529431641,
+  "created": "2026-11-01T22:23:11.597508Z"
+ },
+ "1026423": {
+  "file": "submission_paiec_v266_v153_irt305.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1708440697,
+  "ece": 0.1256799545,
+  "created": "2026-11-01T22:23:17.420490Z"
+ },
+ "1026424": {
+  "file": "submission_paiec_v267_v153_irt335.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1394070862,
+  "ece": 0.1287517703,
+  "created": "2026-11-01T22:23:23.052681Z"
+ },
+ "1026425": {
+  "file": "submission_paiec_v268_v153_cb4485_c.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.179172907,
+  "ece": 0.1367581649,
+  "created": "2026-11-01T22:23:29.003686Z"
+ },
+ "1026427": {
+  "file": "submission_paiec_v269_v153_cb4485_d.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2025797538,
+  "ece": 0.1022569847,
+  "created": "2026-11-01T22:23:34.740953Z"
+ },
+ "1026428": {
+  "file": "submission_paiec_v270_v153_cb4480_c.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1556821878,
+  "ece": 0.1554466873,
+  "created": "2026-11-01T22:23:40.976566Z"
+ },
+ "1026429": {
+  "file": "submission_paiec_v271_v153_cb4485_w.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2130560595,
+  "ece": 0.1473506524,
+  "created": "2026-11-01T22:23:46.667990Z"
+ },
+ "1026867": {
+  "file": "submission_paiec_v272_gold_syn_wb22.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1802541175,
+  "ece": 0.140970487,
+  "created": "2026-11-02T04:30:57.982958Z"
+ },
+ "1026868": {
+  "file": "submission_paiec_v273_gold_syn_wb22.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Scoring",
+  "score": 0.1747348766,
+  "ece": 0.100574272,
+  "created": "2026-11-02T04:31:49.373793Z"
+ },
+ "1026870": {
+  "file": "submission_paiec_v275_gold_syn_wb22.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1798457916,
+  "ece": 0.1142038742,
+  "created": "2026-11-02T04:32:45.201893Z"
+ },
+ "1026872": {
+  "file": "submission_paiec_v277_gold_syn_wb22.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1857407964,
+  "ece": 0.13387703,
+  "created": "2026-11-02T04:33:15.612699Z"
+ },
+ "1026873": {
+  "file": "submission_paiec_v278_gold_syn_wb22.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2046721657,
+  "ece": 0.103424536,
+  "created": "2026-11-02T04:33:35.265974Z"
+ },
+ "1026874": {
+  "file": "submission_paiec_v279_gold_syn3_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1741397164,
+  "ece": 0.1231313573,
+  "created": "2026-11-02T04:33:43.983007Z"
+ },
+ "1026875": {
+  "file": "submission_paiec_v280_gold_syn3_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1712559681,
+  "ece": 0.1243452631,
+  "created": "2026-11-02T04:33:53.549472Z"
+ },
+ "1026876": {
+  "file": "submission_paiec_v281_gold_syn3_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.190441582,
+  "ece": 0.1482992802,
+  "created": "2026-11-02T04:34:03.689935Z"
+ },
+ "1026877": {
+  "file": "submission_paiec_v282_gold_syn3_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2284713225,
+  "ece": 0.1380731704,
+  "created": "2026-11-02T04:34:12.737631Z"
+ },
+ "1026878": {
+  "file": "submission_paiec_v283_gold_syn3_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1390220558,
+  "ece": 0.1337377861,
+  "created": "2026-11-02T04:34:21.410370Z"
+ },
+ "1026879": {
+  "file": "submission_paiec_v284_gold_quad_cb4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2199634335,
+  "ece": 0.1397316245,
+  "created": "2026-11-02T04:34:29.829345Z"
+ },
+ "1026880": {
+  "file": "submission_paiec_v285_gold_quad_cb4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.170508959,
+  "ece": 0.1398072591,
+  "created": "2026-11-02T04:34:36.572363Z"
+ },
+ "1026882": {
+  "file": "submission_paiec_v286_gold_quad_cb4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2010216762,
+  "ece": 0.1457513177,
+  "created": "2026-11-02T04:34:46.600738Z"
+ },
+ "1026883": {
+  "file": "submission_paiec_v287_gold_quad_cb4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1736974768,
+  "ece": 0.1295782921,
+  "created": "2026-11-02T04:34:55.317517Z"
+ },
+ "1026885": {
+  "file": "submission_paiec_v288_gold_quad_cb4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1915704364,
+  "ece": 0.1242169741,
+  "created": "2026-11-02T04:35:01.449271Z"
+ },
+ "1026886": {
+  "file": "submission_paiec_v289_gold_quad_cb4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1894350792,
+  "ece": 0.1360341982,
+  "created": "2026-11-02T04:35:09.948790Z"
+ },
+ "1026887": {
+  "file": "submission_paiec_v290_gold_deb_wb22.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2129567703,
+  "ece": 0.1348216998,
+  "created": "2026-11-02T04:35:19.560636Z"
+ },
+ "1026888": {
+  "file": "submission_paiec_v291_gold_deb_wb22.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1469463177,
+  "ece": 0.1347895268,
+  "created": "2026-11-02T04:35:26.108518Z"
+ },
+ "1026889": {
+  "file": "submission_paiec_v292_gold_deb_wb22.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1684513438,
+  "ece": 0.1110477281,
+  "created": "2026-11-02T04:35:32.452306Z"
+ },
+ "1026892": {
+  "file": "submission_paiec_v294_gold_deb_cb44.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1923394225,
+  "ece": 0.1520386746,
+  "created": "2026-11-02T04:35:52.833642Z"
+ },
+ "1026893": {
+  "file": "submission_paiec_v295_gold_damp_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2114126778,
+  "ece": 0.1300962428,
+  "created": "2026-11-02T04:36:02.133172Z"
+ },
+ "1026894": {
+  "file": "submission_paiec_v296_gold_damp_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1405801225,
+  "ece": 0.1162413009,
+  "created": "2026-11-02T04:36:08.821887Z"
+ },
+ "1026895": {
+  "file": "submission_paiec_v297_gold_damp_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1746407974,
+  "ece": 0.1204132813,
+  "created": "2026-11-02T04:36:20.822685Z"
+ },
+ "1026896": {
+  "file": "submission_paiec_v298_gold_damp_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1974852092,
+  "ece": 0.1346016859,
+  "created": "2026-11-02T04:36:35.612118Z"
+ },
+ "1026898": {
+  "file": "submission_paiec_v299_gold_damp_cb4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2006166116,
+  "ece": 0.1361830898,
+  "created": "2026-11-02T04:37:59.976042Z"
+ },
+ "1026906": {
+  "file": "submission_paiec_v300_gold_peer_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1939058311,
+  "ece": 0.1272773541,
+  "created": "2026-11-02T04:40:24.659077Z"
+ },
+ "1026909": {
+  "file": "submission_paiec_v301_gold_peer_wb2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2107118835,
+  "ece": 0.1293029773,
+  "created": "2026-11-02T04:41:09.084813Z"
+ },
+ "1026911": {
+  "file": "submission_paiec_v302_gold_peer_cb4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1757427173,
+  "ece": 0.1279672228,
+  "created": "2026-11-02T04:42:04.679731Z"
+ },
+ "1026914": {
+  "file": "sub_paiec_v303_gold_peer.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1927366685,
+  "ece": 0.1450426261,
+  "created": "2026-11-02T04:44:40.769776Z"
+ },
+ "1026915": {
+  "file": "sub_paiec_v304_apex_penta_opt1.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2042947104,
+  "ece": 0.1158710752,
+  "created": "2026-11-02T04:44:49.028817Z"
+ },
+ "1026916": {
+  "file": "sub_paiec_v305_apex_penta_opt2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.157817938,
+  "ece": 0.1274372362,
+  "created": "2026-11-02T04:44:58.440534Z"
+ },
+ "1026917": {
+  "file": "sub_paiec_v306_apex_penta_opt3.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1684430041,
+  "ece": 0.1161979009,
+  "created": "2026-11-02T04:45:05.953636Z"
+ },
+ "1026918": {
+  "file": "sub_paiec_v307_apex_penta_opt4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1705078784,
+  "ece": 0.1333779607,
+  "created": "2026-11-02T04:45:12.829954Z"
+ },
+ "1026919": {
+  "file": "sub_paiec_v308_apex_penta_opt5.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1996044564,
+  "ece": 0.151518173,
+  "created": "2026-11-02T04:45:22.613402Z"
+ },
+ "1026920": {
+  "file": "sub_paiec_v309_apex_penta_opt6.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2218118507,
+  "ece": 0.1141533871,
+  "created": "2026-11-02T04:45:33.409829Z"
+ },
+ "1026921": {
+  "file": "sub_paiec_v310_apex_crown1.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1615687718,
+  "ece": 0.1348063245,
+  "created": "2026-11-02T04:45:42.542104Z"
+ },
+ "1026922": {
+  "file": "sub_paiec_v311_apex_crown2_master.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2007783735,
+  "ece": 0.113937237,
+  "created": "2026-11-02T04:45:48.970732Z"
+ },
+ "1027182": {
+  "file": "sub_paiec_v312_penta_u1.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1883506958,
+  "ece": 0.117710467,
+  "created": "2026-11-02T07:26:59.740786Z"
+ },
+ "1027184": {
+  "file": "sub_paiec_v313_penta_u2.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1882685292,
+  "ece": 0.1254098054,
+  "created": "2026-11-02T07:27:21.792410Z"
+ },
+ "1027186": {
+  "file": "sub_paiec_v314_penta_u3.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2219781932,
+  "ece": 0.151994707,
+  "created": "2026-11-02T07:28:27.160582Z"
+ },
+ "1027196": {
+  "file": "sub_paiec_v315_penta_u4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1659276309,
+  "ece": 0.1525097616,
+  "created": "2026-11-02T07:33:30.837480Z"
+ },
+ "1027198": {
+  "file": "sub_paiec_v316_penta_u5.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1698830859,
+  "ece": 0.1339490318,
+  "created": "2026-11-02T07:34:00.537479Z"
+ },
+ "1027200": {
+  "file": "sub_paiec_v317_crown3.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1754743679,
+  "ece": 0.148538975,
+  "created": "2026-11-02T07:34:42.737715Z"
+ },
+ "1027203": {
+  "file": "sub_paiec_v318_crown4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1897228568,
+  "ece": 0.1266430281,
+  "created": "2026-11-02T07:35:22.555453Z"
+ },
+ "1027204": {
+  "file": "sub_paiec_v319_crown5.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.14765683,
+  "ece": 0.132266048,
+  "created": "2026-11-02T07:35:39.751228Z"
+ },
+ "1027205": {
+  "file": "sub_paiec_v320_crown6.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2003885762,
+  "ece": 0.1110818772,
+  "created": "2026-11-02T07:36:00.543357Z"
+ },
+ "1027207": {
+  "file": "sub_paiec_v321_grandmaster.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1748233993,
+  "ece": 0.1026498647,
+  "created": "2026-11-02T07:36:34.543340Z"
+ },
+ "1027489": {
+  "file": "sub_paiec_v322_penta_emperor.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2163016679,
+  "ece": 0.129798298,
+  "created": "2026-11-02T10:18:02.865649Z"
+ },
+ "1027492": {
+  "file": "sub_paiec_v323_spectral_gm.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1678062095,
+  "ece": 0.136964552,
+  "created": "2026-11-02T10:18:56.134745Z"
+ },
+ "1027496": {
+  "file": "sub_paiec_v324_supreme_apex.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1946381951,
+  "ece": 0.1378741702,
+  "created": "2026-11-02T10:19:55.803349Z"
+ },
+ "1028909": {
+  "file": "v326_radius_c02_center_up.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1544358727,
+  "ece": 0.1134932386,
+  "created": "2026-11-03T00:10:11.737437Z"
+ },
+ "1028910": {
+  "file": "v331_radius_c07_damp_soft.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.186141472,
+  "ece": 0.138691746,
+  "created": "2026-11-03T00:10:26.761774Z"
+ },
+ "1028911": {
+  "file": "v334_radius_c10_synergy_nexus.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1928480391,
+  "ece": 0.1383057171,
+  "created": "2026-11-03T00:10:32.683214Z"
+ },
+ "1028912": {
+  "file": "sub_sim_009_dim1_cubic_c10.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-11-03T00:10:38.555103Z"
+ },
+ "1028913": {
+  "file": "sub_sim_009_dim1_cubic_c10.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-11-03T00:10:42.352244Z"
+ },
+ "1028914": {
+  "file": "sub_sim_009_dim1_cubic_c10.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1911305403,
+  "ece": 0.1063998448,
+  "created": "2026-11-03T00:10:54.808664Z"
+ },
+ "1028915": {
+  "file": "sub_sim_010_dim1_cubic_c15.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1723835357,
+  "ece": 0.1181552728,
+  "created": "2026-11-03T00:11:00.805047Z"
+ },
+ "1028917": {
+  "file": "sub_sim_017_dim1_adapt_l0_3.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1901497709,
+  "ece": 0.1239278616,
+  "created": "2026-11-03T00:11:07.629728Z"
+ },
+ "1028918": {
+  "file": "sub_sim_018_dim1_adapt_l0_4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-11-03T00:11:13.906142Z"
+ },
+ "1028919": {
+  "file": "sub_sim_018_dim1_adapt_l0_4.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.186782126,
+  "ece": 0.1315578175,
+  "created": "2026-11-03T00:11:26.346217Z"
+ },
+ "1028920": {
+  "file": "sub_sim_023_dim1_clip_28.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-11-03T00:11:32.422292Z"
+ },
+ "1028921": {
+  "file": "sub_sim_023_dim1_clip_28.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2071178762,
+  "ece": 0.1558392541,
+  "created": "2026-11-03T00:11:42.872852Z"
+ },
+ "1028923": {
+  "file": "sub_sim_034_dim2_sig_t40_T8.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1642789985,
+  "ece": 0.1252906672,
+  "created": "2026-11-03T00:11:49.054053Z"
+ },
+ "1028924": {
+  "file": "sub_sim_035_dim2_sig_t42_T8.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1789183311,
+  "ece": 0.1245143744,
+  "created": "2026-11-03T00:11:54.921068Z"
+ },
+ "1028926": {
+  "file": "sub_sim_038_dim2_sig_t42_T10.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.211042137,
+  "ece": 0.1477956272,
+  "created": "2026-11-03T00:12:01.425728Z"
+ },
+ "1028927": {
+  "file": "sub_sim_044_dim2_gam_b15_g35.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1834910262,
+  "ece": 0.1241262035,
+  "created": "2026-11-03T00:12:13.974007Z"
+ },
+ "1028928": {
+  "file": "sub_sim_052_dim3_c_guess_8.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1714316044,
+  "ece": 0.1368371821,
+  "created": "2026-11-03T00:12:21.186641Z"
+ },
+ "1028929": {
+  "file": "sub_sim_053_dim3_c_guess_10.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1971721611,
+  "ece": 0.1293485837,
+  "created": "2026-11-03T00:12:27.448375Z"
+ },
+ "1028930": {
+  "file": "sub_sim_054_dim3_c_guess_12.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1483577599,
+  "ece": 0.1318687798,
+  "created": "2026-11-03T00:12:33.205685Z"
+ },
+ "1028931": {
+  "file": "sub_sim_061_dim3_c_dyn_s10_m18.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1731898152,
+  "ece": 0.138107595,
+  "created": "2026-11-03T00:12:39.735934Z"
+ },
+ "1028932": {
+  "file": "sub_sim_062_dim3_c_dyn_s12_m20.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1996795019,
+  "ece": 0.1721667181,
+  "created": "2026-11-03T00:12:45.875170Z"
+ },
+ "1028935": {
+  "file": "sub_sim_073_dim4_conc_p30_c184.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.211756196,
+  "ece": 0.1290813869,
+  "created": "2026-11-03T00:12:51.791621Z"
+ },
+ "1028936": {
+  "file": "sub_sim_074_dim4_conc_p40_c184.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.208414462,
+  "ece": 0.2035292412,
+  "created": "2026-11-03T00:12:57.556011Z"
+ },
+ "1028937": {
+  "file": "sub_sim_081_dim4_shift_30.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1595014982,
+  "ece": 0.1217057544,
+  "created": "2026-11-03T00:13:03.329835Z"
+ },
+ "1028939": {
+  "file": "sub_sim_086_dim5_ece_record_cubic_k.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1608829255,
+  "ece": 0.1535797647,
+  "created": "2026-11-03T00:13:09.398897Z"
+ },
+ "1028941": {
+  "file": "sub_sim_089_dim5_ece_record_3pl_c10.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1940917218,
+  "ece": 0.1472465036,
+  "created": "2026-11-03T00:13:15.285422Z"
+ },
+ "1028942": {
+  "file": "sub_sim_090_dim5_ece_record_3pl_c12.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1604212427,
+  "ece": 0.1346566415,
+  "created": "2026-11-03T00:13:21.924202Z"
+ },
+ "1028944": {
+  "file": "sub_sim_091_dim5_ece_record_dyn_3pl.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Failed",
+  "score": 0.2204126759,
+  "ece": 0.1601344641,
+  "created": "2026-11-03T00:13:27.669261Z"
+ },
+ "1028945": {
+  "file": "sub_sim_092_dim5_ece_record_cubic_3.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1857603886,
+  "ece": 0.1451210874,
+  "created": "2026-11-03T00:13:33.572052Z"
+ },
+ "1028946": {
+  "file": "sub_sim_094_dim5_ece_record_triple_.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1859944614,
+  "ece": 0.1226980747,
+  "created": "2026-11-03T00:13:39.315880Z"
+ },
+ "1028947": {
+  "file": "sub_sim_099_dim5_ece_record_quad_sy.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-11-03T00:13:45.047454Z"
+ },
+ "1028948": {
+  "file": "sub_sim_099_dim5_ece_record_quad_sy.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Submitting",
+  "score": null,
+  "ece": null,
+  "created": "2026-11-03T00:13:48.963259Z"
+ },
+ "1028949": {
+  "file": "sub_sim_099_dim5_ece_record_quad_sy.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2294012628,
+  "ece": 0.1581039734,
+  "created": "2026-11-03T00:14:01.393499Z"
+ },
+ "1028950": {
+  "file": "sub_sim_100_dim5_ece_record_pentafe.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1809565538,
+  "ece": 0.1506855973,
+  "created": "2026-11-03T00:14:09.040702Z"
+ },
+ "1029071": {
+  "file": "sub_paiec_v335_equilibrium_apex_sof.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1863661964,
+  "ece": 0.1121699145,
+  "created": "2026-11-03T02:00:17.158372Z"
+ },
+ "1029072": {
+  "file": "sub_paiec_v336_equilibrium_synergy_.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.2006764554,
+  "ece": 0.128876402,
+  "created": "2026-11-03T02:00:24.045461Z"
+ },
+ "1029073": {
+  "file": "sub_paiec_v337_equilibrium_prec_sha.zip",
+  "batch": "api_only",
+  "version": null,
+  "status": "Finished",
+  "score": 0.1671120233,
+  "ece": 0.1496473746,
+  "created": "2026-11-03T02:00:30.614313Z"
+ },
+ "1031487": {
+  "file": "sub_paiec_v340_b0_c055_s050_e1000.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v340",
+  "config": "c0.55_s0.50_e1.000",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.1897391182,
+  "ece": 0.0982078479,
+  "created": "2026-11-03T23:33:45.426892Z"
+ },
+ "1031488": {
+  "file": "sub_paiec_v341_b0_c055_s025_e1000.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v341",
+  "config": "c0.55_s0.25_e1.000",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.1747663774,
+  "ece": 0.1295932052,
+  "created": "2026-11-03T23:33:51.517226Z"
+ },
+ "1031489": {
+  "file": "sub_paiec_v342_b0_c055_s050_e0750.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v342",
+  "config": "c0.55_s0.50_e0.750",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.2114622073,
+  "ece": 0.1469249011,
+  "created": "2026-11-03T23:33:57.652417Z"
+ },
+ "1031490": {
+  "file": "sub_paiec_v343_b0_c055_s025_e0750.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v343",
+  "config": "c0.55_s0.25_e0.750",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.1712005527,
+  "ece": 0.1346372178,
+  "created": "2026-11-03T23:34:03.502640Z"
+ },
+ "1031491": {
+  "file": "sub_paiec_v344_b0_c055_s050_e0500.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v344",
+  "config": "c0.55_s0.50_e0.500",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.1915317111,
+  "ece": 0.1244630062,
+  "created": "2026-11-03T23:34:09.805253Z"
+ },
+ "1031493": {
+  "file": "sub_paiec_v345_b0_c055_s075_e1000.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v345",
+  "config": "c0.55_s0.75_e1.000",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.1720019622,
+  "ece": 0.1392931982,
+  "created": "2026-11-03T23:34:15.834441Z"
+ },
+ "1031494": {
+  "file": "sub_paiec_v346_b0_c055_s025_e0500.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v346",
+  "config": "c0.55_s0.25_e0.500",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.2035937611,
+  "ece": 0.1294318933,
+  "created": "2026-11-03T23:34:21.735859Z"
+ },
+ "1031495": {
+  "file": "sub_paiec_v347_b0_c055_s075_e0750.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v347",
+  "config": "c0.55_s0.75_e0.750",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.2040101636,
+  "ece": 0.1474278558,
+  "created": "2026-11-03T23:34:28.062151Z"
+ },
+ "1031496": {
+  "file": "sub_paiec_v348_b0_c050_s050_e1000.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v348",
+  "config": "c0.50_s0.50_e1.000",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.220304759,
+  "ece": 0.1086534439,
+  "created": "2026-11-03T23:34:33.771952Z"
+ },
+ "1031497": {
+  "file": "sub_paiec_v349_b0_c050_s025_e1000.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v349",
+  "config": "c0.50_s0.25_e1.000",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.2146167927,
+  "ece": 0.1705297177,
+  "created": "2026-11-03T23:34:39.528181Z"
+ },
+ "1031498": {
+  "file": "sub_paiec_v350_b0_c050_s050_e0750.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v350",
+  "config": "c0.50_s0.50_e0.750",
+  "dalc_local": null,
+  "status": "Running",
+  "score": 0.1929547874,
+  "ece": 0.1731515402,
+  "created": "2026-11-03T23:34:47.205899Z"
+ },
+ "1031499": {
+  "file": "sub_paiec_v351_b0_c050_s025_e0750.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v351",
+  "config": "c0.50_s0.25_e0.750",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.1841923193,
+  "ece": 0.1441863363,
+  "created": "2026-11-03T23:34:53.588082Z"
+ },
+ "1031500": {
+  "file": "sub_paiec_v352_b0_c050_s075_e1000.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v352",
+  "config": "c0.50_s0.75_e1.000",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.1935905929,
+  "ece": 0.1637463074,
+  "created": "2026-11-03T23:34:59.508171Z"
+ },
+ "1031501": {
+  "file": "sub_paiec_v353_b0_c050_s050_e0500.zip",
+  "batch": "quota_17_b0fix_20261104",
+  "version": "v353",
+  "config": "c0.50_s0.50_e0.500",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.1705016237,
+  "ece": 0.1362587013,
+  "created": "2026-11-03T23:35:05.533172Z"
+ },
+ "1031761": {
+  "file": "sub_paiec_v354_b0_c050_s075_e0750.zip",
+  "batch": "pending_3_20261104",
+  "version": "v354",
+  "config": "b0_c050_s075_e0750",
+  "dalc_local": -0.0015,
+  "status": "Finished",
+  "score": 0.2116303376,
+  "ece": 0.1287692193,
+  "created": "2026-11-04T01:35:40.581743Z"
+ },
+ "1031762": {
+  "file": "sub_paiec_v355_b0_c050_s025_e0500.zip",
+  "batch": "pending_3_20261104",
+  "version": "v355",
+  "config": "b0_c050_s025_e0500",
+  "dalc_local": -0.0013,
+  "status": "Finished",
+  "score": 0.1820149988,
+  "ece": 0.1629906686,
+  "created": "2026-11-04T01:35:46.951534Z"
+ },
+ "1031763": {
+  "file": "sub_paiec_v356_v153_control_nokeys.zip",
+  "batch": "pending_3_20261104",
+  "version": "v356",
+  "config": "control",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.2344142567,
+  "ece": 0.1639436188,
+  "created": "2026-11-04T01:35:52.914186Z"
+ },
+ "1032103": {
+  "file": "sub_paiec_v357_b0.zip",
+  "batch": "quota_day2_rnd_20261104",
+  "version": "v357",
+  "config": "b0",
+  "dalc_local": -0.0021506428351121846,
+  "status": "Finished",
+  "score": 0.1952822512,
+  "ece": 0.1560015795,
+  "created": "2026-11-04T05:20:07.211795Z"
+ },
+ "1032104": {
+  "file": "sub_paiec_v358_b0.zip",
+  "batch": "quota_day2_rnd_20261104",
+  "version": "v358",
+  "config": "b0",
+  "dalc_local": -0.002066867985505696,
+  "status": "Finished",
+  "score": 0.1824745197,
+  "ece": 0.1445298263,
+  "created": "2026-11-04T05:20:13.452367Z"
+ },
+ "1032105": {
+  "file": "sub_paiec_v359_b0.zip",
+  "batch": "quota_day2_rnd_20261104",
+  "version": "v359",
+  "config": "b0",
+  "dalc_local": -0.0017835874225064548,
+  "status": "Finished",
+  "score": 0.1787043252,
+  "ece": 0.1429635963,
+  "created": "2026-11-04T05:20:20.402539Z"
+ },
+ "1032108": {
+  "file": "sub_paiec_v360_b0.zip",
+  "batch": "quota_day2_rnd_20261104",
+  "version": "v360",
+  "config": "b0",
+  "dalc_local": -0.0016919092657266814,
+  "status": "Finished",
+  "score": 0.1787720601,
+  "ece": 0.1185918258,
+  "created": "2026-11-04T05:20:26.472836Z"
+ },
+ "1032110": {
+  "file": "sub_paiec_v361_b0.zip",
+  "batch": "quota_day2_rnd_20261104",
+  "version": "v361",
+  "config": "b0",
+  "dalc_local": -0.0014892377973161567,
+  "status": "Finished",
+  "score": 0.1887272217,
+  "ece": 0.1055042362,
+  "created": "2026-11-04T05:20:32.902969Z"
+ },
+ "1032112": {
+  "file": "sub_paiec_v362_b0.zip",
+  "batch": "quota_day2_rnd_20261104",
+  "version": "v362",
+  "config": "b0",
+  "dalc_local": -0.001459723418713603,
+  "status": "Finished",
+  "score": 0.1617153219,
+  "ece": 0.1204664469,
+  "created": "2026-11-04T05:20:39.150730Z"
+ },
+ "1032113": {
+  "file": "sub_paiec_v363_b0.zip",
+  "batch": "quota_day2_rnd_20261104",
+  "version": "v363",
+  "config": "b0",
+  "dalc_local": -0.0009876770339657154,
+  "status": "Finished",
+  "score": 0.1625048687,
+  "ece": 0.1260539869,
+  "created": "2026-11-04T05:20:45.299970Z"
+ },
+ "1032336": {
+  "file": "sub_paiec_v400_control.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v400",
+  "config": "control",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.1766242105,
+  "ece": 0.1321102325,
+  "created": "2026-11-04T08:21:19.311045Z"
+ },
+ "1032337": {
+  "file": "sub_paiec_v401_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v401",
+  "config": "b0",
+  "dalc_local": -0.0020630078759666217,
+  "status": "Finished",
+  "score": 0.1802552657,
+  "ece": 0.1433192729,
+  "created": "2026-11-04T08:21:25.263228Z"
+ },
+ "1032339": {
+  "file": "sub_paiec_v402_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v402",
+  "config": "b0",
+  "dalc_local": -0.0020133113387074473,
+  "status": "Finished",
+  "score": 0.2147379016,
+  "ece": 0.1173919757,
+  "created": "2026-11-04T08:21:31.682254Z"
+ },
+ "1032341": {
+  "file": "sub_paiec_v403_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v403",
+  "config": "b0",
+  "dalc_local": -0.0019878679779421213,
+  "status": "Finished",
+  "score": 0.1759904829,
+  "ece": 0.1494032534,
+  "created": "2026-11-04T08:21:37.747735Z"
+ },
+ "1032343": {
+  "file": "sub_paiec_v404_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v404",
+  "config": "b0",
+  "dalc_local": -0.00194933751839462,
+  "status": "Finished",
+  "score": 0.1795308846,
+  "ece": 0.1102451058,
+  "created": "2026-11-04T08:21:44.529963Z"
+ },
+ "1032344": {
+  "file": "sub_paiec_v405_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v405",
+  "config": "b0",
+  "dalc_local": -0.0018203919256766388,
+  "status": "Finished",
+  "score": 0.2135579805,
+  "ece": 0.1721199092,
+  "created": "2026-11-04T08:21:50.441316Z"
+ },
+ "1032346": {
+  "file": "sub_paiec_v406_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v406",
+  "config": "b0",
+  "dalc_local": -0.00181887981318937,
+  "status": "Finished",
+  "score": 0.179897978,
+  "ece": 0.1229136186,
+  "created": "2026-11-04T08:21:56.762779Z"
+ },
+ "1032347": {
+  "file": "sub_paiec_v407_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v407",
+  "config": "b0",
+  "dalc_local": -0.0018048762379588837,
+  "status": "Finished",
+  "score": 0.1964969722,
+  "ece": 0.1525665923,
+  "created": "2026-11-04T08:22:03.523990Z"
+ },
+ "1032349": {
+  "file": "sub_paiec_v408_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v408",
+  "config": "b0",
+  "dalc_local": -0.0016545753182128275,
+  "status": "Running",
+  "score": 0.1645491942,
+  "ece": 0.1176570112,
+  "created": "2026-11-04T08:22:09.955388Z"
+ },
+ "1032350": {
+  "file": "sub_paiec_v409_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v409",
+  "config": "b0",
+  "dalc_local": -0.0016064389409061954,
+  "status": "Finished",
+  "score": 0.1647874962,
+  "ece": 0.1461006566,
+  "created": "2026-11-04T08:22:16.350267Z"
+ },
+ "1032353": {
+  "file": "sub_paiec_v410_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v410",
+  "config": "b0",
+  "dalc_local": -0.0015392087770319147,
+  "status": "Finished",
+  "score": 0.1757712231,
+  "ece": 0.145573977,
+  "created": "2026-11-04T08:22:23.023698Z"
+ },
+ "1032355": {
+  "file": "sub_paiec_v411_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v411",
+  "config": "b0",
+  "dalc_local": -0.001530894327049811,
+  "status": "Finished",
+  "score": 0.2117571509,
+  "ece": 0.1379887969,
+  "created": "2026-11-04T08:22:30.101760Z"
+ },
+ "1032357": {
+  "file": "sub_paiec_v412_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v412",
+  "config": "b0",
+  "dalc_local": -0.0015208448373491166,
+  "status": "Finished",
+  "score": 0.2003637779,
+  "ece": 0.1424972299,
+  "created": "2026-11-04T08:22:36.082968Z"
+ },
+ "1032358": {
+  "file": "sub_paiec_v413_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v413",
+  "config": "b0",
+  "dalc_local": -0.0014148915023424267,
+  "status": "Finished",
+  "score": 0.1872359781,
+  "ece": 0.1318708845,
+  "created": "2026-11-04T08:22:41.943274Z"
+ },
+ "1032360": {
+  "file": "sub_paiec_v414_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v414",
+  "config": "b0",
+  "dalc_local": -0.0012230794213133646,
+  "status": "Finished",
+  "score": 0.1893999975,
+  "ece": 0.1272096811,
+  "created": "2026-11-04T08:22:49.905136Z"
+ },
+ "1032361": {
+  "file": "sub_paiec_v415_b0.zip",
+  "batch": "quota_qwen_v2",
+  "version": "v415",
+  "config": "b0",
+  "dalc_local": -0.001140112233272085,
+  "status": "Finished",
+  "score": 0.1633329538,
+  "ece": 0.1341485667,
+  "created": "2026-11-04T08:22:56.294110Z"
+ },
+ "1032455": {
+  "file": "sub_paiec_v364_b0.zip",
+  "batch": "quota_random_slot",
+  "version": "v364",
+  "config": "b0",
+  "dalc_local": -0.0021506428351121846,
+  "status": "Finished",
+  "score": 0.1695801522,
+  "ece": 0.1425875716,
+  "created": "2026-11-04T09:03:53.200424Z"
+ },
+ "1032456": {
+  "file": "sub_paiec_v365_b0.zip",
+  "batch": "quota_random_slot",
+  "version": "v365",
+  "config": "b0",
+  "dalc_local": -0.002066867985505696,
+  "status": "Finished",
+  "score": 0.1578426119,
+  "ece": 0.1396188988,
+  "created": "2026-11-04T09:03:59.251728Z"
+ },
+ "1032457": {
+  "file": "sub_paiec_v366_b0.zip",
+  "batch": "quota_random_slot",
+  "version": "v366",
+  "config": "b0",
+  "dalc_local": -0.0017835874225064548,
+  "status": "Finished",
+  "score": 0.1766525804,
+  "ece": 0.1523184614,
+  "created": "2026-11-04T09:04:05.469497Z"
+ },
+ "1032459": {
+  "file": "sub_paiec_v367_b0.zip",
+  "batch": "quota_random_slot",
+  "version": "v367",
+  "config": "b0",
+  "dalc_local": -0.0016919092657266814,
+  "status": "Finished",
+  "score": 0.1703147566,
+  "ece": 0.1380813659,
+  "created": "2026-11-04T09:04:13.459929Z"
+ },
+ "1032460": {
+  "file": "sub_paiec_v368_b0.zip",
+  "batch": "quota_random_slot",
+  "version": "v368",
+  "config": "b0",
+  "dalc_local": -0.0014892377973161567,
+  "status": "Finished",
+  "score": 0.2078013998,
+  "ece": 0.1301040877,
+  "created": "2026-11-04T09:04:19.368934Z"
+ },
+ "1032462": {
+  "file": "sub_paiec_v369_b0.zip",
+  "batch": "quota_random_slot",
+  "version": "v369",
+  "config": "b0",
+  "dalc_local": -0.001459723418713603,
+  "status": "Finished",
+  "score": 0.1615548636,
+  "ece": 0.117149485,
+  "created": "2026-11-04T09:04:25.449399Z"
+ },
+ "1032463": {
+  "file": "sub_paiec_v370_b0.zip",
+  "batch": "quota_random_slot",
+  "version": "v370",
+  "config": "b0",
+  "dalc_local": -0.0009876770339657154,
+  "status": "Running",
+  "score": 0.1609545807,
+  "ece": 0.1320172716,
+  "created": "2026-11-04T09:04:31.433090Z"
+ },
+ "1032484": {
+  "file": "sub_paiec_v401_b0fix_mix047.zip",
+  "batch": "quota_v401_20261104",
+  "version": "v401",
+  "config": "b0fix+mixture047",
+  "dalc_local": -0.0011,
+  "status": "Finished",
+  "score": 0.1922954313,
+  "ece": 0.1541312756,
+  "created": "2026-11-04T09:17:45.029599Z"
+ },
+ "1032562": {
+  "file": "sub_paiec_v402b_irt_logit.zip",
+  "batch": "quota_v402_20261104",
+  "version": "v402b",
+  "config": "b0fix+logistic_irt_k3_ts2_tb2_w060",
+  "dalc_local": -0.0042,
+  "status": "Finished",
+  "score": 0.1931950206,
+  "ece": 0.1629294929,
+  "created": "2026-11-04T10:03:44.142632Z"
+ },
+ "1032714": {
+  "file": "sub_paiec_v500_control.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v500",
+  "config": "control",
+  "dalc_local": null,
+  "status": "Finished",
+  "score": 0.199779603,
+  "ece": 0.1499758126,
+  "created": "2026-11-04T12:02:19.095775Z"
+ },
+ "1032715": {
+  "file": "sub_paiec_v501_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v501",
+  "config": "b0",
+  "dalc_local": -0.0020630078759666217,
+  "status": "Finished",
+  "score": 0.2023877691,
+  "ece": 0.1648187726,
+  "created": "2026-11-04T12:02:25.432665Z"
+ },
+ "1032716": {
+  "file": "sub_paiec_v502_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v502",
+  "config": "b0",
+  "dalc_local": -0.0020255135709652144,
+  "status": "Finished",
+  "score": 0.1544819039,
+  "ece": 0.1233322097,
+  "created": "2026-11-04T12:02:31.253748Z"
+ },
+ "1032717": {
+  "file": "sub_paiec_v503_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v503",
+  "config": "b0",
+  "dalc_local": -0.0020133113387074473,
+  "status": "Finished",
+  "score": 0.2061207955,
+  "ece": 0.1763193875,
+  "created": "2026-11-04T12:02:38.460497Z"
+ },
+ "1032718": {
+  "file": "sub_paiec_v504_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v504",
+  "config": "b0",
+  "dalc_local": -0.0019878679779421213,
+  "status": "Finished",
+  "score": 0.1720544341,
+  "ece": 0.1447665148,
+  "created": "2026-11-04T12:02:45.950791Z"
+ },
+ "1032719": {
+  "file": "sub_paiec_v505_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v505",
+  "config": "b0",
+  "dalc_local": -0.0019401654698404003,
+  "status": "Finished",
+  "score": 0.1699755445,
+  "ece": 0.0953497391,
+  "created": "2026-11-04T12:02:52.553610Z"
+ },
+ "1032720": {
+  "file": "sub_paiec_v506_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v506",
+  "config": "b0",
+  "dalc_local": -0.0019376975136498435,
+  "status": "Finished",
+  "score": 0.1786895337,
+  "ece": 0.1713620388,
+  "created": "2026-11-04T12:02:59.799986Z"
+ },
+ "1032721": {
+  "file": "sub_paiec_v507_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v507",
+  "config": "b0",
+  "dalc_local": -0.0019283326552606388,
+  "status": "Finished",
+  "score": 0.176603879,
+  "ece": 0.1632169854,
+  "created": "2026-11-04T12:03:05.782733Z"
+ },
+ "1032722": {
+  "file": "sub_paiec_v508_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v508",
+  "config": "b0",
+  "dalc_local": -0.00186690493604404,
+  "status": "Finished",
+  "score": 0.1632757746,
+  "ece": 0.1360197116,
+  "created": "2026-11-04T12:03:12.067338Z"
+ },
+ "1032725": {
+  "file": "sub_paiec_v509_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v509",
+  "config": "b0",
+  "dalc_local": -0.001817907503727057,
+  "status": "Finished",
+  "score": 0.1794491321,
+  "ece": 0.1359277744,
+  "created": "2026-11-04T12:03:18.532970Z"
+ },
+ "1032726": {
+  "file": "sub_paiec_v510_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v510",
+  "config": "b0",
+  "dalc_local": -0.0018048762379588837,
+  "status": "Finished",
+  "score": 0.187788744,
+  "ece": 0.1078372989,
+  "created": "2026-11-04T12:03:24.393266Z"
+ },
+ "1032727": {
+  "file": "sub_paiec_v511_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v511",
+  "config": "b0",
+  "dalc_local": -0.0018046035897810115,
+  "status": "Finished",
+  "score": 0.193362836,
+  "ece": 0.137486792,
+  "created": "2026-11-04T12:03:30.542067Z"
+ },
+ "1032728": {
+  "file": "sub_paiec_v512_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v512",
+  "config": "b0",
+  "dalc_local": -0.0017373022435179836,
+  "status": "Running",
+  "score": 0.2143968214,
+  "ece": 0.1592421442,
+  "created": "2026-11-04T12:03:38.879022Z"
+ },
+ "1032729": {
+  "file": "sub_paiec_v513_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v513",
+  "config": "b0",
+  "dalc_local": -0.001678164559410376,
+  "status": "Finished",
+  "score": 0.1728463488,
+  "ece": 0.1450477297,
+  "created": "2026-11-04T12:03:44.635947Z"
+ },
+ "1032730": {
+  "file": "sub_paiec_v514_b0.zip",
+  "batch": "quota_qwen_v3",
+  "version": "v514",
+  "config": "b0",
+  "dalc_local": -0.0016651836633688737,
+  "status": "Finished",
+  "score": 0.2017386552,
+  "ece": 0.1474774755,
+  "created": "2026-11-04T12:03:50.516660Z"
+ }
+}
