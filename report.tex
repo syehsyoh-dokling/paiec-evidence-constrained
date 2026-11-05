@@ -2,7 +2,7 @@
 
 % NeurIPS 2026 template. Upload neurips_2026.sty from the official template next to this file
 % (Overleaf: "NeurIPS 2026" gallery template). Use [final] for the camera-ready, non-anonymous report.
-\usepackage[final]{neurips_2026}
+\usepackage[final,nonatbib]{neurips_2026}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -370,7 +370,7 @@ The submitted artifacts were fitted on 200 items per benchmark. For each of the 
 \begin{table}[h]
 \caption{Budget-0 Brier on seen (fitted) and unseen items of the same benchmark, same subjects; ``diff'' is unseen minus seen with its standard error over subjects.}
 \label{tab:unseen}
-\centering\small
+\centering\footnotesize
 \begin{tabular}{lrrrrrrr}
 \toprule
  & & \multicolumn{3}{c}{v153} & \multicolumn{3}{c}{budget-0 revision} \\
@@ -457,7 +457,7 @@ Hosted generations and the baseline promoted from each (the ``best'' column is t
 \caption{Generations of the baseline.}
 \label{tab:generations}
 \centering\small
-\begin{tabular}{llrrll}
+\begin{tabular}{lp{3.9cm}rrp{4.3cm}p{2.4cm}}
 \toprule
 Generation & Versions & Submissions & Best & Promoted baseline & Derived from \\
 \midrule
