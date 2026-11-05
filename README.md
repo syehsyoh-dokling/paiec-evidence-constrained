@@ -1,4 +1,4 @@
-# Supplementary material: PAIEC entry (Codabench submission ID 1020778)
+# Supplementary material: PAIEC entry (selected Codabench submission 1034049 = v403; leaderboard entry 1020778 = v153)
 
 submission/paiec_submission_v153.zip  The Codabench submission (model.py, labeling.py, models.txt,
     submission_config.json without credentials, data/, src/). Identical predictor code to the
