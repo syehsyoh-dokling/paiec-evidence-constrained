@@ -24,9 +24,12 @@
 with Leave-One-Benchmark-Out Model Selection and a Gated Code-Revision Agent}
 
 \author{%
-  Saifuddin Abdullah\thanks{AI engineer and developer with more than twenty years of experience in international organisations and agencies, including WHO, RTI International, Management Systems International (DFAT--AusAID), FHI 360, NIPA Korea, Aligner and Outlier. Codabench user \texttt{syehsyoh}.}\\
+  Saifuddin Abdullah\thanks{AI engineer and developer with more than twenty years of experience in international organisations and agencies, including WHO, RTI International, Management Systems International (DFAT--AusAID), FHI 360, NIPA Korea, Aligner and Outlier. Codabench user \texttt{syehsyoh}. Corresponding author.}\\
   Independent AI engineer\\
   \texttt{syehsaifuddin@gmail.com}
+  \And
+  Munazar Saifannur\\
+  Independent researcher
 }
 
 \begin{document}
@@ -231,7 +234,7 @@ python localsim/sim_local.py --zips submission.zip --pairs-per-fold 16 --context
 All scripts resolve their paths from one environment variable (\texttt{PAIEC\_ROOT}); \texttt{HOW\_TO\_RERUN.md} in the archive lists the commands, inputs and runtimes for every table. Given the harness and a labelled dataset, the predictor and the simulator produce Brier ALC directly without Codabench; the agent is a development tool and is not part of the prediction path. The same material is released at \url{https://github.com/syehsyoh-dokling/paiec-evidence-constrained}.
 
 \section*{Disclosures}
-Training data: measurement-db tables only, obtained through the public re-upload named in Section~\ref{sec:data} because the official repository was gated to us at build time. Pretrained models: all-MiniLM-L6-v2, bge-small-en-v1.5, and optional budget-0 calls to the Nemotron inference API. LLM-based coding assistants were used throughout development (Anthropic Claude via Claude Code for analysis, simulator and report drafting; Qwen2.5-Coder as the code-revision agent; Gemini and Nemotron in earlier agent experiments). The assistants wrote code and text under human direction; the hypotheses, the acceptance rules and the decision of what to submit were made by the author (``we'' throughout), and every number in this report comes from scripts that are released. No private test data were extracted and no anonymous identifiers were de-anonymised.
+Training data: measurement-db tables only, obtained through the public re-upload named in Section~\ref{sec:data} because the official repository was gated to us at build time. Pretrained models: all-MiniLM-L6-v2, bge-small-en-v1.5, and optional budget-0 calls to the Nemotron inference API. LLM-based coding assistants were used throughout development (Anthropic Claude via Claude Code for analysis, simulator and report drafting; Qwen2.5-Coder as the code-revision agent; Gemini and Nemotron in earlier agent experiments). The assistants wrote code and text under human direction; the hypotheses, the acceptance rules and the decision of what to submit were made by the authors, and every number in this report comes from scripts that are released. No private test data were extracted and no anonymous identifiers were de-anonymised.
 
 \begin{thebibliography}{99}
 \bibitem{paiec} S. Truong, W. Salaudeen, N. Truong, S. Wang, A. Wang, L. Guerdan, Z. Xiao, X. Xie, N. Haber, and S. Koyejo. The Predictive AI Evaluation Competition at NeurIPS 2026. \url{https://aims.stanford.edu/competition}, 2026.
